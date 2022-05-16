@@ -1,0 +1,270 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  min-width: 1280px;
+}
+
+.inner {
+  width: 1200px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.logo {
+  background: url(/images/yuhan/logo.svg) 0 0 no-repeat;
+  width: 147.32px;
+  height: 36px;
+  margin: 0 50px;
+}
+
+
+.menu {
+  margin: 0 50px;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding: 55px 0px 55px 55px;
+}
+
+.search {
+  vertical-align: top;
+}
+
+.main_wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_wrap video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -99;
+}
+
+.main_wrap .text_area {
+  position: relative;
+  top: -70px;
+  left: -500px;
+  z-index: 1;
+  max-width: 1000px;
+  color: #fff;
+}
+
+.main_wrap .text_area h1 {
+  font-size: 75px;
+  text-shadow: 2px 2px 15px rgba(83, 83, 83, 0.767);
+}
+
+.main_wrap .text_area p {
+  font-size: 23px;
+  padding: 20px 0;
+}
+
+.company {
+  margin-top: 150px;
+}
+
+.company h1 {
+  font-size: 60px;
+  box-shadow: inset 0 -25px 0 #009FE3;
+  width: 30%;
+}
+
+.company p {
+  padding-top: 30px;
+  font-size: 20px;
+  width: 30%;
+}
+
+.company .group {
+  display: flex;
+  align-content: space-between;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  top: -200px;
+}
+
+.company .group .box {
+  flex: 1 1 0;
+  margin: 20px;
+}
+
+.company .group .box .bg {
+  width: 100%;
+  height: 280px;
+  background-color: bisque;
+}
+
+.company .group .box h4 {
+  color: #fff;
+  padding-top: 180px;
+  padding-right: 20px;
+  font-weight: 200;
+}
+
+.company .group .box h3 {
+  color: #fff;
+  font-size: 35px;
+  padding-right: 20px;
+  font-weight: 500;
+}
+
+.company .group .box.b01 .bg {
+  background: url(/images/yuhan/vision.png) 50% 50% no-repeat;
+}
+
+.company .group .box.b02 .bg {
+  background: url(/images/yuhan/strategic.png) 50% 50% no-repeat;
+}
+
+.company .group .box.b03 .bg {
+  background: url(/images/yuhan/core.png) 50% 50% no-repeat;
+}
+
+
+.company .group .box.b01 {
+  margin-top: 150px;
+}
+
+.company .group .box.b02 {
+  margin-top: 230px;
+}
+
+.main_wrap button {
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  background: #009FE3;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+.sm {
+  padding: 100px 0;
+  /* background: #F4F4F4; */
+  width: 100%;
+  height: auto;
+}
+
+.sm .inner {
+  display: flex;
+  align-content: space-between;
+  width: 1200px;
+}
+
+.sm .text_area h1 {
+  font-size: 60px;
+  box-shadow: inset 0 -25px 0 #009FE3;
+  width: 80%;
+  margin: 0;
+}
+
+.sm .text_area h2 {
+  padding: 40px 0px;
+  font-size: 30px;
+}
+
+
+.sm .text_area span {
+  font-size: 25px;
+  font-weight: 600;
+  color: #009FE3;
+}
+
+.sm .group {
+  display: flex;
+  align-items: center;
+}
+
+.sm .group .box {
+  margin-left: 50px;
+  width: 200px;
+  height: 300px;
+  background: #fff;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 0px 40px #e4e4e4;
+  padding: 40px 0;
+}
+
+.sm .group .box h3 {
+  font-size: 1.8rem;
+  color: #C4C4C4;
+  font-weight: 700;
+}
+
+.sm .group .box img {
+  margin: 20px 0;
+}
+
+
+.sm .group .box:hover {
+  background: #009FE3;
+  color: #fff;
+}
+
+.sm button {
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  background: #009FE3;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+.basic{
+  margin: 0;
+  width: 100%;
+  height: 600px;
+  font-size: 4rem;
+  }
+
+  .basic h1{
+    font-size: 60px;
+  }

@@ -1,0 +1,379 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    min-width: 1280px;
+}
+
+.inner {
+    width: 1200px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+
+.logo {
+    background: url(/images/kakao/kakao.png) 0 0 no-repeat;
+    width: 118px;
+    height: 25px;
+    margin: 0;
+}
+
+.login {
+    margin: 0;
+}
+
+.menu {
+    margin: 0;
+}
+
+
+.expand_more {
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+
+.title {
+    margin: 100px 0 50px 0;
+}
+
+.title span {
+    padding-left: 20px;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.mainbox {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+
+.left {
+    width: 50%;
+    background: #ffffff;
+    padding: 60px 80px;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0px 0px 40px #e4e4e4;
+}
+
+.txt h1 {
+    font-size: 35px;
+    padding-top: 50px;
+    letter-spacing: -2px;
+}
+
+.txt h2 {
+    color: #A1A1A1;
+    font-weight: 300;
+}
+
+.txt p {
+    padding: 120px 0 50px 0;
+    font-size: 18px;
+    color: #333333;
+}
+
+.txt span {
+    color: #A1A1A1;
+}
+
+.right {
+    width: 50%;
+    background: #F8DD20;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0px 0px 40px #e4e4e4;
+}
+
+.video1 {
+    width: 100%;
+    border-radius: 0 15px 15px 0;
+}
+
+.button {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.button p {
+    letter-spacing: 20px;
+}
+
+.arrow {
+    vertical-align: top;
+}
+
+.contents {
+    padding-top: 150px;
+}
+
+.b_group {
+    margin: 50px 0;
+}
+
+.b_group button {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    height: 50px;
+    line-height: 40px;
+    padding: 0px 20px;
+    margin-right: 15px;
+    border: 1px solid #EEEEEE;
+    border-radius: 30px;
+    color: #494949;
+    background: #EEEEEE;
+    cursor: pointer;
+}
+
+.b_group button:hover {
+    background: #000;
+    color: #ffffff;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.wrap .box {
+    width: 500px;
+    margin: 0;
+    padding: 30px 0;
+}
+
+
+.box.b01 .icon {
+    background: url(/images/kakao/ico1.png) 0 0 no-repeat;
+    width: 460x;
+    height: 46px;
+}
+
+.box h1 {
+    padding: 20px 0;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+.box p {
+    font-weight: 300;
+}
+
+.border {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 30px 0;
+}
+
+.office {
+    padding-top: 130px;
+    padding-bottom: 200px;
+}
+
+.office h1 {
+    padding-bottom: 50px;
+}
+
+.wrap .map {
+    width: 380px;
+    height: 380px;
+    margin: 0;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0px 20px 40px #d3d3d3;
+    position: relative;
+    top: 0;
+
+}
+
+.m01 .bg {
+    background: url(/images/kakao/img_office_jeju.jpg) 0 0 no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    border-radius: 20px 20px 0 0;
+}
+
+.m02 .bg {
+    background: url(/images/kakao/img_office_pangyo.jpg) 0 0 no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    border-radius: 20px 20px 0 0;
+}
+
+.m03 .bg {
+    background: url(/images/kakao/img_office_samseong.jpg) 0 0 no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    border-radius: 20px 20px 0 0;
+}
+
+.txt2 {
+    background: #ffffff;
+    padding: 22px 23px;
+    width: 380px;
+    position: relative;
+    top: -40px;
+    letter-spacing: -1px;
+    font-size: 15px;
+}
+
+.txt2 h3 {
+    margin-bottom: 10px;
+}
+
+.txt2 p {
+    padding: 0;
+}
+
+.map:hover {
+    top: -10px;
+    transition: all 0.3s;
+}
+
+/* 호버 트랜지션 하려면 원래있던 부모에게 포지션 릴레이티브 주고 top:0 한다음에 호버에게 트랜지션 주기 */
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e4e4e4;
+    width: 100%;
+}
+
+footer:last-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright span {
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.copyrighticon {
+    vertical-align: top;
+    font-size: 24px;
+}
+
+.copyright {
+    margin: 0;
+    width: 400px;
+}
+
+.sns {
+    margin: 0 auto;
+}
+
+.sns h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.site {
+    margin: 0;
+}
+
+.footerinner {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding-top: 50px;
+}
+
+.snsicon {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0 48px;
+}
+
+.sns1 {
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0px;
+    background: url(/images/kakao/sns1.png) 0 0 no-repeat;
+    width: 62px;
+    height: 62px;
+    margin: 0 10px;
+}
+
+
+.sns2 {
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0px;
+    background: url(/images/kakao/sns2.png) 0 0 no-repeat;
+    width: 62px;
+    height: 62px;
+    margin: 0 10px;
+}
+
+.sns3 {
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0px;
+    background: url(/images/kakao/sns3.png) 0 0 no-repeat;
+    width: 62px;
+    height: 62px;
+    margin: 0 10px;
+}
+
+.sns4 {
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0px;
+    background: url(/images/kakao/sns4.png) 0 0 no-repeat;
+    width: 62px;
+    height: 62px;
+    margin: 0 10px;
+}
+
+.sns5 {
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0px;
+    background: url(/images/kakao/sns5.png) 0 0 no-repeat;
+    width: 62px;
+    height: 62px;
+    margin: 0 10px;
+}
