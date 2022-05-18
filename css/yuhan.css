@@ -47,7 +47,7 @@ header {
 }
 
 .logo {
-  background: url(/images/yuhan/logo.svg) 0 0 no-repeat;
+  background: url(../images/yuhan/logo.svg) 0 0 no-repeat;
   width: 147.32px;
   height: 36px;
   margin: 0 50px;
