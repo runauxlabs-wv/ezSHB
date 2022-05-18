@@ -145,7 +145,7 @@ header {
 
 .hoverslide {
   width: 100%;
-  height: 600px;
+  height: 550px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -153,19 +153,38 @@ header {
 }
 
 
-.hoverslide .text_area {
+.hoverslide .box {
   flex: 1 1 25%;
   height: 100%;
   background: #939ea8;
-  padding: 50px 100px;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.hoverslide .text_area:nth-child(odd) {
-  background: #009FE3;
+.hoverslide .box.b01{
+  background: url(../images/yuhan/company_about.png) 50% 50% no-repeat;
+  background-size: cover;
 }
 
-.hoverslide .text_area button {
+.hoverslide .box.b02{
+  background: url(../images/yuhan/company_history.png) 20% 20% no-repeat;
+  background-size: cover;
+}
+
+.hoverslide .box.b03{
+  background: url(../images/yuhan/company_report.png) 50% 50% no-repeat;
+  background-size: cover;
+  color: #000;
+}
+
+.hoverslide .box.b04{
+  background: url(../images/yuhan/company_recruit.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.hoverslide .box button {
   width: 110px;
   height: 40px;
   line-height: 40px;
@@ -175,65 +194,63 @@ header {
   cursor: pointer;
   border: 1px solid #FFF;
   display: none;
+  margin-top: 60px;
 }
 
-.hoverslide .text_area:hover button {
+
+.hoverslide .box:hover button {
   display: block;
   transition: all 1s ease-out;
+  
 }
 
-.hoverslide .text_area h1 {
+.hoverslide .box h1 {
   width: 100%;
   text-align: center;
   color: #fff;
   margin: 0;
-  padding: 20px 0;
   font-size: 30px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.hoverslide .box h2{
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
   font-weight: 300;
 }
 
-.hoverslide .text_area p {
+.hoverslide .box p {
   display: none;
   color: #fff;
+  font-weight: 400;
 }
 
 
 
-.hoverslide .text_area:hover h1 {
+.hoverslide .box:hover h1 {
   position: relative;
   animation: fadeInUp 1s;
 }
 
-.hoverslide .text_area:hover p {
+.hoverslide .box:hover p {
   position: relative;
   animation: fadeInUp 1s;
 }
 
-.hoverslide .text_area:hover p {
+.hoverslide .box:hover p {
   display: block;
 }
 
-.hoverslide .text_area:hover {
+.hoverslide .box:hover {
   flex: 1 1 100%;
   transition: all 0.5s ease-out;
 }
 
-.hoverslide .text_area:hover h1 {
+.hoverslide .box:hover h1 {
   display: block;
   transition: all 1s ease-out;
-}
-
-
-.main_wrap button {
-  width: 110px;
-  height: 40px;
-  line-height: 40px;
-  background: #009FE3;
-  border: none;
-  color: #FFF;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 10px;
 }
 
 
@@ -302,7 +319,9 @@ header {
   transition: all 1.5s;
 }
 
-.sm button {
+.main_wrap button,
+.sm button,
+.brand button {
   width: 110px;
   height: 40px;
   line-height: 40px;
@@ -314,24 +333,18 @@ header {
   margin-top: 10px;
 }
 
-
-.basic {
-  margin: 0;
-  width: 100%;
-  height: 600px;
-  font-size: 4rem;
-}
-
-.basic h1 {
-  font-size: 60px;
+.ccm {
+  padding: 200px 0;
+  text-align: center;
 }
 
 .newsroom {
   background: rgba(192, 192, 192, 0.075);
+  padding: 200px 0;
 }
 
 .newsroom h1 {
-  padding: 200px 0 150px 0;
+  padding-bottom: 100px;
 }
 
 .news_group {
@@ -345,13 +358,25 @@ header {
   background: #fff;
   border-radius: 30px;
   box-shadow: 0px 0px 40px #e4e4e457;
-  padding: 30px;
+  padding: 40px;
 }
 
 .news_group .box:hover {
   background: #009FE3;
   transition: all 1.5s;
   color: #fff;
+}
+
+.news_group button{
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  background: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 60px;
 }
 
 .news_group .box.b01 {
@@ -366,12 +391,12 @@ header {
 
 /* 테스트 */
 
-.tc {
-  text-align: center;
+.brand{
+  padding: 200px 0;
 }
 
 .wrap {
-  width: 1200px;
+  width: 100%;
   margin: 50px auto;
   padding: 50px 0;
   display: flex;
@@ -390,7 +415,7 @@ header {
 
 .wrap .box p {
   width: 100%;
-  height: 40%;
+  height: 400px;
   margin: 0;
   padding: 20px;
   color: #fff;
@@ -398,22 +423,22 @@ header {
 }
 
 .wrap .box.b01 {
-  background: url(/images/crecendo/furniture_3.jpg) 50% 50% no-repeat;
+  background: url(../images/yuhan/core.png) 50% 50% no-repeat;
   background-size: 150%;
 }
 
 .wrap .box.b02 {
-  background: url(/images/crecendo/furniture_2.png) 50% 50% no-repeat;
+  background: url(../images/yuhan/core.png) 50% 50% no-repeat;
   background-size: 200%;
 }
 
 .wrap .box.b03 {
-  background: url(/images/crecendo/furniture_4.jpg) 50% 50% no-repeat;
+  background: url(../images/yuhan/core.png) 50% 50% no-repeat;
   background-size: 150%;
 }
 
 .wrap .box.b01 p {
-  background: #588ebb;
+  background: #E2211C;
 }
 
 .wrap .box.b02 p {
@@ -425,7 +450,7 @@ header {
 }
 
 .wrap .box:hover {
-  background-size: 130%;
+  background-size: 180%;
   transition: all 0.5s;
 }
 
