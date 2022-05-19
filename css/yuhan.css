@@ -1,16 +1,19 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+
 @keyframes fadeInUp {
   0% {
-      opacity: 0;
-      transform: translate3d(0, 100%, 0);
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
   }
+
   to {
-      opacity: 1;
-      transform: translateZ(0);
+    opacity: 1;
+    transform: translateZ(0);
   }
 }
+
 * {
   margin: 0 auto;
   padding: 0;
@@ -163,23 +166,23 @@ header {
   flex-direction: column;
 }
 
-.hoverslide .box.b01{
+.hoverslide .box.b01 {
   background: url(../images/yuhan/company_about.png) 50% 50% no-repeat;
   background-size: cover;
 }
 
-.hoverslide .box.b02{
+.hoverslide .box.b02 {
   background: url(../images/yuhan/company_history.png) 20% 20% no-repeat;
   background-size: cover;
 }
 
-.hoverslide .box.b03{
+.hoverslide .box.b03 {
   background: url(../images/yuhan/company_report.png) 50% 50% no-repeat;
   background-size: cover;
   color: #000;
 }
 
-.hoverslide .box.b04{
+.hoverslide .box.b04 {
   background: url(../images/yuhan/company_recruit.png) 50% 50% no-repeat;
   background-size: cover;
 }
@@ -201,7 +204,7 @@ header {
 .hoverslide .box:hover button {
   display: block;
   transition: all 1s ease-out;
-  
+
 }
 
 .hoverslide .box h1 {
@@ -214,7 +217,7 @@ header {
   line-height: 60px;
 }
 
-.hoverslide .box h2{
+.hoverslide .box h2 {
   color: #fff;
   margin: 0;
   font-size: 16px;
@@ -367,7 +370,7 @@ header {
   color: #fff;
 }
 
-.news_group button{
+.news_group button {
   width: 110px;
   height: 40px;
   line-height: 40px;
@@ -387,11 +390,56 @@ header {
   margin-right: 0;
 }
 
+.swiper {
+  width: 100%;
+  position: relative;
+  overflow: visible;
+}
+
+.mySwiper .swiper-pagination {
+  position: absolute;
+  bottom: -80px;
+}
+
+.swiper-pagination-bullet {
+  width: 70px;
+  height: 8px;
+  border-radius: 0%;
+  background: #009FE3;
+}
+
+.mySwiper .bt {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  position: absolute;
+  top: -50px;
+}
+
+.mySwiper .swiper-button-prev {
+  /* transform:translateX(-100%); */
+  background: url(../images/yuhan/button_prev.svg) no-repeat;
+  background-size: 100% auto;
+}
+
+.mySwiper .swiper-button-next {
+  transform: translateX(-4050%);
+  background: url(../images/yuhan/button_next.svg) no-repeat;
+  background-size: 100% auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
 
 
 /* 테스트 */
 
-.brand{
+.brand {
   padding: 200px 0;
 }
 
