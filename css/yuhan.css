@@ -344,6 +344,7 @@ header {
 .newsroom {
   background: rgba(192, 192, 192, 0.075);
   padding: 200px 0;
+  overflow: hidden;
 }
 
 .newsroom h1 {
@@ -420,13 +421,13 @@ header {
 }
 
 .mySwiper .swiper-button-prev {
-  /* transform:translateX(-100%); */
+  transform:translateX(-40%);
   background: url(../images/yuhan/button_prev.svg) no-repeat;
   background-size: 100% auto;
 }
 
 .mySwiper .swiper-button-next {
-  transform: translateX(-4050%);
+  transform: translateX(-4150%);
   background: url(../images/yuhan/button_next.svg) no-repeat;
   background-size: 100% auto;
 }
