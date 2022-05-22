@@ -14,6 +14,7 @@
   }
 }
 
+
 * {
   margin: 0 auto;
   padding: 0;
@@ -39,6 +40,10 @@ a {
   color: white;
 }
 
+
+h4 {
+  color: #009FE3;
+}
 
 header {
   width: 100%;
@@ -108,6 +113,8 @@ header {
   font-size: 23px;
   padding: 20px 0;
 }
+
+/*  기업소개 */
 
 .company {
   text-align: center;
@@ -214,7 +221,7 @@ header {
   margin: 0;
   font-size: 30px;
   font-weight: 500;
-  line-height: 60px;
+  line-height: 70px;
 }
 
 .hoverslide .box h2 {
@@ -230,17 +237,13 @@ header {
   font-weight: 400;
 }
 
-
-
-.hoverslide .box:hover h1 {
-  position: relative;
-  animation: fadeInUp 1s;
-}
-
+.hoverslide .box:hover h2,
+.hoverslide .box:hover h1,
 .hoverslide .box:hover p {
   position: relative;
   animation: fadeInUp 1s;
 }
+
 
 .hoverslide .box:hover p {
   display: block;
@@ -257,29 +260,35 @@ header {
 }
 
 
+/* 지속가능경영 */
+
 .sm {
   padding: 100px 0;
   /* background: #F4F4F4; */
   width: 100%;
   height: auto;
+  animation: fadeInUp 2s;
 }
 
 .sm .inner {
   display: flex;
-  align-content: space-between;
-  width: 1200px;
+  justify-content: space-between;
 }
 
-.sm .text_area h1 {
-  font-size: 60px;
-  box-shadow: inset 0 -25px 0 #009FE3;
-  width: 80%;
+.sm .text_area {
   margin: 0;
 }
 
-.sm .text_area h2 {
+.sm .text_area h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.sm .text_area p {
   padding: 40px 0px;
-  font-size: 30px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 40px;
 }
 
 
@@ -290,8 +299,8 @@ header {
 }
 
 .sm .group {
+  margin: 0;
   display: flex;
-  align-items: center;
 }
 
 .sm .group .box {
@@ -309,6 +318,11 @@ header {
   font-size: 1.8rem;
   color: #C4C4C4;
   font-weight: 700;
+}
+
+.sm .group .box p {
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .sm .group .box img {
@@ -336,19 +350,146 @@ header {
   margin-top: 10px;
 }
 
-.ccm {
-  padding: 200px 0;
+/* 주요활동 */
+
+.contents {
+  padding: 100px 0;
   text-align: center;
 }
 
+.contents .line {
+  border: 1px solid black;
+  width: 0.1px;
+  height: 200px;
+}
+
+.contents h1 {
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+.tab {
+  width: 100%;
+  margin: 0 0 100px 0;
+  position: relative;
+  margin: 100px 0;
+}
+
+.tab ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tab ul li {
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0px 10px;
+  margin: 0 0 0 30px;
+  background: #FFF;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #009FE3;
+  border-radius: 25px;
+  color: #009FE3;
+}
+
+.tab ul li:first-child {
+  margin: 0;
+}
+
+.tab ul li.on {
+  background: #009FE3;
+  color: #FFF;
+  transition: all 0.3s ease-in
+}
+
+.tab .conBox {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  color: #333;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.tab .conBox.on {
+  display: block;
+}
+
+.forest {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forest .text_area {
+  width: 50%;
+  margin: 0;
+  padding: 0 120px;
+  text-align: left;
+}
+
+.forest .text_area h1{
+padding: 50px 0;
+}
+.forest .text_area h2{
+  font-style: italic;
+  font-weight: 400;
+}
+
+.forest .text_area p{
+  padding: 100px 0px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 40px;
+}
+
+.forest .forest_video {
+  width: 50%;
+  /* max-width: 100%; */
+  height: auto;
+  margin: 0;
+}
+
+.forest .forest_video video {
+width: 100%;
+}
+
+/* 고객중심경영 */
+
+.ccm {
+  padding: 200px 0;
+}
+
+
+.ccm .text_area h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.ccm .text_area p {
+  padding: 40px 0px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 40px;
+}
+
+/* 뉴스룸 */
+
 .newsroom {
   background: rgba(192, 192, 192, 0.075);
-  padding: 200px 0;
+  padding: 150px 0;
   overflow: hidden;
 }
 
+
 .newsroom h1 {
   padding-bottom: 100px;
+  font-weight: 500;
+  font-size: 40px;
 }
 
 .news_group {
@@ -372,15 +513,21 @@ header {
 }
 
 .news_group button {
-  width: 110px;
+  width: 105px;
   height: 40px;
   line-height: 40px;
   background: transparent;
   border: none;
-  color: rgb(0, 0, 0);
+  color: #000;
   cursor: pointer;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #000;
   margin-top: 60px;
+}
+
+.news_group .box:hover button {
+  color: #FFF;
+  border: 1px solid #FFF;
+  transition: all 1.5s;
 }
 
 .news_group .box.b01 {
@@ -421,14 +568,14 @@ header {
 }
 
 .mySwiper .swiper-button-prev {
-  transform:translateX(-40%);
-  background: url(../images/yuhan/button_prev.svg) no-repeat;
+  transform: translateX(-40%);
+  background: url(../images/yuhan/button_prev2.svg) no-repeat;
   background-size: 100% auto;
 }
 
 .mySwiper .swiper-button-next {
-  transform: translateX(-4150%);
-  background: url(../images/yuhan/button_next.svg) no-repeat;
+  transform: translateX(-4100%);
+  background: url(../images/yuhan/button_next2.svg) no-repeat;
   background-size: 100% auto;
 }
 
@@ -438,10 +585,22 @@ header {
 }
 
 
-/* 테스트 */
+/* 브랜드 */
 
 .brand {
   padding: 200px 0;
+}
+
+.brand h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.brand p {
+  padding: 40px 0px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 40px;
 }
 
 .wrap {
@@ -511,4 +670,9 @@ header {
 .wrap .box:hover p {
   transform: translateY(0%);
   transition: all 0.5s;
+}
+
+footer {
+  background: #2e2e2e;
+  padding: 100px 0;
 }
