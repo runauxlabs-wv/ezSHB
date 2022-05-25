@@ -425,6 +425,7 @@ header .logo {
 .volunteer {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .forest .text_area,
@@ -438,6 +439,24 @@ header .logo {
 .forest .text_area h1,
 .volunteer .text_area h1 {
   padding: 50px 0;
+}
+
+.forest .text_area .add_circle,
+.woman .text_area .add_circle,
+.volunteer .text_area .add_circle{
+  color: #009FE3;
+  font-size: 50px;
+  vertical-align: top;
+  padding-left: 10px;
+  position: absolute;
+  top: 30px;
+}
+
+.forest .text_area .add_circle:hover,
+.woman .text_area .add_circle:hover,
+.volunteer .text_area .add_circle:hover{
+  color: #2e2e2e;
+  transition: all 0.5s;
 }
 
 .forest .text_area h2,
@@ -465,6 +484,47 @@ header .logo {
 
 .forest .forest_video video {
   width: 100%;
+}
+
+.forest_photobox{
+  display: flex;
+  position: relative;
+  margin: 50px 0 500px 0;
+}
+
+.forest_photobox .pic{
+  margin: 0;
+}
+
+.forest_photobox .pic.p01{
+  background: url(../images/yuhan/forest_pic1.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+
+.forest_photobox .pic.p02{
+  background: url(../images/yuhan/forest_pic2.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  top: 50px;
+  left: 770px;
+}
+
+.forest_photobox .pic.p03{
+  background: url(../images/yuhan/forest_pic3.png) 50% 50% no-repeat;
+  background-size: cover;
+  width: 680px;
+  height: 300px;
+  position: absolute;
+  top: -80px;
+  left: 1200px;
 }
 
 .woman .woman_pic {
