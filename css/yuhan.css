@@ -443,7 +443,7 @@ header .logo {
 
 .forest .text_area .add_circle,
 .woman .text_area .add_circle,
-.volunteer .text_area .add_circle{
+.volunteer .text_area .add_circle {
   color: #009FE3;
   font-size: 50px;
   vertical-align: top;
@@ -454,7 +454,7 @@ header .logo {
 
 .forest .text_area .add_circle:hover,
 .woman .text_area .add_circle:hover,
-.volunteer .text_area .add_circle:hover{
+.volunteer .text_area .add_circle:hover {
   color: #2e2e2e;
   transition: all 0.5s;
 }
@@ -486,45 +486,97 @@ header .logo {
   width: 100%;
 }
 
-.forest_photobox{
+.forest_photo {
+  margin: 100px 0;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pic {
   position: relative;
-  margin: 50px 0 500px 0;
+  overflow: hidden;
+  margin: 7px;
+  min-width: 200px;
+  max-width: 250px;
+  width: 100%;
+  height: 165px;
+  font-size: 18px;
+  background-color: #009FE3;
 }
 
-.forest_photobox .pic{
-  margin: 0;
+.pic * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
 }
 
-.forest_photobox .pic.p01{
-  background: url(../images/yuhan/forest_pic1.jpg) 50% 50% no-repeat;
-  background-size: cover;
-  width: 450px;
-  height: 300px;
+.pic img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.pic figcaption {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
-.forest_photobox .pic.p02{
-  background: url(../images/yuhan/forest_pic2.jpg) 50% 50% no-repeat;
-  background-size: cover;
-  width: 350px;
-  height: 300px;
-  position: absolute;
-  top: 50px;
-  left: 770px;
+.pic h3,
+.pic h5 {
+  color: #fff;
+  margin: 10px 0;
+  padding: 0 20px;
+  opacity: 0;
+  word-break: keep-all;
 }
 
-.forest_photobox .pic.p03{
-  background: url(../images/yuhan/forest_pic3.png) 50% 50% no-repeat;
-  background-size: cover;
-  width: 680px;
-  height: 300px;
+.pic h3 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.pic h5 {
+  font-style: italic;
+  font-weight: 300;
+  color: #000;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.pic a {
   position: absolute;
-  top: -80px;
-  left: 1200px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.pic:hover>img,
+.pic.hover>img {
+  opacity: 0.2;
+}
+
+.pic:hover h3,
+.pic.hover h3,
+.pic:hover h5,
+.pic.hover h5 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .woman .woman_pic {
@@ -743,28 +795,83 @@ header .logo {
 }
 
 .content .box {
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: 250px;
   background: #009FE3;
 }
 
-.content .box {
-  background: url(../images/yuhan/vision_3d.svg) 50% 50% no-repeat;
-  background-size: cover;
+.content .box.b01 {
+  background: url(../images/yuhan/logo_huggies.png) 50% 50% no-repeat;
 }
 
-.content .box.b01{
-  margin-bottom: 50px;
+.content .box.b02 {
+  background: url(../images/yuhan/logo_goodNight.png) 50% 50% no-repeat;
 }
+
+.content .box.b03 {
+  background: url(../images/yuhan/logo_doubleHeart.png) 50% 50% no-repeat;
+}
+
+.content .box.b04 {
+  background: url(../images/yuhan/logo_green.png) 50% 50% no-repeat;
+}
+
+.content .box.b04 {
+  background: url(../images/yuhan/logo_white.png) 50% 50% no-repeat;
+}
+
+.content .box.b05 {
+  background: url(../images/yuhan/logo_good.png) 50% 50% no-repeat;
+}
+
+.content .box.b06 {
+  background: url(../images/yuhan/logo_lanature.png) 50% 50% no-repeat;
+}
+
+.content .box.b07 {
+  background: url(../images/yuhan/logo_kleenex.png) 50% 50% no-repeat;
+}
+
+.content .box.b08 {
+  background: url(../images/yuhan/logo_poppy.png) 50% 50% no-repeat;
+}
+
+.content .box.b09 {
+  background: url(../images/yuhan/logo_scott.png) 50% 50% no-repeat;
+}
+
+.content .box.b10 {
+  background: url(../images/yuhan/logo_myToilet.png) 50% 50% no-repeat;
+}
+
+.content .box.b11 {
+  background: url(../images/yuhan/logo_defend.png) 50% 50% no-repeat;
+}
+
+.content .box.b12 {
+  background: url(../images/yuhan/logo_tn.png) 50% 50% no-repeat;
+}
+
+.content .box.b13 {
+  background: url(../images/yuhan/logo_wypall_new.png) 50% 50% no-repeat;
+}
+
+.content .box.b14 {
+  background: url(../images/yuhan/logo_kimtech_new.png) 50% 50% no-repeat;
+}
+
+.content .box.b15 {
+  background: url(../images/yuhan/logo_kleenguard_new.png) 50% 50% no-repeat;
+}
+
+
 
 .content .item:nth-child(even) {
-  background: lightblue;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 .content .item:nth-child(odd) {
-  background: tomato;
-  margin-right: 50px;
+  margin-right: 100px;
 }
 
 
@@ -775,63 +882,63 @@ footer {
   color: #fff;
 }
 
-footer .top{
+footer .top {
   display: flex;
   justify-content: space-between;
   padding: 50px 0px;
 }
 
-footer .logo{
+footer .logo {
   background: url(../images/yuhan/footer_logo.svg) 0 0 no-repeat;
   width: 147.32px;
   height: 36px;
   margin: 0 30px 0 0;
 }
 
-footer .info{
+footer .info {
   margin: 0;
   width: 60%;
 }
 
-footer .info a{
+footer .info a {
   padding-right: 20px;
   line-height: 60px;
 }
 
-footer .info a:nth-child(2){
+footer .info a:nth-child(2) {
   color: #009FE3;
   font-weight: 700;
 }
 
-footer .info a:nth-child(3){
+footer .info a:nth-child(3) {
   color: #009FE3;
   opacity: 0.5;
 }
 
-.top .info p{
+.top .info p {
   opacity: 0.5;
   display: inline-block;
   font-size: 14px;
   padding-right: 10px;
 }
 
-footer .sns{
+footer .sns {
   margin: 0;
 }
 
-footer .sns p{
+footer .sns p {
   font-size: 20px;
   line-height: 60px;
 }
 
-footer .bottom{
+footer .bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 280px 50px;
 }
 
-footer .bottom p{
+footer .bottom p {
   font-size: 14px;
   margin: 0;
   opacity: 0.5;
