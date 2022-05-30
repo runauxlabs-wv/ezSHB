@@ -14,7 +14,6 @@
   }
 }
 
-
 * {
   margin: 0 auto;
   padding: 0;
@@ -40,7 +39,6 @@ a {
   color: white;
 }
 
-
 h4 {
   color: #009FE3;
 }
@@ -60,7 +58,6 @@ header .logo {
   height: 36px;
   margin: 0 50px;
 }
-
 
 .menu {
   margin: 0 50px;
@@ -140,10 +137,10 @@ header .logo {
 
 .company>h1 {
   font-size: 60px;
+  font-weight: 700;
   padding-bottom: 50px;
   letter-spacing: -2px;
 }
-
 
 .company p {
   padding-top: 30px;
@@ -161,7 +158,6 @@ header .logo {
   flex-direction: row;
   margin: 100px 0;
 }
-
 
 .hoverslide .box {
   flex: 1 1 25%;
@@ -199,19 +195,23 @@ header .logo {
   height: 40px;
   line-height: 40px;
   background: transparent;
-  border: none;
   color: #fff;
   cursor: pointer;
   border: 1px solid #FFF;
+  border-radius: 5px;
   display: none;
   margin-top: 60px;
+  font-weight: 700;
 }
 
+.hoverslide .box button:hover {
+  background: #009FE3;
+  border: 1px solid #009FE3;
+}
 
 .hoverslide .box:hover button {
   display: block;
-  transition: all 1s ease-out;
-
+  transition: all 0.5s ease-out;
 }
 
 .hoverslide .box h1 {
@@ -220,7 +220,7 @@ header .logo {
   color: #fff;
   margin: 0;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 70px;
 }
 
@@ -280,8 +280,8 @@ header .logo {
 }
 
 .sm .text_area h1 {
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 45px;
+  letter-spacing: -2px;
 }
 
 .sm .text_area p {
@@ -290,7 +290,6 @@ header .logo {
   letter-spacing: -1px;
   line-height: 40px;
 }
-
 
 .sm .text_area span {
   font-size: 25px;
@@ -336,18 +335,46 @@ header .logo {
   transition: all 1.5s;
 }
 
-.main_wrap button,
+.main_wrap button {
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  background: #009FE3;
+  border: 1px solid #009FE3;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+}
+
+.main_wrap button:hover {
+  background: #fff;
+  color: #009FE3;
+  border: 1px solid #fff;
+}
+
 .sm button,
 .brand button {
   width: 110px;
   height: 40px;
   line-height: 40px;
-  background: #009FE3;
-  border: none;
-  color: #fff;
+  background: #fff;
+  border: 1px solid #009FE3;
+  color: #009FE3;
   cursor: pointer;
   border-radius: 5px;
   margin-top: 10px;
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+}
+
+.sm button:hover,
+.brand button:hover {
+  background: #009FE3;
+  color: #fff;
+  border: 1px solid #009FE3;
 }
 
 /* 주요활동 */
@@ -366,6 +393,7 @@ header .logo {
 .contents h1 {
   font-size: 40px;
   padding: 20px 0;
+  letter-spacing: -2px;
 }
 
 .tab {
@@ -437,8 +465,25 @@ header .logo {
 }
 
 .forest .text_area h1,
+.volunteer .text_area h1,
+.woman .text_area h1 {
+  letter-spacing: -2px;
+  font-size: 45px;
+
+}
+
+.forest .text_area h1,
 .volunteer .text_area h1 {
   padding: 50px 0;
+}
+
+.forest .text_area span {
+  color: #009FE3;
+  font-size: 55px;
+}
+
+.woman .text_area h1 {
+  padding: 50px 0 50px 0px;
 }
 
 .forest .text_area .add_circle,
@@ -593,10 +638,6 @@ header .logo {
   text-align: left;
 }
 
-.woman .text_area h1 {
-  padding: 50px 0 50px 0px;
-}
-
 .woman .text_area p {
   font-size: 18px;
   letter-spacing: -1px;
@@ -611,38 +652,56 @@ header .logo {
   width: 50%;
 }
 
-/* 고객중심경영 */
-
-.ccm {
-  padding: 200px 0;
-}
-
-
-.ccm .text_area h1 {
-  font-size: 40px;
-  font-weight: 600;
-}
-
-.ccm .text_area p {
-  padding: 40px 0px;
-  font-size: 18px;
-  letter-spacing: -1px;
-  line-height: 40px;
-}
-
 /* 뉴스룸 */
 
 .newsroom {
-  background: rgba(192, 192, 192, 0.075);
-  padding: 150px 0;
+  padding: 50px 0 100px 0;
   overflow: hidden;
 }
 
+.newsroom::before {
+  background: url(../images/yuhan/bg_newsroom.svg)50% 50%;
+  content: "";
+  background-size: cover;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
 .newsroom h1 {
-  padding-bottom: 100px;
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: 400;
+  font-size: 42px;
+  letter-spacing: -2px;
+  color: #fff;
+  padding-left: 70px;
+}
+
+.newsroom h4 {
+  color: #fff;
+  padding-left: 80px;
+}
+
+.newsroom .text_area {
+  background: #009FE3;
+  width: 800px;
+  margin: 0;
+  padding: 50px;
+  position: absolute;
+  top: -120px;
+  left: -20px;
+}
+
+.newsroom .bg_title h1 {
+  font-weight: 800;
+  font-size: 120px;
+  opacity: 0.5;
+  color: #009FE3;
+  transform: translateX(67%);
+  padding: 0;
+  padding-bottom: 30px;
 }
 
 .newsroom h3 {
@@ -655,6 +714,7 @@ header .logo {
   height: 70px;
   line-height: 35px;
   font-size: 20px;
+  letter-spacing: -1px;
 }
 
 .newsroom p {
@@ -672,8 +732,9 @@ header .logo {
   height: 250px;
   background: #fff;
   border-radius: 30px;
-  box-shadow: 0px 0px 40px #e4e4e457;
+  box-shadow: 0px 0px 40px #41414125;
   padding: 40px;
+  margin-top: 30px;
 }
 
 .news_group .box:hover {
@@ -737,7 +798,7 @@ header .logo {
 .mySwiper .swiper-button-next,
 .mySwiper .swiper-button-prev {
   position: absolute;
-  top: -50px;
+  top: -45px;
 }
 
 .mySwiper .swiper-button-prev {
@@ -765,8 +826,9 @@ header .logo {
 }
 
 .brand h1 {
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: 400;
+  font-size: 42px;
+  letter-spacing: -2px;
 }
 
 .brand p {
@@ -774,6 +836,16 @@ header .logo {
   font-size: 18px;
   letter-spacing: -1px;
   line-height: 40px;
+}
+
+.brand .bg_logo {
+  background: url(../images/yuhan/bg_logo.svg) 50% 50% no-repeat;
+  background-size: cover;
+  width: 800px;
+  height: 580px;
+  opacity: 0.03;
+  transform: translateX(-55%);
+  margin-top: 100px;
 }
 
 .container {
@@ -864,8 +936,6 @@ header .logo {
   background: url(../images/yuhan/logo_kleenguard_new.png) 50% 50% no-repeat;
 }
 
-
-
 .content .item:nth-child(even) {
   margin-left: 100px;
 }
@@ -873,6 +943,111 @@ header .logo {
 .content .item:nth-child(odd) {
   margin-right: 100px;
 }
+
+/* 고객중심경영 */
+
+.ccm {
+  text-align: center;
+  padding: 200px 0;
+}
+
+
+.ccm .text_area h1 {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.ccm .text_area p {
+  padding: 40px 0px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 40px;
+}
+
+.ccm .consumer {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.ccm .consumer .qna h1 {
+  padding-bottom: 50px;
+  color: #009FE3;
+}
+
+.ccm .consumer .ask h1 {
+  padding-bottom: 50px;
+}
+
+.ccm .consumer .qna {
+  width: 50%;
+  height: 90%;
+  margin: 0;
+  padding: 50px;
+  background: rgba(192, 192, 192, 0.075);
+  transform: translateX(5%);
+}
+
+.ccm .consumer .qna a {
+  display: flex;
+  width: 80%;
+  font-size: 16px;
+  letter-spacing: -1px;
+  padding: 10px 0;
+  border-bottom: 1px solid #dbdbdb
+}
+
+.ccm .consumer .qna a:hover p {
+  color: #009FE3;
+  font-weight: 600;
+}
+
+.ccm .consumer .qna span {
+  color: #009FE3;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+}
+
+.ccm .consumer .qna p {
+  color: #000;
+  line-height: 35px;
+  text-align: left;
+  margin: 0;
+  padding: 0 20px;
+  display: -webkit-box;
+  word-break: keep-all;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ccm .consumer .qna button {
+  font-weight: 700;
+  color: #fff;
+  background: #009FE3;
+  padding: 12px 30px;
+  border: 1px solid #009FE3;
+  border-radius: 5px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.ccm .consumer .ask {
+  width: 50%;
+  margin: 0;
+  background: #009FE3;
+  color: #fff;
+  padding: 80px;
+  z-index: 20;
+  transform: translateX(-5%);
+}
+
 
 
 /* 푸터 */
@@ -950,10 +1125,9 @@ footer .sns_icon {
 .sns1:hover,
 .sns2:hover,
 .sns3:hover,
-.sns4:hover{
+.sns4:hover {
   opacity: 0.5;
-  border: 1px solid #009FE3;
-  border-radius: 50px;
+  transition: all 0.3s ease;
 }
 
 .sns2 {
