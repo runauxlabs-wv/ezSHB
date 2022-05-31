@@ -41,6 +41,7 @@ a {
 
 h4 {
   color: #009FE3;
+  padding: 5px 0;
 }
 
 header {
@@ -114,55 +115,73 @@ header .logo {
 /*  기업소개 */
 
 .company {
-  text-align: center;
+  text-align: left;
+  position: relative;
+  padding: 300px 0;
+  overflow: hidden;
+}
+
+.company_top{
+  display: flex;
+  justify-content: space-between;
   position: relative;
 }
 
-.company .line {
-  border: 1px solid black;
-  width: 0.1px;
-  height: 200px;
+.company_top .text_area{
+  margin: 0;
+  width: 60%;
+  padding: 80px 100px;
 }
 
-.company .circle {
-  position: absolute;
-  top: 185px;
-  left: 35.5%;
-  width: 60px;
-  height: 60px;
-  background: #009FE3;
-  border-radius: 50%;
-  z-index: -10;
-}
-
-.company>h1 {
+.company_top .text_area>h1 {
   font-size: 60px;
   font-weight: 700;
   padding-bottom: 50px;
   letter-spacing: -2px;
 }
 
-.company p {
+.company_top .text_area p {
   padding-top: 30px;
   font-size: 20px;
   letter-spacing: -1px;
   line-height: 50px;
+}
 
+.company_top .picture{
+  width: 40%;
+  height: 600px;
+  background: url(../images/yuhan/company_pic.png)50% 50% no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.company_top .rec{
+  width: 70px;
+  height: 180px;
+  background: #009FE3;
+  position: absolute;
+  z-index: -20;
+  left: 740px;
+  top: 25px;
+}
+
+.company_bottom{
+  position: relative;
 }
 
 .hoverslide {
-  width: 100%;
-  height: 550px;
-  overflow: hidden;
+  position: absolute;
+  top: -200px;
+  left: 500px;
+  width: 73.8%;
+  height: 350px;
   display: flex;
   flex-direction: row;
-  margin: 100px 0;
 }
 
 .hoverslide .box {
   flex: 1 1 25%;
   height: 100%;
-  background: #939ea8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,27 +189,78 @@ header .logo {
 }
 
 .hoverslide .box.b01 {
-  background: url(../images/yuhan/company_about.png) 50% 50% no-repeat;
-  background-size: cover;
+  /* background: url(../images/yuhan/company_about.png) 50% 50% no-repeat;
+  background-size: cover; */
+  background: #fff;
+}
+
+.hoverslide .box.b01 .icon{
+  background:url(../images/yuhan/company_icon_about.svg) 50% 50% no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
 }
 
 .hoverslide .box.b02 {
-  background: url(../images/yuhan/company_history.png) 20% 20% no-repeat;
-  background-size: cover;
+  /* background: url(../images/yuhan/company_history.png) 20% 20% no-repeat;
+  background-size: cover; */
+  background: #F7F7F9;
+}
+
+.hoverslide .box.b02 .icon{
+  background:url(../images/yuhan/company_icon_history.svg) 50% 50% no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
 }
 
 .hoverslide .box.b03 {
-  background: url(../images/yuhan/company_report.png) 50% 50% no-repeat;
-  background-size: cover;
-  color: #000;
+  /* background: url(../images/yuhan/company_report.png) 50% 50% no-repeat;
+  background-size: cover; */
+  background: #009FE3;
+}
+
+.hoverslide .box.b03 .icon{
+  background:url(../images/yuhan/company_icon_report.svg) 50% 50% no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
 }
 
 .hoverslide .box.b04 {
-  background: url(../images/yuhan/company_recruit.png) 50% 50% no-repeat;
-  background-size: cover;
+  /* background: url(../images/yuhan/company_recruit.png) 50% 50% no-repeat;
+  background-size: cover; */
+  background: #2e2e2e;
 }
 
-.hoverslide .box button {
+.hoverslide .box.b04 .icon{
+  background:url(../images/yuhan/company_icon_recruit.svg) 50% 50% no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
+}
+
+.hoverslide .box.b01 button,
+.hoverslide .box.b02 button{
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  background: transparent;
+  color: #009FE3;
+  cursor: pointer;
+  border: 1px solid #009FE3;
+  border-radius: 5px;
+  display: none;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.hoverslide .box.b04 button,
+.hoverslide .box.b03 button {
   width: 110px;
   height: 40px;
   line-height: 40px;
@@ -200,13 +270,27 @@ header .logo {
   border: 1px solid #FFF;
   border-radius: 5px;
   display: none;
-  margin-top: 60px;
+  margin-top: 20px;
   font-weight: 700;
 }
 
-.hoverslide .box button:hover {
+.hoverslide .box.b01 button:hover,
+.hoverslide .box.b02 button:hover {
   background: #009FE3;
+  color: #fff;
   border: 1px solid #009FE3;
+}
+
+.hoverslide .box.b03 button:hover{
+  background: #fff;
+  color: #009FE3;
+  border: 1px solid #fff;
+}
+
+.hoverslide .box.b04 button:hover {
+  background: #fff;
+  color: #2e2e2e;
+  border: 1px solid #fff;
 }
 
 .hoverslide .box:hover button {
@@ -214,36 +298,53 @@ header .logo {
   transition: all 0.5s ease-out;
 }
 
+.hoverslide .box.b03 h2,
+.hoverslide .box.b03 h1,
+.hoverslide .box.b03 p,
+.hoverslide .box.b04 h2,
+.hoverslide .box.b04 h1,
+.hoverslide .box.b04 p{
+  color: #fff;
+}
+
+.hoverslide .box.b01 h2,
+.hoverslide .box.b02 h2{
+  color: #009FE3;
+}
+
 .hoverslide .box h1 {
   width: 100%;
   text-align: center;
-  color: #fff;
   margin: 0;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 70px;
 }
 
 .hoverslide .box h2 {
-  color: #fff;
   margin: 0;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .hoverslide .box p {
   display: none;
-  color: #fff;
   font-weight: 400;
+  letter-spacing: -1px;
 }
 
 .hoverslide .box:hover h2,
 .hoverslide .box:hover h1,
-.hoverslide .box:hover p {
+.hoverslide .box:hover p{
   position: relative;
   animation: fadeInUp 1s;
 }
 
+.hoverslide .box:hover .icon{
+  animation: fadeInUp 1s;
+  width: 60px;
+  height: 60px;
+}
 
 .hoverslide .box:hover p {
   display: block;
@@ -390,9 +491,12 @@ header .logo {
   height: 200px;
 }
 
+.contents h4{
+  padding-top: 25px;
+}
+
 .contents h1 {
   font-size: 40px;
-  padding: 20px 0;
   letter-spacing: -2px;
 }
 
@@ -663,7 +767,7 @@ header .logo {
   background: url(../images/yuhan/bg_newsroom.svg)50% 50%;
   content: "";
   background-size: cover;
-  opacity: 0.3;
+  opacity: 0.2;
   position: absolute;
   top: 0;
   left: 0;
@@ -681,7 +785,7 @@ header .logo {
 
 .newsroom h4 {
   color: #fff;
-  padding-left: 80px;
+  padding-left: 70px;
 }
 
 .newsroom .text_area {
@@ -987,7 +1091,7 @@ header .logo {
   height: 90%;
   margin: 0;
   padding: 50px;
-  background: rgba(192, 192, 192, 0.075);
+  background: #F7F7F9;
   transform: translateX(5%);
 }
 
@@ -997,7 +1101,7 @@ header .logo {
   font-size: 16px;
   letter-spacing: -1px;
   padding: 10px 0;
-  border-bottom: 1px solid #dbdbdb
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .ccm .consumer .qna a:hover p {
