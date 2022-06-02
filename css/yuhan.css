@@ -121,13 +121,13 @@ header .logo {
   overflow: hidden;
 }
 
-.company_top{
+.company_top {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-.company_top .text_area{
+.company_top .text_area {
   margin: 0;
   width: 60%;
   padding: 80px 100px;
@@ -147,7 +147,7 @@ header .logo {
   line-height: 50px;
 }
 
-.company_top .picture{
+.company_top .picture {
   width: 40%;
   height: 600px;
   background: url(../images/yuhan/company_pic.png)50% 50% no-repeat;
@@ -155,7 +155,7 @@ header .logo {
   margin: 0;
 }
 
-.company_top .rec{
+.company_top .rec {
   width: 70px;
   height: 180px;
   background: #009FE3;
@@ -165,7 +165,7 @@ header .logo {
   top: 25px;
 }
 
-.company_bottom{
+.company_bottom {
   position: relative;
 }
 
@@ -194,8 +194,8 @@ header .logo {
   background: #fff;
 }
 
-.hoverslide .box.b01 .icon{
-  background:url(../images/yuhan/company_icon_about.svg) 50% 50% no-repeat;
+.hoverslide .box.b01 .icon {
+  background: url(../images/yuhan/company_icon_about.svg) 50% 50% no-repeat;
   background-size: contain;
   width: 80px;
   height: 80px;
@@ -208,8 +208,8 @@ header .logo {
   background: #F7F7F9;
 }
 
-.hoverslide .box.b02 .icon{
-  background:url(../images/yuhan/company_icon_history.svg) 50% 50% no-repeat;
+.hoverslide .box.b02 .icon {
+  background: url(../images/yuhan/company_icon_history.svg) 50% 50% no-repeat;
   background-size: contain;
   width: 80px;
   height: 80px;
@@ -222,8 +222,8 @@ header .logo {
   background: #009FE3;
 }
 
-.hoverslide .box.b03 .icon{
-  background:url(../images/yuhan/company_icon_report.svg) 50% 50% no-repeat;
+.hoverslide .box.b03 .icon {
+  background: url(../images/yuhan/company_icon_report.svg) 50% 50% no-repeat;
   background-size: contain;
   width: 80px;
   height: 80px;
@@ -236,8 +236,8 @@ header .logo {
   background: #2e2e2e;
 }
 
-.hoverslide .box.b04 .icon{
-  background:url(../images/yuhan/company_icon_recruit.svg) 50% 50% no-repeat;
+.hoverslide .box.b04 .icon {
+  background: url(../images/yuhan/company_icon_recruit.svg) 50% 50% no-repeat;
   background-size: contain;
   width: 80px;
   height: 80px;
@@ -245,7 +245,7 @@ header .logo {
 }
 
 .hoverslide .box.b01 button,
-.hoverslide .box.b02 button{
+.hoverslide .box.b02 button {
   width: 110px;
   height: 40px;
   line-height: 40px;
@@ -281,7 +281,7 @@ header .logo {
   border: 1px solid #009FE3;
 }
 
-.hoverslide .box.b03 button:hover{
+.hoverslide .box.b03 button:hover {
   background: #fff;
   color: #009FE3;
   border: 1px solid #fff;
@@ -303,12 +303,12 @@ header .logo {
 .hoverslide .box.b03 p,
 .hoverslide .box.b04 h2,
 .hoverslide .box.b04 h1,
-.hoverslide .box.b04 p{
+.hoverslide .box.b04 p {
   color: #fff;
 }
 
 .hoverslide .box.b01 h2,
-.hoverslide .box.b02 h2{
+.hoverslide .box.b02 h2 {
   color: #009FE3;
 }
 
@@ -335,12 +335,12 @@ header .logo {
 
 .hoverslide .box:hover h2,
 .hoverslide .box:hover h1,
-.hoverslide .box:hover p{
+.hoverslide .box:hover p {
   position: relative;
   animation: fadeInUp 1s;
 }
 
-.hoverslide .box:hover .icon{
+.hoverslide .box:hover .icon {
   animation: fadeInUp 1s;
   width: 60px;
   height: 60px;
@@ -491,7 +491,7 @@ header .logo {
   height: 200px;
 }
 
-.contents h4{
+.contents h4 {
   padding-top: 25px;
 }
 
@@ -1074,7 +1074,7 @@ header .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .ccm .consumer .qna h1 {
@@ -1147,12 +1147,136 @@ header .logo {
   margin: 0;
   background: #009FE3;
   color: #fff;
-  padding: 80px;
+  padding: 80px 80px 0 80px;
   z-index: 20;
   transform: translateX(-5%);
 }
 
+.ask .group {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  padding: 50px 0;
+}
 
+.ask .group .box {
+  width: 33.333%;
+  border-right: 1px solid rgba(255, 255, 255, 0.247);
+  padding: 20px;
+}
+
+.ask .group .box:nth-child(3) {
+  border-right: none;
+}
+
+.ask .group .box h2{
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.ask .group .box h3{
+  font-size: 25px;
+}
+
+.ask .group .box p{
+  font-size: 15px;
+  letter-spacing: -1px;
+  padding: 20px;
+  outline: 1px solid #C4C4C4;
+  background: #f7f7f915;
+  word-break: keep-all;
+  color: #fff;
+  margin: 40px 10px;
+}
+
+.ask .box .icon {
+  width: 80px;
+  height: 80px;
+}
+
+.ask .box.b01 .icon {
+  background: url(../images/yuhan/ask_icon_call.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.ask .box.b02 .icon {
+  background: url(../images/yuhan/ask_icon_letter.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.ask .box.b03 .icon {
+  background: url(../images/yuhan/ask_icon_chat.svg) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+.ask .box button{
+  width: 90px;
+  height: 35px;
+  line-height: 30px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #FFF;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -1px;
+  margin-top: 8px;
+}
+
+.ask .box button:hover {
+  background: #fff;
+  color: #009FE3;
+  border: 1px solid #FFF;
+  transition: all 0.5s ease;
+}
+
+/* 퀵 */
+
+.quick_wrap {
+  position: absolute;
+  width: 100px;
+  top: -50px;
+  right: 60px;
+  z-index: 9999;
+  margin: 830px 0;
+}
+
+.quick_wrap ul li {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 100px;
+  opacity: 0.8;
+  box-shadow: 0px 0px 40px #41414125;
+}
+
+.quick_wrap ul li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 53px;
+}
+
+.quick_wrap ul li.quick1{
+  background: #fff url(../images/yuhan/quick_call.svg) 50% 20% no-repeat;
+}
+
+.quick_wrap ul li.quick1 a{
+  color: #009FE3;
+}
+
+.quick_wrap ul li.quick2{
+  background: #009FE3 url(../images/yuhan/quick_chat.svg) 50% 30% no-repeat;
+  padding-top: 8px;
+}
+
+.quick_wrap ul li:hover{
+  opacity: 1;
+}
 
 /* 푸터 */
 
