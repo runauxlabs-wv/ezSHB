@@ -117,7 +117,7 @@ header .logo {
 .company {
   text-align: left;
   position: relative;
-  padding: 300px 0;
+  padding: 200px 0;
   overflow: hidden;
 }
 
@@ -133,7 +133,7 @@ header .logo {
   padding: 80px 100px;
 }
 
-.company_top .text_area>h1 {
+.company_top .text_area h1 {
   font-size: 60px;
   font-weight: 700;
   padding-bottom: 50px;
@@ -187,6 +187,7 @@ header .logo {
   height: 350px;
   display: flex;
   flex-direction: row;
+  box-shadow: 0px 0px 40px #41414125;
 }
 
 .hoverslide .box {
@@ -375,20 +376,22 @@ header .logo {
 /* 지속가능경영 */
 
 .sm {
-  padding: 100px 0;
-  /* background: #F4F4F4; */
+  padding: 100px 0 170px 0;
+  background: rgb(247, 247, 249);
   width: 100%;
   height: auto;
   animation: fadeInUp 2s;
+  margin: 200px 0;
+  box-shadow: inset 0px 0px 40px #41414110;
 }
 
 .sm .inner {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  width: 50%;
 }
 
 .sm .text_area {
-  margin: 0;
+  text-align: center;
 }
 
 .sm .text_area h1 {
@@ -410,41 +413,65 @@ header .logo {
 }
 
 .sm .group {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
+  width: 100%;
+  position: absolute;
+  padding: 50px 0;
 }
 
 .sm .group .box {
-  margin-left: 50px;
-  width: 200px;
+  width: 250px;
   height: 300px;
   background: #fff;
   text-align: center;
   align-items: center;
-  box-shadow: 0px 0px 40px #e4e4e457;
-  padding: 40px 0;
-}
-
-.sm .group .box h3 {
-  font-size: 1.8rem;
-  color: #C4C4C4;
-  font-weight: 700;
+  box-shadow: 0px 0px 40px #41414125;
+  border-radius: 50px;
+  /* border: 1px solid #009FE3; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .sm .group .box p {
   font-size: 18px;
   line-height: 25px;
+  letter-spacing: -1px;
+  line-height: 36px;
+  color: #2e2e2e;
+  font-weight: 700;
 }
 
-.sm .group .box img {
-  margin: 20px 0;
+.sm .group .box:hover p {
+  color: #fff;
+  transition: all 1.5s;
 }
 
+.sm .group .box:hover .num {
+  color: #009FE3;
+  background: #fff;
+  border: 1px solid #009FE3;
+  transition: all 1.5s;
+}
 
 .sm .group .box:hover {
   background: #009FE3;
   color: #fff;
   transition: all 1.5s;
+}
+
+.sm .group .box .num {
+  position: absolute;
+  top: -25px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  background: #009FE3;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  line-height: 45px;
 }
 
 .main_wrap button {
@@ -467,7 +494,6 @@ header .logo {
   border: 1px solid #fff;
 }
 
-.sm button,
 .brand button {
   width: 110px;
   height: 40px;
@@ -482,7 +508,6 @@ header .logo {
   transition: all 0.3s ease-in;
 }
 
-.sm button:hover,
 .brand button:hover {
   background: #009FE3;
   color: #fff;
@@ -492,7 +517,6 @@ header .logo {
 /* 주요활동 */
 
 .contents {
-  padding: 100px 0;
   text-align: center;
 }
 
@@ -774,6 +798,7 @@ header .logo {
 
 .newsroom {
   padding: 50px 0 100px 0;
+  margin-top: 200px;
   overflow: hidden;
 }
 
@@ -1067,8 +1092,8 @@ header .logo {
 .ccm {
   text-align: center;
   padding: 200px 0;
+  position: relative;
 }
-
 
 .ccm .text_area h1 {
   font-size: 45px;
@@ -1092,7 +1117,7 @@ header .logo {
 }
 
 .ccm .consumer .qna h1 {
-  padding-bottom: 50px;
+  padding: 0 0 70px 0;
   color: #009FE3;
 }
 
@@ -1104,9 +1129,9 @@ header .logo {
   width: 50%;
   height: 90%;
   margin: 0;
-  padding: 50px;
+  padding: 80px;
   background: #F7F7F9;
-  transform: translateX(5%);
+  transform: translateX(6%);
 }
 
 .ccm .consumer .qna a {
@@ -1118,7 +1143,7 @@ header .logo {
   border-bottom: 1px solid #dbdbdb;
 }
 
-.ccm .consumer .qna a:last-child{
+.ccm .consumer .qna a:last-child {
   border-bottom: none;
 }
 
@@ -1159,14 +1184,56 @@ header .logo {
   cursor: pointer;
 }
 
+.indexBox {
+  width: 100%;
+  margin: 0 0 100px 0;
+  position: relative;
+}
+
+.indexBox ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.indexBox ul li {
+  width: 300px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0px 10px;
+  margin: 0 0 0 10px;
+  background: #FFF;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #009FE3;
+  border-radius: 25px;
+  color: #009FE3;
+  font-size: 14px;
+}
+
+.indexBox ul li:hover::after {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.indexBox .conBox {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  color: #333;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .ccm .consumer .ask {
-  width: 50%;
+  width: 45%;
+  height: 80%;
   margin: 0;
   background: #009FE3;
   color: #fff;
-  padding: 80px 80px 0 80px;
-  z-index: 20;
-  transform: translateX(-5%);
+  padding: 50px 50px 0 50px;
+  transform: translateX(-6%);
 }
 
 .ask .group {
@@ -1204,6 +1271,7 @@ header .logo {
   word-break: keep-all;
   color: #fff;
   margin: 40px 10px;
+  z-index: 60;
 }
 
 .ask .box .icon {
@@ -1246,6 +1314,17 @@ header .logo {
   color: #009FE3;
   border: 1px solid #FFF;
   transition: all 0.5s ease;
+}
+
+.group_bg {
+  background: url(../images/yuhan/vision.png)50% 50% no-repeat;
+  background-size: cover;
+  width: 48%;
+  height: 700px;
+  z-index: -20;
+  position: absolute;
+  top: 720px;
+  left: 960px;
 }
 
 /* 퀵 */
@@ -1331,7 +1410,6 @@ footer .info a:nth-child(2) {
 }
 
 footer .info a:nth-child(3) {
-  color: #009FE3;
   opacity: 0.5;
 }
 
@@ -1408,45 +1486,4 @@ footer .bottom p {
   font-size: 14px;
   margin: 0;
   opacity: 0.5;
-}
-
-.indexBox {
-  width: 100%;
-  margin: 0 0 100px 0;
-  position: relative;
-}
-
-.indexBox ul {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.indexBox ul li {
-  width: 180px;
-  height: 60px;
-  line-height: 60px;
-  padding: 0px 10px;
-  margin: 0 0 0 30px;
-  background: #FFF;
-  font-weight: 600;
-  cursor: pointer;
-  border: 1px solid #009FE3;
-  border-radius: 25px;
-  color: #009FE3;
-}
-
-.indexBox ul li:hover::after {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.indexBox .conBox {
-  display: none;
-  width: 100%;
-  height: auto;
-  margin-top: 100px;
-  color: #333;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
