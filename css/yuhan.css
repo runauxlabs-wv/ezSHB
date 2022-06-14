@@ -181,10 +181,10 @@ header .logo {
 
 .hoverslide {
   position: absolute;
-  top: -200px;
+  top: -165px;
   left: 500px;
   width: 73.8%;
-  height: 350px;
+  height: 325px;
   display: flex;
   flex-direction: row;
   box-shadow: 0px 0px 40px #41414125;
@@ -375,7 +375,7 @@ header .logo {
   /* margin: 200px 0; */
   box-shadow: inset 0px 0px 40px #41414110;
   background: url(../images/yuhan/bg5.png) 50% 50% no-repeat;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-size: cover;
   position: relative;
@@ -468,25 +468,25 @@ header .logo {
   line-height: 45px;
 }
 
-.sm .group .box .icon{
+.sm .group .box .icon {
   margin: 20px 0;
 }
 
-.sm .group .box.b01 .icon{
+.sm .group .box.b01 .icon {
   width: 90px;
   height: 90px;
   background: url(../images/yuhan/icon_tree.svg)50% 50% no-repeat;
   background-size: contain;
 }
 
-.sm .group .box.b02 .icon{
+.sm .group .box.b02 .icon {
   width: 90px;
   height: 90px;
   background: url(../images/yuhan/icon_share.svg)50% 50% no-repeat;
   background-size: contain;
 }
 
-.sm .group .box.b03 .icon{
+.sm .group .box.b03 .icon {
   width: 90px;
   height: 90px;
   background: url(../images/yuhan/icon_world.svg)50% 50% no-repeat;
@@ -820,7 +820,7 @@ header .logo {
 /* 뉴스룸 */
 
 .newsroom {
-  padding: 50px 0 100px 0;
+  padding: 50px 0 50px 0;
   margin-top: 200px;
   overflow: hidden;
   background: rgb(247, 247, 249);
@@ -975,39 +975,158 @@ header .logo {
 
 /* yk_story */
 
-.yk_story{
+.yk_story {
   background: rgb(247, 247, 249);
 }
 
-.yk_story h1{
+.yk_story h1 {
   font-size: 45px;
   letter-spacing: -2px;
+  padding-bottom: 30px;
 }
 
-.yk_sec{
+.yk_story a{
+  color: #000;
+  position: absolute;
+}
+
+.yk_sec {
+  padding: 100px 0;
+}
+
+.yk_sec .top {
+text-align: center;
+}
+
+.yk_sec .sns{
+  border-top: solid 1px #e5e5e5;
+  padding-top: 30px;
+}
+
+.yk_sec .bottom {
   display: flex;
-  justify-content: space-between;
-  padding: 200px 0;
-}
-
-.yk_sec .left{
-  width: 30%;
   margin: 0;
-  height: 500px;
-  box-shadow: 0px 0px 40px #41414110;
-  border: 1px solid #fff;
-  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.yk_sec .bottom .con{
+  margin: 0;
+  width: 300px;
+  padding: 0 0 20px 20px;
+}
+
+.yk_sec .bottom .con:nth-of-type(5){
+  width: 600px;
+}
+
+.yk_sec .bottom .con:nth-of-type(9){
+  width: 600px;
+}
+
+.yk_sec .bottom .box{
+  width: 100%;
+  height: 200px;
   background: #fff;
+  margin-bottom: 22px;
+  border: solid 1px #e5e5e5;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
-.yk_sec .text_area{
-  padding: 30px;
+.yk_sec .bottom .con:hover .box,
+.yk_sec .bottom .con:hover .text_area{
+box-shadow: 0px 0px 40px #41414125;
+transition: all 0.5s ease;
 }
 
-.yk_sec .right{
-  width: 70%;
+.yk_sec .bottom .text_area{
+  padding: 15px 20px 35px 20px; 
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  border: solid 1px #e5e5e5;
+  border-top: none;
+  margin: 0;
+  height: 120px;
+  overflow: hidden;
 }
 
+.yk_sec .bottom .text_area p{
+  display: -webkit-box;
+  word-break: keep-all;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -1px;
+  font-size: 15px;
+  /* 텍스트 가운데정렬 */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.yk_sec .bottom .text_area .blog{
+  color: #fff;
+  background: green;
+  padding: 5px;
+  width: 55px;
+  margin: 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.yk_sec .bottom .box.b01{
+  background: url(../images/yuhan/yk1.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_sec .bottom .box.b02{
+  background: url(../images/yuhan/yk2.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_sec .bottom .box.b03{
+  background: url(../images/yuhan/yk3.jpg) 50% 20% no-repeat;
+  background-size: cover;
+}
+
+.yk_sec .bottom .box.b04{
+  background: url(../images/yuhan/yk4.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_sec .bottom .box.b05{
+  background: url(../images/yuhan/yk5.jpg) 50% 47% no-repeat;
+  background-size: cover;
+}
+
+.yk_sec .bottom .box.b06{
+  background: url(../images/yuhan/yk6.jpg) 50% 15% no-repeat;
+  background-size: cover;
+}
+
+.yk_sec .bottom .box.b07{
+  background: url(../images/yuhan/yk7.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_sec .bottom .box.b08{
+  background: url(../images/yuhan/yk8.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_sec .bottom .box.b09{
+  background: url(../images/yuhan/yk9.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_sec .bottom .box.b10{
+  background: url(../images/yuhan/yk10.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
 
 /* 브랜드 */
 
@@ -1047,8 +1166,7 @@ header .logo {
   width: 40%;
   height: 400px;
   position: sticky;
-  top: 0;
-  padding-top: 100px;
+  top: 100px;
 }
 
 .content {
@@ -1168,7 +1286,7 @@ header .logo {
   color: #009FE3;
 }
 
-.ccm .consumer .ask h2{
+.ccm .consumer .ask h2 {
   font-size: 20px;
 }
 
@@ -1285,8 +1403,8 @@ header .logo {
   background: url(../images/yuhan/bg3.png);
 }
 
-.ccm .consumer .ask::before{
-  background:#009FE3;
+.ccm .consumer .ask::before {
+  background: #009FE3;
   opacity: 0.7;
   content: "";
   position: absolute;
@@ -1430,7 +1548,7 @@ header .logo {
 footer {
   color: #fff;
   background: url(../images/yuhan/company_about.png)50% 50% no-repeat;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-size: cover;
 }
