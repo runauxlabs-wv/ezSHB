@@ -14,6 +14,10 @@
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0 auto;
   padding: 0;
@@ -816,8 +820,6 @@ header .logo {
   width: 50%;
 }
 
-
-
 /* 뉴스룸 */
 
 .newsroom {
@@ -890,7 +892,7 @@ header .logo {
   background: #fff;
   border-radius: 30px;
   border: 1px solid rgb(229, 229, 229);
-  padding: 70px 40px 40px 40px;
+  padding: 70px 50px 40px 50px;
   margin-top: 30px;
   margin-right: 40px;
   cursor: pointer;
@@ -987,8 +989,8 @@ header .logo {
 }
 
 .swiper-pagination-bullet {
-  width: 70px;
-  height: 8px;
+  width: 60px;
+  height: 5px;
   border-radius: 0%;
   background: #009FE3;
 }
@@ -1025,6 +1027,8 @@ header .logo {
 
 .yk_story {
   background: rgb(247, 247, 249);
+  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .yk_story h1 {
@@ -1033,13 +1037,8 @@ header .logo {
   padding-bottom: 30px;
 }
 
-.yk_story a{
-  color: #000;
-  position: absolute;
-}
-
 .yk_sec {
-  padding: 100px 0;
+  padding: 50px 0;
   margin-top: 200px;
 }
 
@@ -1052,57 +1051,89 @@ text-align: center;
   padding-top: 30px;
 }
 
-.yk_sec .bottom {
-  display: flex;
-  margin: 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.yk_group{
+  position: relative;
+  top: 200px;
 }
 
-.yk_sec .bottom .con{
-  margin: 0;
-  width: 300px;
-  padding: 0 0 20px 20px;
-}
-
-.yk_sec .bottom .con:nth-of-type(5){
-  width: 600px;
-}
-
-.yk_sec .bottom .con:nth-of-type(9){
-  width: 600px;
-}
-
-.yk_sec .bottom .box{
-  width: 100%;
-  height: 200px;
+.yk_group .box{
+  width: 380px;
+  height: 250px;
   background: #fff;
-  margin-bottom: 22px;
   border: solid 1px #e5e5e5;
   border-radius: 10px 10px 0 0;
-  display: flex;
-  flex-direction: column;
   margin: 0;
 }
 
-.yk_sec .bottom .con:hover .box,
-.yk_sec .bottom .con:hover .text_area{
+.yk_group .con:hover .box,
+.yk_group .con:hover .text_area{
 box-shadow: 0px 0px 40px #41414125;
 transition: all 0.5s ease;
 }
 
-.yk_sec .bottom .text_area{
-  padding: 15px 20px 35px 20px; 
+.yk_group .box.b01{
+  background: url(../images/yuhan/yk1.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_group .box.b02{
+  background: url(../images/yuhan/yk2.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_group .box.b03{
+  background: url(../images/yuhan/yk3.jpg) 50% 20% no-repeat;
+  background-size: cover;
+}
+
+.yk_group .box.b04{
+  background: url(../images/yuhan/yk4.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_group .box.b05{
+  background: url(../images/yuhan/yk5.jpg) 50% 40% no-repeat;
+  background-size: cover;
+}
+
+.yk_group .box.b06{
+  background: url(../images/yuhan/yk6.jpg) 50% 15% no-repeat;
+  background-size: cover;
+}
+
+.yk_group .box.b07{
+  background: url(../images/yuhan/yk7.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_group .box.b08{
+  background: url(../images/yuhan/yk8.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_group .box.b09{
+  background: url(../images/yuhan/yk9.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_group .box.b10{
+  background: url(../images/yuhan/yk10.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.yk_group .text_area{
+  width: 380px;
+  padding: 20px; 
   background: #fff;
   border-radius: 0 0 10px 10px;
   border: solid 1px #e5e5e5;
   border-top: none;
   margin: 0;
-  height: 120px;
+  height: 80px;
   overflow: hidden;
 }
 
-.yk_sec .bottom .text_area p{
+.yk_group .text_area p{
   display: -webkit-box;
   word-break: keep-all;
   -webkit-line-clamp: 2;
@@ -1115,63 +1146,6 @@ transition: all 0.5s ease;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.yk_sec .bottom .blog{
-  background: green;
-  color: #fff;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.yk_sec .bottom .box.b01{
-  background: url(../images/yuhan/yk1.jpg) 50% 50% no-repeat;
-  background-size: cover;
-}
-
-.yk_sec .bottom .box.b02{
-  background: url(../images/yuhan/yk2.jpg) 50% 50% no-repeat;
-  background-size: cover;
-}
-
-.yk_sec .bottom .box.b03{
-  background: url(../images/yuhan/yk3.jpg) 50% 20% no-repeat;
-  background-size: cover;
-}
-
-.yk_sec .bottom .box.b04{
-  background: url(../images/yuhan/yk4.jpg) 50% 50% no-repeat;
-  background-size: cover;
-}
-
-.yk_sec .bottom .box.b05{
-  background: url(../images/yuhan/yk5.jpg) 50% 47% no-repeat;
-  background-size: cover;
-}
-
-.yk_sec .bottom .box.b06{
-  background: url(../images/yuhan/yk6.jpg) 50% 15% no-repeat;
-  background-size: cover;
-}
-
-.yk_sec .bottom .box.b07{
-  background: url(../images/yuhan/yk7.jpg) 50% 50% no-repeat;
-  background-size: cover;
-}
-
-.yk_sec .bottom .box.b08{
-  background: url(../images/yuhan/yk8.jpg) 50% 50% no-repeat;
-  background-size: cover;
-}
-
-.yk_sec .bottom .box.b09{
-  background: url(../images/yuhan/yk9.jpg) 50% 50% no-repeat;
-  background-size: cover;
-}
-
-.yk_sec .bottom .box.b10{
-  background: url(../images/yuhan/yk10.jpg) 50% 50% no-repeat;
-  background-size: cover;
 }
 
 /* 브랜드 */
