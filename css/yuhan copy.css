@@ -1048,17 +1048,9 @@ header .logo {
   text-align: center;
 }
 
-.yk_sec .sns_icon {
-  display: flex;
-  justify-content: center;
+.yk_sec .sns{
   border-top: solid 1px #e5e5e5;
   padding-top: 30px;
-}
-
-.yk_sec .sns_icon a{
-  background-color: #2e2e2e;
-  border-radius: 50px;
-  margin: 0 10px;
 }
 
 /* .yk_group{
@@ -1348,10 +1340,6 @@ transition: all 0.5s ease;
   color: #333333;
 }
 
-.ccm .inquiry{
-  background: #009FE3;
-}
-
 .ccm h3{
   font-size: 23px;
   font-weight: 700;
@@ -1526,16 +1514,16 @@ footer .sns_icon {
   opacity: 0.7;
 }
 
+.sns1 {
+  background: url(../images/yuhan/sns_footer.png) 0 0 no-repeat;
+}
+
 .sns1:hover,
 .sns2:hover,
 .sns3:hover,
 .sns4:hover {
   opacity: 1.0;
   transition: all 0.3s ease;
-}
-
-.sns1 {
-  background: url(../images/yuhan/sns_footer.png) 0 0 no-repeat;
 }
 
 .sns2 {
@@ -1550,7 +1538,7 @@ footer .sns_icon {
 
 .sns4 {
   background: url(../images/yuhan/sns_footer.png) 0 0 no-repeat;
-  background-position: -150px 2px;
+  background-position: -150px 0;
 }
 
 footer .sns p {
