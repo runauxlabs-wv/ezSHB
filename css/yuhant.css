@@ -1,0 +1,157 @@
+/* 유한킴벌리 태블릿 */
+@charset "utf-8";
+
+body {
+    min-width: 640px;
+}
+
+.inner {
+    width: 90%;
+}
+
+header {
+    width: 90%;
+}
+
+header .top .h_inner {
+    width: 100%;
+}
+
+header .title .text_area {
+    padding: 220px 0 200px 80px;
+}
+
+header .title h1 {
+    font-size: 65px;
+}
+
+header .title p {
+    font-size: 20px;
+}
+
+.company {
+    margin: 235px 0 130px 0;
+}
+
+.company_top .rec {
+    left: 300px;
+}
+
+.company_top .picture {
+    height: 500px;
+}
+
+.company_top .logo_w {
+    width: 37%;
+    height: 37%;
+    position: absolute;
+    top: 140px;
+    left: 10px;
+}
+
+.company_top .text_area {
+    padding: 50px 70px;
+}
+
+.company_top .text_area h1 {
+    font-size: 55px;
+    font-weight: 700;
+    padding-bottom: 35px;
+}
+
+.company_top .text_area p {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 40px;
+}
+
+.hoverslide {
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 250px;
+}
+
+.hoverslide .box .icon {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+}
+
+.hoverslide .box h1 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.hoverslide .box:hover .icon {
+    display: none;
+}
+
+.hoverslide .box:hover h2 {
+    display: none;
+}
+
+.sm .inner {
+    width: 100%;
+}
+
+.forest,
+.woman,
+.volunteer {
+    display: inherit;
+    justify-content: space-between;
+    position: relative;
+}
+
+.forest .forest_video,
+.volunteer .volunteer_video {
+    width: 100%;
+}
+
+.woman .woman_pic {
+    width: 100%;
+    height: 500px;
+    background-size: auto;
+    margin-left: 0;
+}
+
+.forest .text_area,
+.volunteer .text_area {
+    width: 100%;
+}
+
+.woman .text_area {
+    width: 100%;
+    margin: 0;
+    padding: 0 120px;
+    text-align: left;
+}
+
+.forest .text_area p,
+.volunteer .text_area p {
+    margin-bottom: 100px;
+}
+
+.forest .text_area h1,
+.volunteer .text_area h1,
+.woman .text_area h1 {
+    font-size: 40px;
+}
+
+.woman .text_area .add_circle{
+    top: 530px;
+}
+
+.newsroom .bg_title h1{
+    font-size: 90px;
+    transform: translateX(0%);
+    text-align: right;
+    width: 100%;
+    padding:0 0 0 100px;
+}
+
+.mySwiper .swiper-button-next {
+    transform: translateX(-2250%);
+  }
+

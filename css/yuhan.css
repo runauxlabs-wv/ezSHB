@@ -1,7 +1,7 @@
+/* 유한킴벌리 데스크탑 */
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
-
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -249,7 +249,7 @@ header .top:hover .h_inner .gnb span:nth-of-type(5):after{
 
 header .top:hover .h_inner .gnb .subgnball{
   height: 400px;
-  background: #fff url(../images/yuhan/bg14.png)50% 50% no-repeat;
+  background: #fff url(../images/yuhan/bg17.png)50% 48% no-repeat;
   background-size: cover;
   box-shadow: 0 3px 5px rgba(0,0,0, 0.1);
   transition: height 0.5s;
@@ -315,6 +315,25 @@ header .title p {
   color: #fff;
 }
 
+header button {
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  background: #009FE3;
+  border: 1px solid #009FE3;
+  color: #FFF;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+}
+
+header button:hover {
+  background: #fff;
+  color: #009FE3;
+  border: 1px solid #fff;
+}
 
 /* 메인비디오 */
 
@@ -346,7 +365,7 @@ header .title p {
   text-align: left;
   position: relative;
   padding: 200px 0;
-  margin: 100px 0;
+  margin: 180px 0 130px 0;
   overflow: hidden;
 }
 
@@ -432,48 +451,62 @@ header .title p {
   background: #fff;
 }
 
-.hoverslide .box.b01 .icon {
-  background: url(../images/yuhan/company_icon_about.svg) 50% 50% no-repeat;
-  background-size: contain;
+.hoverslide .box.b01:hover{
+  background: #fff url(../images/yuhan/bg14.png)50% 90% no-repeat;
+  background-size: cover;
+}
+
+.hoverslide .box .icon{
   width: 80px;
   height: 80px;
   margin: 10px 0;
+}
+
+.hoverslide .box.b01 .icon {
+  background: url(../images/yuhan/company_icon_about.svg) 50% 50% no-repeat;
+  background-size: contain;
 }
 
 .hoverslide .box.b02 {
   background: #F7F7F9;
 }
 
+.hoverslide .box.b02:hover{
+  background: #F7F7F9 url(../images/yuhan/bg14.png)50% 90% no-repeat;
+  background-size: cover;
+}
+
 .hoverslide .box.b02 .icon {
   background: url(../images/yuhan/company_icon_history.svg) 50% 50% no-repeat;
   background-size: contain;
-  width: 80px;
-  height: 80px;
-  margin: 10px 0;
 }
 
 .hoverslide .box.b03 {
   background: #009FE3;
 }
 
+.hoverslide .box.b03:hover{
+  background: #009FE3 url(../images/yuhan/bg14.png)50% 90% no-repeat;
+  background-size: cover;
+}
+
 .hoverslide .box.b03 .icon {
   background: url(../images/yuhan/company_icon_report.svg) 50% 50% no-repeat;
   background-size: contain;
-  width: 80px;
-  height: 80px;
-  margin: 10px 0;
 }
 
 .hoverslide .box.b04 {
   background: #2e2e2e;
 }
 
+.hoverslide .box.b04:hover{
+  background: #2e2e2e url(../images/yuhan/bg14.png)50% 90% no-repeat;
+  background-size: cover;
+}
+
 .hoverslide .box.b04 .icon {
   background: url(../images/yuhan/company_icon_recruit.svg) 50% 50% no-repeat;
   background-size: contain;
-  width: 80px;
-  height: 80px;
-  margin: 10px 0;
 }
 
 .hoverslide .box.b01 button,
@@ -599,11 +632,10 @@ header .title p {
 /* 지속가능경영 */
 
 .sm {
-  padding: 270px 0 170px 0;
+  padding: 180px 0 180px 0;
   width: 100%;
   height: auto;
   animation: fadeInUp 2s;
-  box-shadow: inset 0px 0px 40px #41414110;
   background: url(../images/yuhan/bg5.png) 50% 50% no-repeat;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
@@ -675,7 +707,7 @@ header .title p {
 
 .sm .group .box .num {
   position: absolute;
-  top: -25px;
+  top: -20px;
   font-size: 25px;
   font-weight: 700;
   color: #fff;
@@ -711,28 +743,8 @@ header .title p {
   background-size: contain;
 }
 
-header button {
-  width: 110px;
-  height: 40px;
-  line-height: 40px;
-  background: #009FE3;
-  border: 1px solid #009FE3;
-  color: #FFF;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 10px;
-  font-weight: 700;
-  transition: all 0.3s ease-in;
-}
-
-header button:hover {
-  background: #fff;
-  color: #009FE3;
-  border: 1px solid #fff;
-}
-
 .newsroom button,
-.brand button {
+.brand button{
   width: 110px;
   height: 40px;
   line-height: 40px;
@@ -747,7 +759,7 @@ header button:hover {
 }
 
 .newsroom button:hover,
-.brand button:hover {
+.brand button:hover{
   background: #009FE3;
   color: #fff;
   border: 1px solid #009FE3;
@@ -853,7 +865,6 @@ header button:hover {
 .woman .text_area h1 {
   letter-spacing: -2px;
   font-size: 45px;
-
 }
 
 .forest .text_area h1,
@@ -904,14 +915,16 @@ header button:hover {
   word-break: keep-all;
 }
 
-.forest .forest_video {
+.forest .forest_video,
+.volunteer .volunteer_video{
   width: 50%;
   /* max-width: 100%; */
   height: auto;
   margin: 0;
 }
 
-.forest .forest_video video {
+.forest .forest_video video,
+.volunteer .volunteer_video video {
   width: 100%;
 }
 
@@ -931,7 +944,7 @@ header button:hover {
   width: 100%;
   height: 165px;
   font-size: 18px;
-  background-color: #009FE3;
+  background-color: #fff;
 }
 
 .pic * {
@@ -962,7 +975,6 @@ header button:hover {
 
 .pic h3,
 .pic h5 {
-  color: #fff;
   margin: 10px 0;
   padding: 0 20px;
   opacity: 0;
@@ -970,6 +982,7 @@ header button:hover {
 }
 
 .pic h3 {
+  color: #333333;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
   text-transform: uppercase;
@@ -1028,12 +1041,6 @@ header button:hover {
   line-height: 40px;
   word-break: keep-all;
   padding-top: 100px;
-}
-
-.volunteer .volunteer_pic {
-  background: url(../images/yuhan/volunteer_pic.jpg) 10% 50% no-repeat;
-  background-size: auto;
-  width: 50%;
 }
 
 /* 뉴스룸 */
@@ -1260,6 +1267,20 @@ header button:hover {
 .yk_sec {
   padding: 50px 0;
   text-align: center;
+  position: relative;
+}
+
+.yk_sec .add_circle{
+  position: absolute;
+  left:950px;
+  top:150px;
+  color: #009FE3;
+  font-size: 60px;
+}
+
+.yk_sec .add_circle:hover{
+  color: #2e2e2e;
+  transition: all 0.5s;
 }
 
 .yk_sec .sns_icon {
@@ -1606,9 +1627,9 @@ transition: all 0.5s ease;
 }
 
 .ccm .faq{
-  background: url(../images/yuhan/bg13.png)50% 50% no-repeat;
+  background: url(../images/yuhan/bg16.png)50% 50% no-repeat;
   background-size: cover;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: screen;
 }
 

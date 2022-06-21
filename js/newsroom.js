@@ -1,6 +1,15 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+  breakpoints: { 
+    640: { 
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
     autoplay : true,
     spaceBetween: 40,
     pagination: {
