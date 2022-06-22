@@ -603,7 +603,8 @@ header button:hover {
 
 .hoverslide .box:hover h2,
 .hoverslide .box:hover h1,
-.hoverslide .box:hover p {
+.hoverslide .box:hover p,
+.hoverslide .box:hover button {
   position: relative;
   animation: fadeInUp 1s;
 }
@@ -791,7 +792,6 @@ header button:hover {
 
 .tab {
   width: 100%;
-  margin: 0 0 100px 0;
   position: relative;
   margin: 100px 0;
 }
@@ -815,6 +815,14 @@ header button:hover {
   border: 1px solid #009FE3;
   border-radius: 25px;
   color: #009FE3;
+}
+
+.tab  ul li:nth-of-type(2){
+  display: none;
+}
+
+.tab  ul li:nth-of-type(4){
+  display: none;
 }
 
 .tab ul li:first-child,

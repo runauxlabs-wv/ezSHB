@@ -60,7 +60,6 @@ header .title p {
 }
 
 .company_top .text_area p {
-    font-size: 16px;
     padding-top: 10px;
     line-height: 40px;
 }
@@ -96,11 +95,19 @@ header .title p {
     width: 100%;
 }
 
-.sm .text_area h1 {
+.sm .text_area h1,
+.newsroom h1,
+.yk_story h1,
+.brand h1 {
     font-size: 40px;
 }
 
-.sm .text_area p {
+.sm .text_area p,
+.forest .text_area p,
+.volunteer .text_area p,
+.woman .text_area p,
+.brand p,
+.company_top .text_area p {
     font-size: 16px;
 }
 
@@ -138,7 +145,6 @@ header .title p {
 .volunteer .text_area p,
 .woman .text_area p {
     padding-top: 80px;
-    font-size: 16px;
     line-height: 40px;
 }
 
@@ -179,12 +185,6 @@ header .title p {
     margin-bottom: 80px;
 }
 
-.forest .text_area h1,
-.volunteer .text_area h1,
-.woman .text_area h1 {
-    font-size: 40px;
-}
-
 .woman .text_area .add_circle {
     top: 500px;
 }
@@ -211,10 +211,6 @@ header .title p {
     padding: 0 0 0 100px;
 }
 
-.newsroom h1 {
-    font-size: 40px;
-}
-
 .mySwiper .swiper-button-next {
     transform: translateX(-2000%);
 }
@@ -230,9 +226,6 @@ header .title p {
     width: 90%;
 }
 
-.yk_story h1 {
-    font-size: 40px;
-}
 
 .yk_sec .add_circle {
     left: 620px;
@@ -271,12 +264,7 @@ header .title p {
     margin: 600px 0 20px 0;
 }
 
-.brand h1 {
-    font-size: 40px;
-}
-
 .brand p {
-    font-size: 16px;
     padding: 30px 0;
 }
 
@@ -321,15 +309,15 @@ header .title p {
     margin-bottom: 30px;
 }
 
-.ccm .icon{
+.ccm .icon {
     width: 90px;
     height: 90px;
 }
 
-.ccm h3{
+.ccm h3 {
     font-size: 25px;
-  }
+}
 
-  footer .bottom{
+footer .bottom {
     padding: 20px 100px;
-  }
+}

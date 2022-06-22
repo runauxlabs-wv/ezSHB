@@ -22,53 +22,230 @@ header .title p {
     font-size: 16px;
 }
 
-.company{
-    margin: 0 0 130px 0;
-    padding: 0 0 200px 0;
+.company {
+    margin: 0;
+    padding: 0 0 160px 0;
 }
 
-.company_top{
+.company_top {
     display: block;
 }
 
-.hoverslide {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 250px;
-    display: block;
-    position:inherit;
-}
-
-.company_top .picture{
+.company_top .picture {
     width: 100%;
     height: 340px;
 }
 
-.company_top .logo_w{
+.company_top .logo_w {
     top: 55px;
     left: 36%;
     width: 30%;
-  height: 30%;
+    height: 30%;
 }
 
 .company_top .text_area {
-    padding: 30px 40px;
+    padding: 30px;
     width: 100%;
 }
 
-.company_top .text_area h1{
-font-size: 45px;
+.company_top .text_area h1 {
+    font-size: 45px;
 }
 
 .company_top .text_area p {
     font-size: 15px;
 }
 
-.news_group .box{
+.company_bottom {
+    position: inherit;
+    height: 320px;
+}
+
+.hoverslide {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    display: block;
+    position: inherit;
+    z-index: 20;
+    box-shadow: 0px 0px 0px #41414125;
+}
+
+.hoverslide .box {
+    flex-direction: row-reverse;
+    padding: 0 50px;
+    box-shadow: inset 0px 0px 40px #a8a8a825;
+}
+
+.hoverslide .box h1 {
+    font-size: 20px;
+}
+
+.hoverslide .box h2 {
+    display: none;
+}
+
+.hoverslide .box p {
+    font-size: 14px;
+}
+
+.hoverslide .box .icon {
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+}
+
+.hoverslide .box:hover h2,
+.hoverslide .box:hover h1,
+.hoverslide .box:hover p {
+    display: none;
+}
+
+.hoverslide .box.b01 button,
+.hoverslide .box.b02 button,
+.hoverslide .box.b04 button,
+.hoverslide .box.b03 button {
+    margin-top: 0;
+}
+
+.sm .text_area h1,
+.forest .text_area h1,
+.volunteer .text_area h1,
+.woman .text_area h1,
+.newsroom h1,
+.yk_story h1,
+.brand h1,
+.contents h1 {
+    font-size: 30px;
+}
+
+.sm .text_area p,
+.forest .text_area p,
+.volunteer .text_area p,
+.woman .text_area p,
+.brand p,
+.company_top .text_area p {
+    font-size: 15px;
+}
+
+.sm {
+    padding: 90px 0 40px 0;
+    position: inherit;
+}
+
+.sm .inner {
+    width: 90%;
+}
+
+.sm .group {
+    display: block;
+    position: inherit;
+    padding: 10px 0;
+}
+
+.sm .group .box {
+    width: 90%;
+    height: 250px;
+    margin-bottom: 40px;
+}
+
+.contents .line {
+    height: 150px;
+}
+
+.contents {
+    width: 100%;
+}
+
+.tab {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.tab ul li {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.tab ul li:nth-of-type(1) {
+    display: none;
+}
+
+
+.tab ul li:nth-of-type(2) {
+    margin-left: 0;
+    display: block;
+}
+
+.tab ul li:nth-of-type(3) {
+    display: none;
+}
+
+.tab ul li:nth-of-type(4) {
+    display: block;
+}
+
+.news_group .box {
     width: 100% !important;
 }
 
 .mySwiper .swiper-button-next {
     transform: translateX(-750%);
+}
+
+.forest .text_area, 
+.volunteer .text_area,
+.woman .text_area{
+    padding: 0 30px;
+}
+
+.forest .text_area h1{
+    font-size: 22px;
+}
+
+.forest .text_area span,
+.volunteer .text_area h1,
+.woman .text_area h1 {
+    font-size: 30px;
+}
+
+.forest .text_area h2, .woman .text_area h2, .volunteer .text_area h2{
+    font-size: 18px;
+}
+
+.forest .text_area p, .volunteer .text_area p, .woman .text_area p{
+    padding-top: 20px;
+}
+
+.forest .text_area .add_circle, 
+.volunteer .text_area .add_circle{
+    font-size: 40px;
+    top:5px;
+}
+
+.woman .text_area .add_circle{
+    font-size: 40px;
+    top:510px;
+}
+
+.woman .woman_pic{
+    height: 300px;
+    background-size: contain;
+}
+
+.photobox{
+    margin: 30px 0;
+}
+
+.newsroom{
+    margin: 50px 0 0 0;
+}
+
+.yk_sec{
+    padding:0 0 50px 0;
 }
