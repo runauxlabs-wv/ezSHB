@@ -34,7 +34,7 @@ header .title p {
 }
 
 .company_top .rec {
-    left: 300px;
+    left: 280px;
 }
 
 .company_top .picture {
@@ -50,13 +50,13 @@ header .title p {
 }
 
 .company_top .text_area {
-    padding: 50px 70px;
+    padding: 50px 60px;
 }
 
 .company_top .text_area h1 {
     font-size: 55px;
     font-weight: 700;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
 }
 
 .company_top .text_area p {
@@ -96,6 +96,52 @@ header .title p {
     width: 100%;
 }
 
+.sm .text_area h1 {
+    font-size: 40px;
+}
+
+.sm .text_area p {
+    font-size: 16px;
+}
+
+.sm .text_area span {
+    font-size: 22px;
+}
+
+.sm .group .box p {
+    font-size: 17px;
+}
+
+.forest .text_area h1,
+.volunteer .text_area h1,
+.woman .text_area h1 {
+    font-size: 35px;
+}
+
+.forest .text_area span {
+    font-size: 50px;
+}
+
+.forest .text_area h1,
+.volunteer .text_area h1,
+.woman .text_area h1 {
+    padding: 20px 0;
+}
+
+.forest .text_area h2,
+.woman .text_area h2,
+.volunteer .text_area h2 {
+    font-size: 22px;
+}
+
+.forest .text_area p,
+.volunteer .text_area p,
+.woman .text_area p {
+    padding-top: 80px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
 .forest,
 .woman,
 .volunteer {
@@ -130,7 +176,7 @@ header .title p {
 
 .forest .text_area p,
 .volunteer .text_area p {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .forest .text_area h1,
@@ -139,19 +185,151 @@ header .title p {
     font-size: 40px;
 }
 
-.woman .text_area .add_circle{
-    top: 530px;
+.woman .text_area .add_circle {
+    top: 500px;
 }
 
-.newsroom .bg_title h1{
+.photobox {
+    margin: 80px 0;
+}
+
+.pic {
+    overflow: hidden;
+    max-width: 200px;
+    height: 130px;
+}
+
+.pic h3 {
+    font-size: 15px;
+}
+
+.newsroom .bg_title h1 {
     font-size: 90px;
     transform: translateX(0%);
     text-align: right;
     width: 100%;
-    padding:0 0 0 100px;
+    padding: 0 0 0 100px;
+}
+
+.newsroom h1 {
+    font-size: 40px;
 }
 
 .mySwiper .swiper-button-next {
-    transform: translateX(-2250%);
+    transform: translateX(-2000%);
+}
+
+
+.news_group .box {
+    width: 48% !important;
+    height: 400px;
+    padding: 50px 50px 40px 50px;
+}
+
+.swiper {
+    width: 90%;
+}
+
+.yk_story h1 {
+    font-size: 40px;
+}
+
+.yk_sec .add_circle {
+    left: 620px;
+}
+
+.yk_group {
+    width: 90%;
+}
+
+.yk_group .box {
+    width: 220px;
+    height: 180px;
+}
+
+.yk_group .text_area {
+    width: 220px;
+    padding: 10px;
+}
+
+.yk_group .text_area p {
+    width: 145px;
+    padding-left: 0;
+}
+
+.yk_group .text_area .icon {
+    width: 30px;
+    height: 30px;
+}
+
+.yk_group .box.b05 {
+    background: url(../images/yuhan/yk5.jpg) 50% 20% no-repeat;
+    background-size: cover;
+}
+
+.yk_story {
+    margin: 600px 0 20px 0;
+}
+
+.brand h1 {
+    font-size: 40px;
+}
+
+.brand p {
+    font-size: 16px;
+    padding: 30px 0;
+}
+
+.brand .bg_logo {
+    margin-top: 0px;
+    top: -100px;
+}
+
+.container {
+    display: block;
+}
+
+.sidebar {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    height: 510px;
+    top: 100px;
+    background: #fff;
+    z-index: 10;
+    padding-top: 80px;
+}
+
+.content {
+    width: 100%;
+    height: 50%;
+}
+
+.ccm {
+    padding: 0;
+    width: 90%;
+}
+
+.ccm .inner {
+    display: block;
+}
+
+.ccm .faq,
+.ccm .inquiry {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 30px;
+}
+
+.ccm .icon{
+    width: 90px;
+    height: 90px;
+}
+
+.ccm h3{
+    font-size: 25px;
   }
 
+  footer .bottom{
+    padding: 20px 100px;
+  }
