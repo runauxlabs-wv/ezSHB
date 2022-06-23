@@ -127,8 +127,7 @@ header .top .h_inner.sticky{
 }
 
 header .top .h_inner.sticky .gnb span,
-header .top .h_inner.sticky .global span,
-header .top .h_inner.sticky .more_button .menu
+header .top .h_inner.sticky .global span
 {
   color: #333333;
 }
@@ -317,7 +316,7 @@ header .title p {
   color: #fff;
 }
 
-header button {
+header .text_area button {
   width: 110px;
   height: 40px;
   line-height: 40px;
@@ -364,15 +363,6 @@ header button:hover {
 
 header .top .h_inner .more_button{
   display: none;
-}
-
-header .top .h_inner .more_button .menu{
-  color: #fff;
-  font-size: 30px;
-}
-
-header .top .h_inner:hover .more_button .menu{
-  color: #333333;
 }
 
 /*  기업소개 */

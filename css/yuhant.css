@@ -26,16 +26,14 @@ header .top .h_inner .logo {
     z-index: 30;
 }
 
-header .top:hover {
-    height: 110px;
+header .top:hover .h_inner .logo {
+    background: url("../images/yuhan/logo.svg") no-repeat;
+    position: absolute;
 }
 
-header .top:hover .h_inner .logo {
-    background: url("../images/yuhan/logo_dark.svg") no-repeat;
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
+header .top .h_inner.sticky:hover .logo{
+    background: url("../images/yuhan/logo_dark.svg") 0 0 no-repeat;
+  }
 
 header .top .h_inner .gnb {
     width: 100%;
@@ -93,12 +91,37 @@ header .top .h_inner .more_button {
     position: absolute;
     top: 40px;
     right: 40px;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
 }
 
-header .top .h_inner .more_button.active{
-    transform: rotate(45deg);
+header .top .h_inner .more_button .icon{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/yuhan/icon_menu.svg)no-repeat;
+    background-size: cover;
 }
 
+header .top .h_inner.sticky .more_button .icon{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/yuhan/icon_menu_dark.svg)no-repeat;
+    background-size: cover;
+}
+
+header .top .h_inner .more_button.active .icon{
+    background: url(../images/yuhan/icon_close.svg)no-repeat;
+    background-size: cover;
+}
+
+header .top:hover{
+    background: transparent;
+    transition: none;
+  }
 
 header .title .text_area {
     padding: 40% 60px;
