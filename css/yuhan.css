@@ -1084,16 +1084,10 @@ header button:hover {
   color: #777777;
   line-height: 1.7em;
   height: 5.1em;
-  -webkit-line-clamp: 3;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: -1px;
   margin: 20px 0;
-}
-
-.newsroom p{
-  padding-top: 30px;
-  font-style: italic;
 }
 
 .news_group {
@@ -1115,9 +1109,16 @@ header button:hover {
 
 .news_group .box:hover h3,
 .news_group .box:hover h5,
-.news_group .box:hover p{
+.news_group .box:hover p
+{
   color: #fff;
   transition: all 1.2s ease;
+}
+
+.news_group .box:hover span{
+  color: #009FE3;
+  transition: all 1.2s ease;
+  opacity: 1.0;
 }
 
 .news_group .box:hover h5,
@@ -1242,6 +1243,24 @@ header button:hover {
   display: none;
 }
 
+.news_date{
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  padding-top: 30px;
+}
+
+.news_date p{
+  margin: 0;
+}
+
+.news_date .share{
+  margin: 0;
+  color: #333333;
+  opacity: 0.7;
+  font-size: 30px;
+}
+
 /* yk_story */
 
 .yk_story {
@@ -1269,7 +1288,7 @@ header button:hover {
 
 .yk_sec .add_circle{
   position: absolute;
-  left:950px;
+  left:1180px;
   top:150px;
   color: #009FE3;
   font-size: 60px;
@@ -1370,6 +1389,7 @@ transition: all 0.5s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 0;
 }
 
 .yk_group .text_area p{
@@ -1381,7 +1401,7 @@ transition: all 0.5s ease;
   text-overflow: ellipsis;
   letter-spacing: -1px;
   font-size: 15px;
-  width: 280px;
+  width: 85%;
   padding-left: 15px;
   /* 텍스트 가운데정렬 */
   /* position: relative;
@@ -1482,23 +1502,23 @@ transition: all 0.5s ease;
   background: url(../images/yuhan/logo_green.png) 50% 50% no-repeat;
 }
 
-.content .box.b04 {
+.content .box.b05 {
   background: url(../images/yuhan/logo_white.png) 50% 50% no-repeat;
 }
 
-.content .box.b05 {
+.content .box.b06 {
   background: url(../images/yuhan/logo_good.png) 50% 50% no-repeat;
 }
 
-.content .box.b06 {
+.content .box.b07 {
   background: url(../images/yuhan/logo_lanature.png) 50% 50% no-repeat;
 }
 
-.content .box.b07 {
+.content .box.b08 {
   background: url(../images/yuhan/logo_kleenex.png) 50% 50% no-repeat;
 }
 
-.content .box.b08 {
+.content .box.b09 {
   background: url(../images/yuhan/logo_poppy.png) 50% 50% no-repeat;
 }
 

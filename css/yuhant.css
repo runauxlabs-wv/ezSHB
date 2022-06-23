@@ -217,9 +217,10 @@ header .title p {
 
 
 .news_group .box {
-    width: 48% !important;
+    width: 50% !important;
     height: 400px;
     padding: 50px 50px 40px 50px;
+    margin-top: 10px;
 }
 
 .swiper {
@@ -236,23 +237,18 @@ header .title p {
 }
 
 .yk_group .box {
-    width: 220px;
+    width: 300px;
     height: 180px;
 }
 
 .yk_group .text_area {
-    width: 220px;
+    width: 300px;
     padding: 10px;
 }
 
 .yk_group .text_area p {
-    width: 145px;
+    width: 80%;
     padding-left: 0;
-}
-
-.yk_group .text_area .icon {
-    width: 30px;
-    height: 30px;
 }
 
 .yk_group .box.b05 {
@@ -262,6 +258,7 @@ header .title p {
 
 .yk_story {
     margin: 600px 0 20px 0;
+    height: 200px;
 }
 
 .brand p {
@@ -281,8 +278,8 @@ header .title p {
     width: 100%;
     height: 100%;
     text-align: center;
-    height: 510px;
-    top: 100px;
+    height: 480px;
+    top: 80px;
     background: #fff;
     z-index: 10;
     padding-top: 80px;

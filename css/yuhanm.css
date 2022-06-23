@@ -5,6 +5,10 @@ body {
     min-width: 320px;
 }
 
+h4 {
+    font-size: 14px;
+}
+
 header {
     width: 100%;
 }
@@ -191,20 +195,37 @@ header .title p {
 }
 
 .news_group .box {
-    width: 100% !important;
+    width: 92% !important;
+    height: 300px;
+    margin-top: 30px;
+    padding: 35px 40px 30px 40px;
+}
+
+.newsroom h3 {
+    font-size: 17px;
+    line-height: 32px;
+    margin: 10px 0;
+}
+
+.newsroom h5 {
+    -webkit-line-clamp: 3;
+    color: #777777;
+    line-height: 1.7em;
+    font-size: 14px;
+    margin: 10px 0;
 }
 
 .mySwiper .swiper-button-next {
     transform: translateX(-750%);
 }
 
-.forest .text_area, 
+.forest .text_area,
 .volunteer .text_area,
-.woman .text_area{
+.woman .text_area {
     padding: 0 30px;
 }
 
-.forest .text_area h1{
+.forest .text_area h1 {
     font-size: 22px;
 }
 
@@ -214,38 +235,250 @@ header .title p {
     font-size: 30px;
 }
 
-.forest .text_area h2, .woman .text_area h2, .volunteer .text_area h2{
+.forest .text_area h2,
+.woman .text_area h2,
+.volunteer .text_area h2 {
     font-size: 18px;
 }
 
-.forest .text_area p, .volunteer .text_area p, .woman .text_area p{
+.forest .text_area p,
+.volunteer .text_area p,
+.woman .text_area p {
     padding-top: 20px;
 }
 
-.forest .text_area .add_circle, 
-.volunteer .text_area .add_circle{
+.forest .text_area .add_circle,
+.volunteer .text_area .add_circle {
     font-size: 40px;
-    top:5px;
+    top: 5px;
 }
 
-.woman .text_area .add_circle{
+.woman .text_area .add_circle {
     font-size: 40px;
-    top:510px;
+    top: 510px;
 }
 
-.woman .woman_pic{
+.woman .woman_pic {
     height: 300px;
     background-size: contain;
 }
 
-.photobox{
+.photobox {
     margin: 30px 0;
 }
 
-.newsroom{
+.newsroom {
     margin: 50px 0 0 0;
 }
 
-.yk_sec{
-    padding:0 0 50px 0;
+.newsroom h1 {
+    padding-bottom: 20px;
+}
+
+.news_date{
+    padding-top: 10px;
+}
+
+.news_date p{
+    font-size: 14px;
+}
+
+.news_date .share{
+    font-size: 25px;
+}
+
+.newsroom .bg_title h1 {
+    font-size: 70px;
+    line-height: 70px;
+    text-align: right;
+    width: 100%;
+    padding: 0 0 0 100px;
+}
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+    top: -15px;
+}
+
+.yk_sec {
+    padding: 0 0 50px 0;
+}
+
+.yk_sec .sns_icon a {
+    margin: 0 5px;
+}
+
+.sns1,
+.sns2,
+.sns3,
+.sns4 {
+    width: 40px;
+    height: 40px;
+}
+
+.sns1 {
+    background: url(../images/yuhan/sns_footer_m.png) 0 0 no-repeat;
+}
+
+.sns2 {
+    background: url(../images/yuhan/sns_footer_m.png) 0 0 no-repeat;
+    background-position: -40px 0;
+}
+
+.sns3 {
+    background: url(../images/yuhan/sns_footer_m.png) 0 0 no-repeat;
+    background-position: -80px 0;
+}
+
+.sns4 {
+    background: url(../images/yuhan/sns_footer_m.png) 0 0 no-repeat;
+    background-position: -120px 2px;
+}
+
+.yk_sec .add_circle {
+    left: 300px;
+    top: 82px;
+    font-size: 45px;
+}
+
+.yk_group {
+    width: 80%;
+}
+
+.yk_group .box {
+    width: 100%;
+}
+
+.yk_group .text_area {
+    width: 100%;
+}
+
+.yk_group .text_area p {
+    width: 80%;
+}
+
+.yk_group .box.b05 {
+    background: url(../images/yuhan/yk5.jpg) 50% 45% no-repeat;
+    background-size: cover;
+}
+
+.mySwiper .swiper-pagination {
+    position: absolute;
+    bottom: -40px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: #000;
+}
+
+.yk_story {
+    height: 180px;
+    margin: 450px 0 20px 0;
+}
+
+.yk_story .inner {
+    top: -370px;
+}
+
+.sidebar {
+    height: 350px;
+    top: 50px;
+}
+
+.brand .inner {
+    width: 100%;
+}
+
+.newsroom h1,
+.brand h1 {
+    font-size: 25px;
+}
+
+.brand p {
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+
+.content .box {
+    width: 60%;
+    height: 120px;
+}
+
+.content .box.b01,
+.content .box.b02,
+.content .box.b03,
+.content .box.b04,
+.content .box.b05,
+.content .box.b06,
+.content .box.b07,
+.content .box.b08,
+.content .box.b09,
+.content .box.b10,
+.content .box.b11,
+.content .box.b12,
+.content .box.b13,
+.content .box.b14,
+.content .box.b15 {
+    background-size: contain;
+}
+
+.ccm {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.ccm h3 {
+    font-size: 20px;
+}
+
+.ccm p {
+    display: none;
+}
+
+.ccm .faq,
+.ccm .inquiry {
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.ccm .icon {
+    width: 60px;
+    height: 60px;
+}
+
+footer .top {
+    display: block;
+    padding: 0px;
+}
+
+footer .info {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.top .info p {
+    font-size: 13px;
+    padding-right: 0px;
+}
+
+footer .sns_icon {
+    justify-content: center;
+}
+
+footer .bottom {
+    padding: 20px 30px;
+}
+
+footer .logo {
+    background: url(../images/yuhan/footer_logo.svg) 0 0 no-repeat;
+    background-size: contain;
+    width: 147.32px;
+    height: 23px;
+    margin: 0 20px 0 0;
 }
