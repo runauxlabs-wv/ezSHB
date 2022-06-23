@@ -127,7 +127,9 @@ header .top .h_inner.sticky{
 }
 
 header .top .h_inner.sticky .gnb span,
-header .top .h_inner.sticky .global span{
+header .top .h_inner.sticky .global span,
+header .top .h_inner.sticky .more_button .menu
+{
   color: #333333;
 }
 
@@ -358,6 +360,20 @@ header button:hover {
   z-index: -99;
 }
 
+/* 모바일 태블릿 메뉴버튼 */
+
+header .top .h_inner .more_button{
+  display: none;
+}
+
+header .top .h_inner .more_button .menu{
+  color: #fff;
+  font-size: 30px;
+}
+
+header .top .h_inner:hover .more_button .menu{
+  color: #333333;
+}
 
 /*  기업소개 */
 

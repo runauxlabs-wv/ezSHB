@@ -10,15 +10,98 @@ body {
 }
 
 header {
-    width: 90%;
+    width: 100%;
 }
 
 header .top .h_inner {
     width: 100%;
+    height: 110px;
+    display: block;
 }
 
+header .top .h_inner .logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 30;
+}
+
+header .top:hover {
+    height: 110px;
+}
+
+header .top:hover .h_inner .logo {
+    background: url("../images/yuhan/logo_dark.svg") no-repeat;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+header .top .h_inner .gnb {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 300px 80px;
+    display: block;
+    background: #009fe3a4;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header .top .h_inner .gnb.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+header .top .h_inner .gnb span {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    padding: 12px 0;
+}
+
+header .top .h_inner .gnb .subgnball {
+    display: none;
+}
+
+header .top .h_inner .global {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 680px 35px;
+    display: flex;
+    width: 50%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header .top .h_inner .global.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+header .top .h_inner .global a {
+    font-size: 18px;
+}
+
+header .top .h_inner .more_button {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+header .top .h_inner .more_button.active{
+    transform: rotate(45deg);
+}
+
+
 header .title .text_area {
-    padding: 220px 0 200px 80px;
+    padding: 40% 60px;
 }
 
 header .title h1 {
