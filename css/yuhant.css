@@ -15,51 +15,80 @@ header {
 
 header .top .h_inner {
     width: 100%;
-    height: 110px;
+    height: 100px;
     display: block;
 }
 
 header .top .h_inner .logo {
     position: absolute;
-    top: 40px;
-    left: 40px;
-    z-index: 30;
+    top: 35px;
+    left: 50px;
 }
 
 header .top:hover .h_inner .logo {
     background: url("../images/yuhan/logo.svg") no-repeat;
     position: absolute;
+    top: 35px;
+    left: 50px;
 }
 
-header .top .h_inner.sticky:hover .logo{
+header .top:hover .h_inner.sticky .logo{
     background: url("../images/yuhan/logo_dark.svg") 0 0 no-repeat;
   }
+
+header .top:hover{
+    background: transparent;
+}
 
 header .top .h_inner .gnb {
     width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
-    padding: 300px 80px;
+    right: 0;
+    padding: 250px 90px;
     display: block;
-    background: #009fe3a4;
+    background: url(../images/yuhan/bg2.png)no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
     opacity: 0;
     visibility: hidden;
+    transform: translateX(100%);
+    transition: 0.3s;
 }
 
 header .top .h_inner .gnb.active {
     opacity: 1;
     visibility: visible;
+    transform: translateX(0);
+    transition: 0.3s;
 }
 
 header .top .h_inner .gnb span {
     display: block;
-    margin: auto;
-    width: 100%;
+    margin: 0;
+    width:fit-content;
     text-align: left;
-    font-size: 30px;
+    font-size: 25px;
     padding: 12px 0;
+    color: #fff;
+    opacity: 0.7;
+}
+
+header .top .h_inner .gnb span:hover{
+    opacity: 1.0;
+}
+
+header .top .h_inner .gnb span::before{
+    content: '';
+    position: absolute;
+    background-color: #009FE3;
+    height: 3px; 
+    width: 0; 
+    bottom: 0; 
+    transition: 0.7s; 
+    left: 0;
 }
 
 header .top .h_inner .gnb .subgnball {
@@ -67,37 +96,59 @@ header .top .h_inner .gnb .subgnball {
 }
 
 header .top .h_inner .global {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 680px 35px;
+    padding: 0px;
     display: flex;
-    width: 50%;
+    width: 40%;
     opacity: 0;
     visibility: hidden;
+    transform: translateX(100%);
+    transition: 0.3s;
+    position: absolute;
+    top: 630px;
+    left: 65px;
 }
 
-header .top .h_inner .global.active{
+header .top:hover .h_inner .global span{
+    color: #fff;
+}
+
+header .top .h_inner .global.active {
     opacity: 1;
     visibility: visible;
+    transform: translateX(0);
+    transition: 0.3s;
+}
+
+header .top .h_inner .logo.active {
+    opacity: 0;
+    visibility: hidden;
 }
 
 header .top .h_inner .global a {
     font-size: 18px;
 }
 
+header .top:hover .h_inner .global a:nth-child(2){
+    border: 1px solid #fff;
+  }
+  
+
+header .top .h_inner.sticky .global a:nth-child(2) {
+    border: 1px solid #fff;
+}
+
 header .top .h_inner .more_button {
     display: block;
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 35px;
+    right: 50px;
     background-color: transparent;
     border: none;
     width: 40px;
     height: 40px;
 }
 
-header .top .h_inner .more_button .icon{
+header .top .h_inner .more_button .icon {
     display: block;
     width: 100%;
     height: 100%;
@@ -105,7 +156,7 @@ header .top .h_inner .more_button .icon{
     background-size: cover;
 }
 
-header .top .h_inner.sticky .more_button .icon{
+header .top .h_inner.sticky .more_button .icon {
     display: block;
     width: 100%;
     height: 100%;
@@ -113,15 +164,42 @@ header .top .h_inner.sticky .more_button .icon{
     background-size: cover;
 }
 
-header .top .h_inner .more_button.active .icon{
+header .top .h_inner .more_button.active .icon {
     background: url(../images/yuhan/icon_close.svg)no-repeat;
     background-size: cover;
 }
 
-header .top:hover{
-    background: transparent;
-    transition: none;
-  }
+header .top .h_inner .more_logo {
+    display: block;
+    width: 200px;
+    height: 36px;
+    background: url(../images/yuhan/logo.svg)no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    position: absolute;
+    top: 35px;
+    left: 50px;
+}
+
+header .top .h_inner .more_logo.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+header .top .h_inner.sticky .gnb span,
+header .top .h_inner.sticky .global span {
+    color: #fff;
+}
+
+header .top:hover .h_inner .gnb span{
+    color: #fff;
+}
+
+header .top:hover .h_inner .gnb span:after{
+    display: none;
+}
 
 header .title .text_area {
     padding: 40% 60px;

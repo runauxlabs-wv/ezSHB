@@ -359,9 +359,13 @@ header button:hover {
   z-index: -99;
 }
 
-/* 모바일 태블릿 메뉴버튼 */
+/* 모바일 태블릿 메뉴버튼, 로고 */
 
 header .top .h_inner .more_button{
+  display: none;
+}
+
+header .top .h_inner .more_logo{
   display: none;
 }
 
