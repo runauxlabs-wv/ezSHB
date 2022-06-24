@@ -369,6 +369,10 @@ header .top .h_inner .more_logo{
   display: none;
 }
 
+header .top .h_inner .more_sns{
+  display: none;
+}
+
 /*  기업소개 */
 
 .company {

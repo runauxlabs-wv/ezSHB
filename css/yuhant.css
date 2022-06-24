@@ -32,11 +32,11 @@ header .top:hover .h_inner .logo {
     left: 50px;
 }
 
-header .top:hover .h_inner.sticky .logo{
+header .top:hover .h_inner.sticky .logo {
     background: url("../images/yuhan/logo_dark.svg") 0 0 no-repeat;
-  }
+}
 
-header .top:hover{
+header .top:hover {
     background: transparent;
 }
 
@@ -51,7 +51,7 @@ header .top .h_inner .gnb {
     background: url(../images/yuhan/bg2.png)no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: multiply;
+    background-blend-mode: multiply;
     opacity: 0;
     visibility: hidden;
     transform: translateX(100%);
@@ -68,7 +68,7 @@ header .top .h_inner .gnb.active {
 header .top .h_inner .gnb span {
     display: block;
     margin: 0;
-    width:fit-content;
+    width: fit-content;
     text-align: left;
     font-size: 25px;
     padding: 12px 0;
@@ -76,18 +76,18 @@ header .top .h_inner .gnb span {
     opacity: 0.7;
 }
 
-header .top .h_inner .gnb span:hover{
+header .top .h_inner .gnb span:hover {
     opacity: 1.0;
 }
 
-header .top .h_inner .gnb span::before{
+header .top .h_inner .gnb span::before {
     content: '';
     position: absolute;
     background-color: #009FE3;
-    height: 3px; 
-    width: 0; 
-    bottom: 0; 
-    transition: 0.7s; 
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    transition: 0.7s;
     left: 0;
 }
 
@@ -108,7 +108,7 @@ header .top .h_inner .global {
     left: 65px;
 }
 
-header .top:hover .h_inner .global span{
+header .top:hover .h_inner .global span {
     color: #fff;
 }
 
@@ -125,13 +125,18 @@ header .top .h_inner .logo.active {
 }
 
 header .top .h_inner .global a {
-    font-size: 18px;
+    font-size: 20px;
+    opacity: 0.7;
 }
 
-header .top:hover .h_inner .global a:nth-child(2){
+header .top .h_inner .global a:hover{
+    opacity: 1.0;
+}
+
+header .top:hover .h_inner .global a:nth-child(2) {
     border: 1px solid #fff;
-  }
-  
+}
+
 
 header .top .h_inner.sticky .global a:nth-child(2) {
     border: 1px solid #fff;
@@ -193,12 +198,42 @@ header .top .h_inner.sticky .global span {
     color: #fff;
 }
 
-header .top:hover .h_inner .gnb span{
+header .top:hover .h_inner .gnb span {
     color: #fff;
 }
 
-header .top:hover .h_inner .gnb span:after{
+header .top:hover .h_inner .gnb span:after {
     display: none;
+}
+
+header .top .h_inner .more_sns {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 0.3s;
+    position: absolute;
+    top: 700px;
+    left: 65px;
+}
+
+header .top .h_inner .more_sns.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: 0.3s;
+}
+
+header .top .h_inner .more_sns p{
+    color: #009FE3;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+header .top .h_inner .more_sns .sns_icon {
+    display: flex;
 }
 
 header .title .text_area {
