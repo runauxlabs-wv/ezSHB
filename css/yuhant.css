@@ -25,6 +25,11 @@ header .top .h_inner .logo {
     left: 50px;
 }
 
+header .top .h_inner .logo.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
 header .top:hover .h_inner .logo {
     background: url("../images/yuhan/logo.svg") no-repeat;
     position: absolute;
@@ -41,71 +46,20 @@ header .top:hover {
 }
 
 header .top .h_inner .gnb {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 250px 90px;
-    display: block;
-    background: url(../images/yuhan/bg2.png)no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: multiply;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(100%);
-    transition: 0.3s;
-}
-
-header .top .h_inner .gnb.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
-    transition: 0.3s;
-}
-
-header .top .h_inner .gnb span {
-    display: block;
-    margin: 0;
-    width: fit-content;
-    text-align: left;
-    font-size: 25px;
-    padding: 12px 0;
-    color: #fff;
-    opacity: 0.7;
-}
-
-header .top .h_inner .gnb span:hover {
-    opacity: 1.0;
-}
-
-header .top .h_inner .gnb span::before {
-    content: '';
-    position: absolute;
-    background-color: #009FE3;
-    height: 3px;
-    width: 0;
-    bottom: 0;
-    transition: 0.7s;
-    left: 0;
-}
-
-header .top .h_inner .gnb .subgnball {
     display: none;
 }
 
 header .top .h_inner .global {
     padding: 0px;
     display: flex;
-    width: 40%;
+    width: 30%;
     opacity: 0;
     visibility: hidden;
     transform: translateX(100%);
     transition: 0.3s;
     position: absolute;
-    top: 630px;
-    left: 65px;
+    top: 35px;
+    left: 400px;
 }
 
 header .top:hover .h_inner .global span {
@@ -117,11 +71,6 @@ header .top .h_inner .global.active {
     visibility: visible;
     transform: translateX(0);
     transition: 0.3s;
-}
-
-header .top .h_inner .logo.active {
-    opacity: 0;
-    visibility: hidden;
 }
 
 header .top .h_inner .global a {
@@ -198,14 +147,6 @@ header .top .h_inner.sticky .global span {
     color: #fff;
 }
 
-header .top:hover .h_inner .gnb span {
-    color: #fff;
-}
-
-header .top:hover .h_inner .gnb span:after {
-    display: none;
-}
-
 header .top .h_inner .more_sns {
     display: block;
     opacity: 0;
@@ -213,8 +154,8 @@ header .top .h_inner .more_sns {
     transform: translateX(100%);
     transition: 0.3s;
     position: absolute;
-    top: 700px;
-    left: 65px;
+    top: 940px;
+    left: 50px
 }
 
 header .top .h_inner .more_sns.active{
@@ -222,14 +163,6 @@ header .top .h_inner .more_sns.active{
     visibility: visible;
     transform: translateX(0);
     transition: 0.3s;
-}
-
-header .top .h_inner .more_sns p{
-    color: #009FE3;
-    opacity: 0.7;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 20px;
 }
 
 header .top .h_inner .more_sns .sns_icon {
@@ -247,6 +180,213 @@ header .title h1 {
 header .title p {
     font-size: 20px;
 }
+
+/* 모바일 태블릿 아코디언 메뉴 */
+
+#wrapper {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: 0.3s;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 180px 0px;
+    background: url(../images/yuhan/bg2.png)no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+  }
+
+  #wrapper.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: 0.3s;
+  }
+  
+  /* Accordion Container */
+  .m_menu {
+    width: 80%;
+    /* max-width: 500px;
+    min-width: 300px; */
+    position: relative;
+  }
+  
+  /* shadow */
+  .m_menu:before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 100%;
+    margin: 0;
+    left: 15px;
+    background-color: transparent;
+    top: 0px;
+    box-shadow: 0px 20px 40px #52616b;
+    opacity: 0.2;
+    z-index: -1;
+    transition: ease-in-out 0.6s all;
+  }
+  
+  .m_menu:hover.m_menu:before {
+    box-shadow: 0px 40px 90px #52616b;
+  }
+  
+  .m_menu ul {
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+  }
+  
+  .accordionTitle {
+    padding: 18px;
+    position: relative;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: #fff ;
+    transition: ease-in-out 0.2s all;
+    cursor: pointer;
+  }
+  
+  .accordionTitle:hover {
+    padding-left: 30px;
+  }
+  
+  /* Accordion Item line */
+  .accordionTitle:before,
+  .accordionTitle:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    border-radius: 50px;
+    transition: ease-in-out 0.6s all;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .accordionTitle:before {
+    width: 100%;
+    background-color: #c9d6df;
+  }
+  
+  .accordionTitle:after {
+    background-image: linear-gradient(90deg, #52616b, #c9d6df);
+    width: 0%;
+  }
+  
+  .accordionTitle:hover::after {
+    width: 100%;
+  }
+  
+  /* Accordion Item line - Active */
+  .accordionTitleActive:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    border-radius: 50px;
+    transition: ease-in-out 0.6s all;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .accordionTitleActive:after {
+    background-image: linear-gradient(90deg, #52616b, #009FE3);
+    width: 100%;
+  }
+  
+  /* Accordion Item Icon  */
+  .accIcon {
+    float: right;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-top: -3px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .accIcon:before,
+  .accIcon:after {
+    content: '';
+    position: absolute;
+    border-radius: 50px;
+    background-color: #c9d6df;
+    transition: ease 0.3s all;
+  }
+  
+  .accIcon:before {
+    width: 2px;
+    height: 20px;
+  }
+  
+  .accIcon:after {
+    width: 20px;
+    height: 2px;
+  }
+  
+  .accordionTitle:hover .accIcon:before,
+  .accordionTitle:hover .accIcon:after {
+    background-color: #fff;
+  }
+  
+  .accIcon.anime.accIcon:before {
+    transform: rotate(90deg);
+  }
+  
+  /* subgnball */  
+  
+  .accordion .item .subgnball {
+    opacity: 0;
+    height: 0;
+    padding: 0px 20px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 200;
+    transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1);
+    overflow: hidden;
+    letter-spacing: -0.8px;
+  }
+
+  .accordion .item .subgnball ul li ul li {
+    padding: 10px;
+  }
+
+  .accordion .item .subgnball ul > li > ul > li:hover{
+background: #009fe34b;
+font-weight: 500;
+  }
+
+  .accordion .item .subgnball ul > li > ul > li > ul{
+    padding-top: 15px;
+  }
+
+  .accordion .item .subgnball ul li ul li > ul li{
+    padding: 5px 20px;
+    opacity: 0.7;
+  }
+  
+  /* Text Content - Class for JS to hide and show */
+  .accordion .item .subgnball.show {
+    opacity: 1;
+    height: auto;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+  }
 
 .company {
     margin: 235px 0 130px 0;

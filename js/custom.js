@@ -8,5 +8,6 @@ $(document).ready(function () {
         $('header .top .h_inner .logo').toggleClass('active');
         $('header .top .h_inner .more_logo').toggleClass('active');
         $('header .top .h_inner .more_sns').toggleClass('active');
+        $('#wrapper').toggleClass('active');
     })
 });

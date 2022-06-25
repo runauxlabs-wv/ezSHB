@@ -373,6 +373,10 @@ header .top .h_inner .more_sns{
   display: none;
 }
 
+#wrapper{
+  display: none;
+}
+
 /*  기업소개 */
 
 .company {
