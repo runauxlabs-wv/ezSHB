@@ -1350,6 +1350,39 @@ transition: all 0.5s ease;
   background-size: cover;
 }
 
+.yk_group .box button{
+  display: none;
+}
+
+.yk_group .box:hover button{
+  display: block;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  background: #009FE3;
+  border: 1px solid #009FE3;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.yk_group .box.b01:hover,
+.yk_group .box.b02:hover,
+.yk_group .box.b03:hover,
+.yk_group .box.b04:hover,
+.yk_group .box.b05:hover,
+.yk_group .box.b06:hover,
+.yk_group .box.b07:hover,
+.yk_group .box.b08:hover,
+.yk_group .box.b09:hover,
+.yk_group .box.b10:hover{
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: screen;
+}
+
 .yk_group .box.b02{
   background: url(../images/yuhan/yk2.jpg) 50% 50% no-repeat;
   background-size: cover;
