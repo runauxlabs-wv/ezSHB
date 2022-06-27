@@ -1979,24 +1979,83 @@ footer .bottom p {
   z-index: -9999;
 }
 
-.sub_company_bg .text_area{
-  padding: 250px 0;
+.sub_ccm_bg{
+  width: 100%;
+  background: url(../images/yuhan/bg3.png)50% 50% no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9999;
 }
 
-.sub_company_bg .text_area h1{
+.sub_company_bg .text_area,
+.sub_ccm_bg .text_area{
+  padding: 230px 0;
+}
+
+.sub_company_bg .text_area h1,
+.sub_ccm_bg .text_area h1{
   color: #fff;
   text-align: center;
   font-size: 60px;
 }
 
-.sub_company_bg .text_area p{
+.sub_company_bg .text_area p,
+.sub_ccm_bg .text_area p{
   color: #fff;
   text-align: center;
   padding: 15px 0;
   opacity: 0.7;
-  line-height: 35px;
+  line-height: 40px;
+  letter-spacing: -1px;
 }
 
+.sub_tab{
+  background: #fff;
+  /* width: 60%; */
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+  z-index: 200;
+  position: relative;
+  top: -190px;
+}
+
+.sub_tab span{
+  color: #333333;
+  letter-spacing: -1px;
+  margin: 0 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.sub_tab span:hover,
+.sub_tab .active{
+  font-weight: 500;
+  color: #009FE3;
+}
+
+.sub_tab span::before{
+  content: '';
+  position: absolute;
+  background-color: #009FE3;
+  height: 3px; 
+  width: 0; 
+  bottom: -22px; 
+  transition: 0.7s; 
+  left: 0;
+}
+
+.sub_tab span:hover:before {
+  width: 100%;
+}
+
+.sub_tab .active::before{
+  width: 100%; 
+}
 
 .sub_company_content{
   width: 100%;
