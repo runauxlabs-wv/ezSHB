@@ -65,17 +65,18 @@ header .top .h_inner .more_button{
 
 header .top .h_inner .global{
     top: 35px;
-    line-height: 28px;
-    left: 205px;
+    line-height: 30px;
+    left: 200px;
 }
 
-header .top .h_inner .global a{
-    font-size: 13px;
+header .top .h_inner .global a,
+header .top .h_inner .global .first{
+    font-size: 15px;
 }
 
-header .top .h_inner .global a:nth-of-type(3){
+/* header .top .h_inner .global a:nth-of-type(2){
     display: none;
-}
+} */
 
 header .top .h_inner .more_sns{
     bottom: 20px;

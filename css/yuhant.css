@@ -63,7 +63,8 @@ header .top .h_inner .global {
     left: 400px;
 }
 
-header .top:hover .h_inner .global span {
+header .top:hover .h_inner .global a span,
+header .top:hover .h_inner .global .first{
     color: #fff;
 }
 
@@ -74,22 +75,9 @@ header .top .h_inner .global.active {
     transition: 0.3s;
 }
 
-header .top .h_inner .global a {
+header .top .h_inner .global a,
+header .top .h_inner .global .first {
     font-size: 20px;
-    opacity: 0.7;
-}
-
-header .top .h_inner .global a:hover{
-    opacity: 1.0;
-}
-
-header .top:hover .h_inner .global a:nth-child(2) {
-    border: 1px solid #fff;
-}
-
-
-header .top .h_inner.sticky .global a:nth-child(2) {
-    border: 1px solid #fff;
 }
 
 header .top .h_inner .more_button {
@@ -680,3 +668,4 @@ font-weight: 500;
 footer .bottom {
     padding: 20px 100px;
 }
+
