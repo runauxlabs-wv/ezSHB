@@ -1964,3 +1964,42 @@ footer .bottom p {
   opacity: 0.5;
   color: #fff;
 }
+
+/* 서브페이지 - 1.회사소개 */
+
+.sub_company_bg{
+  width: 100%;
+  background: url(../images/yuhan/bg20.png)0 0 no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+.sub_company_bg .text_area{
+  padding: 250px 0;
+}
+
+.sub_company_bg .text_area h1{
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+}
+
+.sub_company_bg .text_area p{
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  opacity: 0.7;
+  line-height: 35px;
+}
+
+
+.sub_company_content{
+  width: 100%;
+  height: 600px;
+  background: #fff;
+}
