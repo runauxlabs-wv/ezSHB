@@ -17,6 +17,7 @@ header .top .h_inner {
     width: 100%;
     height: 100px;
     display: block;
+    position: relative;
 }
 
 header .top .h_inner .logo {
@@ -153,9 +154,10 @@ header .top .h_inner .more_sns {
     visibility: hidden;
     transform: translateX(100%);
     transition: 0.3s;
-    position: absolute;
-    top: 940px;
-    left: 50px
+    left: 500px;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
 }
 
 header .top .h_inner .more_sns.active{
@@ -201,6 +203,7 @@ header .title p {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
+    overflow-y: scroll;
   }
 
   #wrapper.active {
