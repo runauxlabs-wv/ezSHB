@@ -129,7 +129,7 @@ header .top .h_inner.sticky{
 
 header .top .h_inner.sticky .gnb span,
 header .top .h_inner.sticky .global span,
-header .top .h_inner.sticky .global ul
+header .top .h_inner.sticky .global ul li
 {
   color: #333333;
 }
@@ -2060,14 +2060,12 @@ footer .bottom p {
 }
 
 .image_container {
-  /* background: url(../); */
+  background: url(../images/yuhan/bg21.png)50% 50% no-repeat;
+  background-size: cover;
   padding-bottom: 100%;
-  background: black;
   position: relative;
   overflow: hidden;
   z-index: 2;
-  background-size: cover;
-  background-position: center;
 }
 
 .section_title {
@@ -2110,22 +2108,46 @@ footer .bottom p {
 }
 
 .sub_company_content .box .contitle{
-  width: 300px;
+  width: 350px;
   margin: 0;
 }
 
 .sub_company_content .box .contitle h2{
   font-size: 30px;
   color: #333333;
+  width: fit-content;
+  margin: 0;
+  padding: 10px 0;
+  border-top: 3px solid #009FE3;
 }
 
 .sub_company_content .box .contitle span{
-  color: #009FE3;
+  opacity: 0.7;
 }
 
 .sub_company_content .box .text_area{
-  width: 300px;
-  padding: 0 50px;
+  padding: 0 40px;
+  border-right: 1px solid #d9d9d9;
+}
+
+.sub_company_content .box .text_area.second,
+.sub_company_content .box .text_area:last-of-type{
+padding: 0 60px;
+}
+
+.sub_company_content .box .text_area:last-of-type{
+  border-right: 0;
+}
+
+.sub_company_content .box .text_area h3{
+  color: #009FE3;
+  padding-bottom: 15px;
+}
+
+.sub_company_content .box .text_area p{
+  line-height: 40px;
+  font-size: 15px;
+  word-break: keep-all;
 }
 
 .sub_company_content .box.b01 .inner{
@@ -2135,7 +2157,10 @@ justify-content: space-between;
 
 .sub_company_content .box.b02{
   background: url(../images/yuhan/bg7.png)50% 50% no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: screen;
   height: 600px;
+  padding: 100px 0;
 }
 
 /* 서브페이지 - 2.고객중심경영 */
