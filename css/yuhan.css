@@ -2150,17 +2150,116 @@ padding: 0 60px;
   word-break: keep-all;
 }
 
+.sub_company_content .box.b01{
+  margin: 100px 0;
+}
+
 .sub_company_content .box.b01 .inner{
 display: flex;
 justify-content: space-between;
+}
+
+.sub_company_content .box .bg_title h1{
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 120px;
+  opacity: 0.1;
+  color: #C4C4C4;
+  transform: translateY(77%);
 }
 
 .sub_company_content .box.b02{
   background: url(../images/yuhan/bg7.png)50% 50% no-repeat;
   background-color: rgba(255, 255, 255, 0.5);
   background-blend-mode: screen;
-  height: 600px;
-  padding: 100px 0;
+  padding: 150px 0;
+  margin-top: 0;
+}
+
+.sub_company_content .box.b02 .inner{
+display: flex;
+}
+
+.sub_company_content .box.b02 .con{
+  text-align: center;
+  width: 300px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.555);
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sub_company_content .box.b02 .con h1{
+  color: #009FE3;
+  font-size: 20px;
+}
+
+.sub_company_content .box.b02 .con h2{
+  font-size: 18px;
+  color: #333333;
+  opacity: 0.3;
+}
+
+.sub_company_content .box.b03 .value{
+  display: flex;
+  padding-top: 200px;
+  text-align: center;
+  width: 75%;
+}
+
+.sub_company_content .box.b03 .con
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:flex-start;
+  position: relative;
+}
+
+.sub_company_content .box.b03 .con h2{
+  color: #009FE3;
+  padding: 5px 0;
+}
+
+.sub_company_content .box.b03 .con span{
+  color: #333333;
+  opacity: 0.5;
+}
+
+.sub_company_content .box.b03 .con.c01,
+.sub_company_content .box.b03 .con.c03{
+  padding-top: 100px;
+}
+
+
+.sub_company_content .box.b03 .con.c04{
+  text-align: center;
+  padding: 30px 0 0 45px;
+}
+
+.sub_company_content .box.b03 .con.c02{
+  background: url(../images/yuhan/value.svg)0 0 no-repeat;
+  width: 600px;
+  height: 400px;
+  background-size: cover;
+  margin: 0;
+}
+
+.sub_company_content .box.b03 .con.c02 img{
+  animation: rotate 15s linear infinite;transform-origin: 50% 50%;
+  position: absolute;
+  top: -60px;
+  left: 110px;
+
+}
+
+@keyframes rotate{
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* 서브페이지 - 2.고객중심경영 */
