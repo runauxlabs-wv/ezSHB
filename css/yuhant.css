@@ -141,7 +141,6 @@ header .top .h_inner .more_logo.active {
 }
 
 header .top .h_inner.sticky .gnb span,
-header .top .h_inner.sticky .global span,
 header .top .h_inner.sticky .global .first {
     color: #fff;
 }

@@ -1979,18 +1979,6 @@ footer .bottom p {
   z-index: -9999;
 }
 
-.sub_ccm_bg{
-  width: 100%;
-  background: url(../images/yuhan/bg3.png)50% 50% no-repeat;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: multiply;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -9999;
-}
-
 .sub_company_bg .text_area,
 .sub_ccm_bg .text_area{
   padding: 230px 0;
@@ -2058,6 +2046,108 @@ footer .bottom p {
 
 .sub_company_content{
   width: 100%;
-  height: 600px;
   background: #fff;
+}
+
+/* 패럴렉스 */
+
+.outer_container {
+  max-width: 600px;
+  margin: auto;
+  width: 90%;
+  position: relative;
+  margin-bottom: 300px;
+}
+
+.image_container {
+  /* background: url(../); */
+  padding-bottom: 100%;
+  background: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+}
+
+.section_title {
+  margin: 0;
+  font-size: 40px;
+  width: 100%;
+  /* text-align: center; */
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  transform: translateY(-50%);
+  z-index: 1;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section_title.on_dark h1,
+.section_title.on_dark p{
+  color: #fff;
+}
+
+.section_title span {
+  position: relative;
+  display: block;
+}
+
+.section_title p{
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  padding-top: 10px;
+  opacity: 0.7;
+}
+
+/*서브 콘텐츠 내용*/
+
+.sub_company_content .box{
+  margin: 200px 0;
+  letter-spacing: -1px;
+}
+
+.sub_company_content .box .contitle{
+  width: 300px;
+  margin: 0;
+}
+
+.sub_company_content .box .contitle h2{
+  font-size: 30px;
+  color: #333333;
+}
+
+.sub_company_content .box .contitle span{
+  color: #009FE3;
+}
+
+.sub_company_content .box .text_area{
+  width: 300px;
+  padding: 0 50px;
+}
+
+.sub_company_content .box.b01 .inner{
+display: flex;
+justify-content: space-between;
+}
+
+.sub_company_content .box.b02{
+  background: url(../images/yuhan/bg7.png)50% 50% no-repeat;
+  height: 600px;
+}
+
+/* 서브페이지 - 2.고객중심경영 */
+
+.sub_ccm_bg{
+  width: 100%;
+  background: url(../images/yuhan/bg3.png)50% 50% no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9999;
 }
