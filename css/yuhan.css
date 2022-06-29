@@ -2343,6 +2343,12 @@ display: flex;
   padding-bottom: 150px;
 }
 
+.sub_company_content2 .conbox.c01 .text_area:hover,
+.sub_company_content .box .text_area:hover{
+  transform: translateY(-10%);
+  transition: 0.5s ease;
+}
+
 .sub_company_content2 .conbox.c01 .arrow_forward_ios{
   color: #333333;
   opacity: 0.2;
