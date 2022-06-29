@@ -2148,15 +2148,19 @@ padding: 0 60px;
   border-right: 0;
 }
 
-.sub_company_content .box .text_area h3{
+.sub_company_content .box .text_area h3,
+.sub_company_content2 .text_area h3{
   color: #009FE3;
   padding-bottom: 15px;
+  letter-spacing: -1px;
 }
 
-.sub_company_content .box .text_area p{
+.sub_company_content .box .text_area p,
+.sub_company_content2 .text_area p{
   line-height: 40px;
   font-size: 15px;
   word-break: keep-all;
+  letter-spacing: -1px;
 }
 
 .sub_company_content .box.b01{
@@ -2337,6 +2341,13 @@ display: flex;
 
 .sub_company_content2 .conbox.c01{
   padding-bottom: 150px;
+}
+
+.sub_company_content2 .conbox.c01 .arrow_forward_ios{
+  color: #333333;
+  opacity: 0.2;
+  font-size: 25px;
+  padding: 25px 10px;
 }
 
 .sub_company_content2 .conbox.c02{
@@ -2554,7 +2565,7 @@ fieldset {
 
 #contact p{
   font-size: 13px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 #contact button[type="submit"] {
@@ -2564,7 +2575,7 @@ fieldset {
   border-radius: 5px;
 	background:#009FE3;
 	color:#FFF;
-	margin:20px 0 5px;
+	margin:50px 0 5px;
 	padding:10px;
 	font-size:15px;
   font-weight: 700;
