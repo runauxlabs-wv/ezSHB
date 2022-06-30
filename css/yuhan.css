@@ -2003,6 +2003,7 @@ footer .bottom p {
   opacity: 0.7;
   line-height: 40px;
   letter-spacing: -1px;
+  word-break: keep-all;
 }
 
 .sub_tab{

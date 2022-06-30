@@ -710,8 +710,7 @@ footer .bottom {
     padding: 0 15px;
 }
 
-.sub_company_content .box .contitle,
-.sub_company_content2 .inner .contitle {
+.sub_company_content .box .contitle {
     width: 320px;
 }
 
@@ -761,6 +760,10 @@ footer .bottom {
     font-size: 15px;
 }
 
+.sub_company_content .box{
+    margin: 100px 0;
+}
+
 .sub_company_content .box.b03 .value{
     padding-top: 100px;
     width: 90%;
@@ -791,4 +794,35 @@ padding-top: 105px;
 
 .sub_company_content .box.b03 .con h2{
     font-size: 20px;
+}
+
+/* 서브페이지 - 2.고객중심경영 */
+
+.sub_tab{
+    top: -180px;
+}
+
+.sub_company_bg .text_area p, 
+.sub_ccm_bg .text_area p{
+padding: 15px 160px;
+}
+
+.sub_company_content2 .inner .contitle{
+    width: 250px;
+}
+
+.sub_company_content2 .conbox.c01 .arrow_forward_ios{
+    padding: 5px 10px;
+}
+
+.sub_company_content2 .conbox.c02 .inner .contitle span{
+font-size: 13px;
+}
+
+.sub_company_content2 .ask .group .box p{
+    font-size: 13px;
+}
+
+#contact{
+    padding: 40px;
 }
