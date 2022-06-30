@@ -65,7 +65,7 @@ header .top .h_inner .global {
 }
 
 header .top:hover .h_inner .global a span,
-header .top:hover .h_inner .global .first{
+header .top:hover .h_inner .global .first {
     color: #fff;
 }
 
@@ -81,11 +81,11 @@ header .top .h_inner .global .first {
     font-size: 20px;
 }
 
-.global li:hover ul{
+.global li:hover ul {
     top: 39px;
 }
 
-.global li:hover .triangle{
+.global li:hover .triangle {
     top: 28px;
 }
 
@@ -141,11 +141,11 @@ header .top .h_inner .more_logo.active {
 }
 
 header .top .h_inner.sticky .global span,
-header .top .h_inner.sticky .global .first{
+header .top .h_inner.sticky .global .first {
     color: #fff;
 }
 
-header .top .h_inner.sticky .global li ul li span{
+header .top .h_inner.sticky .global li ul li span {
     color: #333333;
 }
 
@@ -161,7 +161,7 @@ header .top .h_inner .more_sns {
     width: 100%;
 }
 
-header .top .h_inner .more_sns.active{
+header .top .h_inner .more_sns.active {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
@@ -205,25 +205,25 @@ header .title p {
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     overflow-y: scroll;
-  }
+}
 
-  #wrapper.active {
+#wrapper.active {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
     transition: 0.3s;
-  }
-  
-  /* Accordion Container */
-  .m_menu {
+}
+
+/* Accordion Container */
+.m_menu {
     width: 80%;
     /* max-width: 500px;
     min-width: 300px; */
     position: relative;
-  }
-  
-  /* shadow */
-  .m_menu:before {
+}
+
+/* shadow */
+.m_menu:before {
     content: '';
     position: absolute;
     width: calc(100% - 30px);
@@ -236,37 +236,37 @@ header .title p {
     opacity: 0.2;
     z-index: -1;
     transition: ease-in-out 0.6s all;
-  }
-  
-  .m_menu:hover.m_menu:before {
+}
+
+.m_menu:hover.m_menu:before {
     box-shadow: 0px 40px 90px #52616b;
-  }
-  
-  .m_menu ul {
+}
+
+.m_menu ul {
     margin: 0;
     padding: 0;
     border-radius: 3px;
-  }
-  
-  .accordionTitle {
+}
+
+.accordionTitle {
     padding: 18px;
     position: relative;
     margin: 0;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: -0.5px;
-    color: #fff ;
+    color: #fff;
     transition: ease-in-out 0.2s all;
     cursor: pointer;
-  }
-  
-  .accordionTitle:hover {
+}
+
+.accordionTitle:hover {
     padding-left: 30px;
-  }
-  
-  /* Accordion Item line */
-  .accordionTitle:before,
-  .accordionTitle:after {
+}
+
+/* Accordion Item line */
+.accordionTitle:before,
+.accordionTitle:after {
     content: '';
     position: absolute;
     height: 2px;
@@ -277,24 +277,24 @@ header .title p {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .accordionTitle:before {
+}
+
+.accordionTitle:before {
     width: 100%;
     background-color: #c9d6df;
-  }
-  
-  .accordionTitle:after {
+}
+
+.accordionTitle:after {
     background-image: linear-gradient(90deg, #52616b, #c9d6df);
     width: 0%;
-  }
-  
-  .accordionTitle:hover::after {
+}
+
+.accordionTitle:hover::after {
     width: 100%;
-  }
-  
-  /* Accordion Item line - Active */
-  .accordionTitleActive:after {
+}
+
+/* Accordion Item line - Active */
+.accordionTitleActive:after {
     content: '';
     position: absolute;
     height: 2px;
@@ -305,15 +305,15 @@ header .title p {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .accordionTitleActive:after {
+}
+
+.accordionTitleActive:after {
     background-image: linear-gradient(90deg, #52616b, #009FE3);
     width: 100%;
-  }
-  
-  /* Accordion Item Icon  */
-  .accIcon {
+}
+
+/* Accordion Item Icon  */
+.accIcon {
     float: right;
     width: 30px;
     height: 30px;
@@ -321,39 +321,39 @@ header .title p {
     margin-top: -3px;
     align-items: center;
     justify-content: center;
-  }
-  
-  .accIcon:before,
-  .accIcon:after {
+}
+
+.accIcon:before,
+.accIcon:after {
     content: '';
     position: absolute;
     border-radius: 50px;
     background-color: #c9d6df;
     transition: ease 0.3s all;
-  }
-  
-  .accIcon:before {
+}
+
+.accIcon:before {
     width: 2px;
     height: 20px;
-  }
-  
-  .accIcon:after {
+}
+
+.accIcon:after {
     width: 20px;
     height: 2px;
-  }
-  
-  .accordionTitle:hover .accIcon:before,
-  .accordionTitle:hover .accIcon:after {
+}
+
+.accordionTitle:hover .accIcon:before,
+.accordionTitle:hover .accIcon:after {
     background-color: #fff;
-  }
-  
-  .accIcon.anime.accIcon:before {
+}
+
+.accIcon.anime.accIcon:before {
     transform: rotate(90deg);
-  }
-  
-  /* subgnball */  
-  
-  .accordion .item .subgnball {
+}
+
+/* subgnball */
+
+.accordion .item .subgnball {
     opacity: 0;
     height: 0;
     padding: 0px 20px;
@@ -363,39 +363,39 @@ header .title p {
     transition: all 0.6s cubic-bezier(0.42, 0.2, 0.08, 1);
     overflow: hidden;
     letter-spacing: -0.8px;
-  }
+}
 
-  .accordion .item .subgnball ul li ul li {
+.accordion .item .subgnball ul li ul li {
     padding: 10px;
-  }
+}
 
-  .accordion .item .subgnball ul > li > ul > li:hover{
-background: #009fe34b;
-font-weight: 500;
-  }
+.accordion .item .subgnball ul>li>ul>li:hover {
+    background: #009fe34b;
+    font-weight: 500;
+}
 
-  .accordion .item .subgnball ul > li > ul > li > ul{
+.accordion .item .subgnball ul>li>ul>li>ul {
     padding-top: 15px;
-  }
+}
 
-  .accordion .item .subgnball ul li ul li > ul li{
+.accordion .item .subgnball ul li ul li>ul li {
     padding: 5px 20px;
     opacity: 0.7;
-  }
+}
 
-  .accordion .item .subgnball ul li ul li > ul li:hover{
+.accordion .item .subgnball ul li ul li>ul li:hover {
     background: transparent;
 }
 
-  
-  /* Text Content - Class for JS to hide and show */
-  .accordion .item .subgnball.show {
+
+/* Text Content - Class for JS to hide and show */
+.accordion .item .subgnball.show {
     opacity: 1;
     height: auto;
     padding: 20px;
     position: relative;
     z-index: 0;
-  }
+}
 
 .company {
     margin: 235px 0 130px 0;
@@ -687,3 +687,108 @@ footer .bottom {
     padding: 20px 100px;
 }
 
+/* 서브페이지 - 1.회사소개 */
+
+.sub_tab span {
+    margin: 0 20px;
+}
+
+.section_title {
+    font-size: 30px;
+}
+
+.sub_company_content .box.b01 {
+    margin: 0 0 100px 0;
+}
+
+.sub_company_content .box .text_area {
+    padding: 0 20px;
+}
+
+.sub_company_content .box .text_area.second,
+.sub_company_content .box .text_area:last-of-type {
+    padding: 0 15px;
+}
+
+.sub_company_content .box .contitle,
+.sub_company_content2 .inner .contitle {
+    width: 320px;
+}
+
+.sub_company_content .box .contitle h2,
+.sub_company_content2 .inner .contitle h2 {
+    font-size: 25px;
+}
+
+.sub_company_content .box .text_area h3,
+.sub_company_content2 .text_area h3 {
+    font-size: 18px;
+}
+
+.sub_company_content .box .text_area p,
+.sub_company_content2 .text_area p {
+    line-height: 30px;
+}
+
+.sub_company_content .box .bg_title h1 {
+    transform: translateY(157%);
+    font-size: 60px;
+}
+
+.sub_company_content .box.b02 {
+    padding: 50px 0;
+}
+
+.sub_company_content .box.b02 .con {
+    height: 200px;
+}
+
+.sub_company_content .box.b02 .con .icon {
+    width: 50px;
+    height: 50px;
+}
+
+.sub_company_content .box.b02 .con:hover .icon {
+    width: 60px;
+    height: 60px;
+}
+
+.sub_company_content .box.b02 .con h1 {
+    font-size: 16px;
+}
+
+.sub_company_content .box.b02 .con h2 {
+    font-size: 15px;
+}
+
+.sub_company_content .box.b03 .value{
+    padding-top: 100px;
+    width: 90%;
+}
+
+.sub_company_content .box.b03 .con.c02 {
+    background-size: contain;
+    background-position: center;
+}
+
+.sub_company_content .box.b03 .con.c02 img {
+    top: -62px;
+    left: 60px;
+}
+
+.sub_company_content .box.b03 .con.c01, 
+.sub_company_content .box.b03 .con.c03{
+padding-top: 105px;
+}
+
+.sub_company_content .box.b03 .con.c03{
+    padding-left: 20px;
+}
+
+.sub_company_content .box.b03 .con.c04{
+    padding: 0 10px 0 40px;
+}
+
+.sub_company_content .box.b03 .con h2{
+    font-size: 20px;
+}
