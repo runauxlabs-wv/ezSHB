@@ -540,3 +540,68 @@ footer .logo {
     height: 23px;
     margin: 0 20px 0 0;
 }
+
+/* 서브페이지 - 1.회사소개 */
+
+.sub_company_bg,
+.sub_ccm_bg{
+    height: 480px;
+}
+
+.sub_company_bg .text_area, 
+.sub_ccm_bg .text_area{
+    padding: 150px 0;
+}
+
+.sub_company_bg .text_area h1, 
+.sub_ccm_bg .text_area h1{
+    font-size: 45px;
+}
+
+.sub_company_bg .text_area p, 
+.sub_ccm_bg .text_area p{
+padding: 30px 20px;
+}
+
+.sub_tab{
+    display: none;
+}
+
+.outer_container{
+    transform: translateY(-60%);
+    margin-bottom: 0;
+}
+
+.sub_company_content .box.b01{
+    margin: 0 0 1px 0;
+}
+
+.sub_company_content .box .contitle{
+    width: 200px;
+    padding-left: 20px;
+}
+
+.sub_company_content .box .txtbox{
+    display: block;
+}
+
+.sub_company_content .box .text_area,
+.sub_company_content .box .text_area.second{
+    border-right: none;
+    padding-bottom: 25px;
+}
+
+.sub_company_content .box .bg_title h1 {
+    transform: translateY(0%);
+    font-size: 60px;
+    line-height: 40px;
+}
+
+.sub_company_content .box.b02 .inner{
+    display: block;
+}
+
+.sub_company_content .box.b02 .con{
+    height: 150px;
+    margin: 20px auto;
+}
