@@ -2621,3 +2621,7 @@ fieldset {
 :-ms-input-placeholder {
  color:#888;
 }
+
+.sub_company_content .box.b03 .value_m{
+  display: none;
+}
