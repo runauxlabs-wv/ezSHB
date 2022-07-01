@@ -568,8 +568,7 @@ footer .logo {
 }
 
 .outer_container {
-    transform: translateY(-60%);
-    margin-bottom: 0;
+    margin-bottom: 80px;
 }
 
 .section_title{
@@ -664,4 +663,10 @@ footer .logo {
   position: absolute;
   left: 180px;
   top:-180px;
+}
+
+/* 서브페이지2 */
+
+header{
+    margin: 0 0 250px 0;
 }
