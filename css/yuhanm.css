@@ -670,3 +670,102 @@ footer .logo {
 header{
     margin: 0 0 250px 0;
 }
+
+.sub_company_content2 .conbox.c01{
+    padding-bottom: 50px;
+}
+
+.sub_company_content2 .conbox.c01 .inner{
+display: block;
+}
+
+.sub_company_content2 .conbox.c01 .arrow_forward_ios{
+    display: none;
+  }
+
+  .sub_company_content2 .inner .contitle{
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+
+  .sub_company_content2 .conbox.c01 .text_area{
+    width: 80%;
+    text-align: center;
+    padding: 15px 0;
+    background: #009fe31f;
+    border-radius: 50px;
+    margin-bottom: 15px;
+  }
+  .sub_company_content2 .conbox.c02 .inner .contitle{
+    padding-bottom: 0px;
+  }
+
+  .sub_company_content2 .inner{
+    display: block;
+  }
+
+  .sub_company_content2 .conbox.c02{
+    background: url(../images/yuhan/bg15.png) 75% 50% no-repeat;
+    background-size: cover;
+  }
+
+  .sub_company_content2 .ask .group{
+    display: block;
+  }
+
+  .sub_company_content2 .ask .group .box{
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 20px 0;
+  }
+
+  .sub_company_content2 .ask .group .box p{
+    padding: 20px 25px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .sub_company_content2 .ask .box .icon{
+    margin-bottom: 0;
+    margin: 20px 0;
+    width: 150px;
+    height: 150px;
+  }
+
+  #contact{
+    padding: 30px 10px;
+  }
+
+  #contact h3{
+    text-align: center;
+  }
+
+  #contact h4{
+    text-align: center;
+  }
+
+  .formbox{
+    display: block;
+  }
+
+  fieldset{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #contact textarea{
+    height: 200px;
+  }
+
+  #contact p{
+    margin-top: 20px;
+  }
+
+  #contact button[type="submit"]{
+    margin: 10px 0 0 5px;
+  }
+
+  .sub_company_content2 .conbox.c02{
+    padding: 80px 0 30px 0;
+  }
