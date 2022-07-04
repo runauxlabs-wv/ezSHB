@@ -10,7 +10,8 @@ body {
     margin: 0;
     min-width: 1280px;
     color: #333333;
-    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: Termina, sans-serif;
 }
 
 header,
@@ -24,16 +25,12 @@ section.myswiper {
     height: 100vh;
 }
 
-section.myswiper .sec01 {
-    background: #fff;
-}
-
 section.myswiper .sec02 {
-    background: #fff;
+    background: #FEDB77;
 }
 
 section.myswiper .sec03 {
-    background: #fff;
+    background: #f4f4f4;
 }
 
 section.myswiper .sec04 {
@@ -142,10 +139,6 @@ section.myswiper .sec05 {
     width: calc(var(--blur-3-size) * 2);
     bottom: 20vh;
     left: 20vw;
-}
-
-body {
-    font-family: Termina, sans-serif;
 }
 
 section {
