@@ -569,10 +569,12 @@ footer .logo {
 
 .outer_container {
     margin-bottom: 80px;
+    width: 75%;
 }
 
 .section_title{
-    font-size: 20px;
+    font-size: 25px;
+    left: -10%;
 }
 
 .section_title p{

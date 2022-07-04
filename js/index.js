@@ -2,7 +2,7 @@ var menu = ['HOME', 'ABOUT', 'PORTFOLIO', 'CONTACT', 'CONTACT'];
 var swiper = new Swiper('.myswiper', {
     slidesPerView: 1,
     direction: 'vertical',
-    effect : 'fade',
+    // effect : 'fade',
     mousewheel: true,
     keyboard: {
         enabled: true,

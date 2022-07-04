@@ -69,12 +69,12 @@ section.myswiper .sec05 {
     color: #333333;
     position: fixed;
     display: block;
-    top: 0;
+    top: 35px;
     left: 20px;
     z-index: 101;
     cursor: pointer;
     padding-left: 100px;
-    padding-top: 35px;
+    line-height: 50px;
 }
 
 .swiper-pagination-bullet {
@@ -93,7 +93,7 @@ section.myswiper .sec05 {
 }
 
 .swiper-pagination-bullet:hover{
-font-weight: 700;
+font-weight: 800;
 }
 
 .swiper-pagination-bullet::before {
@@ -134,11 +134,18 @@ font-weight: 700;
     border-bottom: 2px solid #333333;
 }
 
-.swiper-pagination-vertical.swiper-pagination-bullets,
+/* .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical>.swiper-pagination-bullets {
     right: 0;
     top: 0;
     transform: translate3d(0px, 0%, 0px);
+} */
+
+.swiper-container-vertical>.swiper-pagination-bullets {
+    right: 0;
+    top: 30px;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
 }
 
 /* 인덱스 메인페이지 */
