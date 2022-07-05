@@ -22,6 +22,14 @@
     }
 }
 
+@keyframes fadeInText {
+
+    100% {
+
+        opacity: 1;
+
+    }
+}
 
 * {
     box-sizing: border-box;
@@ -53,14 +61,6 @@ section.myswiper .sec02 {
 
 section.myswiper .sec03 {
     background: #f4f4f4;
-}
-
-section.myswiper .sec04 {
-    background: #fff;
-}
-
-section.myswiper .sec05 {
-    background: #fff;
 }
 
 .swiper-container .swiper-wrapper .swiper-slide.sec02,
@@ -171,7 +171,7 @@ section.myswiper .sec05 {
     transform: translate3d(0, -50%, 0);
 }
 
-/* 인덱스 메인페이지 */
+/* 1.인덱스 메인페이지 */
 
 :root {
     --color: #FEDB77;
@@ -223,7 +223,7 @@ section {
     overflow: hidden;
 }
 
-.credit {
+.sec01 .credit {
     position: relative;
     margin-top: 3rem;
     width: 100%;
@@ -231,11 +231,13 @@ section {
     z-index: 2;
 }
 
-.credit a {
+.sec01 .credit a {
     color: #333333;
+    opacity: 0;
+    animation: fadeInText 1.5s 3.0s ease-in forwards;
 }
 
-h3 {
+.sec01 h3 {
     font-weight: 700;
     margin: 2rem 0;
     font-size: clamp(4.5rem, 4vw, 3rem);
@@ -244,10 +246,12 @@ h3 {
     text-align: center;
     z-index: 2;
     position: relative;
+    opacity: 0;
+    animation: fadeInText 1.5s 0.5s ease-in forwards;
 }
 
 
-h1 {
+.sec01 h1 {
     font-weight: 800;
     margin: 2rem 0;
     font-size: clamp(6.5rem, 4vw, 3rem);
@@ -256,6 +260,8 @@ h1 {
     text-align: center;
     z-index: 2;
     position: relative;
+    opacity: 0;
+    animation: fadeInText 1.5s 1.5s ease-in forwards;
 }
 
 .scrollto {
@@ -293,3 +299,71 @@ h1 {
     font-weight: 500;
     color: #333333;
 }
+
+.fly_in_text {
+    left: 50%;
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 20;
+}
+
+.fly_in_text li {
+    display: inline-block;
+    font-weight: 800;
+    font-size: clamp(6.5rem, 4vw, 3rem);
+    margin-right: 10px;
+    margin: 2rem 0;
+    opacity: 0.5;
+    transition: all 3.0s ease;
+}
+
+.fly_in_text li:last-child {
+    margin-right: 0;
+}
+
+.fly_in_text.hidden li {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+/* 2. 어바웃 */
+
+.swiper-slide-active.sec02 h1{
+    font-size: 60px;
+    font-weight: 600;
+    animation: fadeInUp 1.5s;
+    text-align: center;
+}
+
+/* 3.포트폴리오 */
+
+/* 4.콘택트 */
+
+section.myswiper .sec04 {
+    background: #333333;
+    margin-top: 500px;
+    color: #fff;
+}
+
+.swiper-slide-active.sec04 .tel {
+    opacity: 0;
+    animation: fadeInText 1.5s ease-in forwards;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.swiper-slide-active.sec04 .mail{
+    opacity: 0;
+    animation: fadeInText 1.5s 0.5s ease-in forwards;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.swiper-slide-active.sec04 .tel span,
+.swiper-slide-active.sec04 .mail span{
+    font-weight: 300;
+    font-size: 50px;
+}
+

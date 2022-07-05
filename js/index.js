@@ -29,3 +29,14 @@ jQuery(document).ready(function(){
         //index넘버링으로 처리
     });
 });
+
+
+$(function() {
+    setTimeout(function() {
+      $(".fly_in_text").removeClass("hidden");
+    }, 700);
+ });
+
+
+
+ 
