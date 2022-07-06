@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
 
 @keyframes scrollani1 {
     0% {
@@ -501,7 +502,6 @@ section {
 .sec02 .about .box1 p,
 .sec02 .about .box2 p {
     font-size: 18px;
-    /* font-family: 'Noto Sans KR', sans-serif; */
     font-family: 'Pretendard', sans-serif;
     letter-spacing: 1px;
     line-height: 35px;
@@ -515,7 +515,7 @@ section {
     padding: 2px 5px;
     background: #333333;
     width: fit-content;
-    margin: 10px 0;
+    margin: 30px 0 10px 0;
 }
 
 .sec02 .about .box1,
@@ -531,6 +531,7 @@ section {
     border-radius: 5px;
     font-size: 13px;
     font-weight: 600;
+    margin-right: 5px;
 }
 
 .sec02 .about .box2 .skill {
@@ -548,18 +549,110 @@ section {
     justify-content: space-between;
 }
 
-/* 3.포트폴리오 */
+.sec02 .about .box1 .info p{
+    margin-bottom: 25px;
+}
 
-/* 4.콘택트 */
+.sec02 .about .box2 .edu p:nth-child(2){
+    font-style: italic;
+    opacity: 0.5;
+    font-size: 13px;
+}
 
-section.myswiper .sec04 {
+.sec02 .about_bg{
+    position: relative;
+}
+
+.sec02 .double_circle{
+    background: url(../images/index/double_circle.svg)0 0 no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -150px;
+    right: -100px;
+    z-index: -500;
+    opacity: 0.5;
+    transform: rotate(-10deg);
+}
+
+.sec02 .star_pink{
+    background: url(../images/index/star_pink.svg)0 0 no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    z-index: 20;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation: motion 0.8s linear 0.8s infinite alternate;
+    margin-top: 0;
+}
+
+.sec02 .star_sky{
+   background: url(../images/index/star_sky.svg)0 0 no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    z-index: 20;
+    position: absolute;
+    top: -100px;
+    right: 200px;
+    animation: motion 0.8s linear 0.5s infinite alternate;
+    margin-top: 0; 
+}
+
+.sec02 .star_yellow{
+   background: url(../images/index/star_yellow.svg)0 0 no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    z-index: 20;
+    position: absolute;
+    top: -180px;
+    right: 150px;
+    animation: motion 0.8s linear 0s infinite alternate;
+    margin-top: 0; 
+}
+
+/* 3. 프로젝트 A */
+
+section.myswiper .sec03{
+    display: flex;
+
+}
+.sec03 .left,
+.sec03 .right{
+    width: 50%;
+}
+
+.sec03 .right{
+    background: #f4f4f4;
+}
+
+.sec03 .right .text_area{
+    padding: 600px 100px; 
+}
+
+.sec03 .right .text_area p{
+    font-size: 15px;
+    font-family: 'Pretendard', sans-serif;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+/* 4. 프로젝트 B */
+
+/* 5.콘택트 */
+
+section.myswiper .sec05 {
     background: #000;
     margin-top: 500px;
     color: #fff;
     z-index: -9999;
 }
 
-.sec04 .noisy {
+.sec05 .noisy {
     width: 100%;
     padding: 0;
     height: 100vh;
@@ -570,26 +663,26 @@ section.myswiper .sec04 {
 }
 
 
-.sec04 .contact {
+.sec05 .contact {
     padding: 150px 100px;
 }
 
-.swiper-slide-active.sec04 .tel {
+.swiper-slide-active.sec05 .tel {
     opacity: 0;
     animation: fadeInText 1.5s ease-in forwards;
     font-size: 60px;
     font-weight: 600;
 }
 
-.swiper-slide-active.sec04 .mail {
+.swiper-slide-active.sec05 .mail {
     opacity: 0;
     animation: fadeInText 1.5s 0.5s ease-in forwards;
     font-size: 60px;
     font-weight: 600;
 }
 
-.swiper-slide-active.sec04 .tel span,
-.swiper-slide-active.sec04 .mail span {
+.swiper-slide-active.sec05 .tel span,
+.swiper-slide-active.sec05 .mail span {
     font-weight: 300;
     font-size: 50px;
 }

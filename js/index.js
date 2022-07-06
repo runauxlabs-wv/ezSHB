@@ -1,4 +1,4 @@
-var menu = ['HOME', 'ABOUT', 'PORTFOLIO', 'CONTACT', 'CONTACT'];
+var menu = ['HOME', 'ABOUT', 'PROJECT A', 'PROJECT B', 'CONTACT'];
 var swiper = new Swiper('.myswiper', {
     slidesPerView: 1,
     direction: 'vertical',
