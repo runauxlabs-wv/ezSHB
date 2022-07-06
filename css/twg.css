@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    min-width: 1280px;
+    color: #333333;
+    font-family: 'Pretendard', sans-serif;
+}
+
+header,
+nav,
+section,
+footer {
+    width: 100%;
+}
+
+section.myswiper {
+    height: 100vh;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: brown;
+    position: relative;
+}
+
+.swiper-pagination-bullet-active {
+    background: wheat;
+}
+
+/* .swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical>.swiper-pagination-bullets {
+    right: 0;
+    top: 0;
+    transform: translate3d(0px, 0%, 0px);
+} */
+
+.swiper-container-vertical>.swiper-pagination-bullets {
+    right: 0;
+    top: 30px;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+
+section.myswiper .sec02{
+    background: #f4f4f4;
+}
+
+section.myswiper .sec03{
+    background: tomato;
+}
+
+section.myswiper .sec04{
+    background: #000;
+}
+
+/* 비디오 */
+
+section.myswiper .sec01{
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section.myswiper .sec01 video{
+    position: absolute;
+    /* top: -60px; */
+    left: 50%;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%);
+}
