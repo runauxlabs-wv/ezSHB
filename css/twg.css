@@ -151,7 +151,7 @@ section.myswiper .sec02 {
 
 .sec02 .title{
     text-align: right;
-    padding-top: 380px;
+    padding-top: 320px;
 }
 
 .sec02 .line{
@@ -159,7 +159,7 @@ section.myswiper .sec02 {
     height: 1px;
     background: #fff;
     position: absolute;
-    top: 600px;
+    top: 500px;
     left: 0;
     opacity: 0.4;
 }
@@ -207,6 +207,58 @@ section.myswiper .sec02 {
     transition: 0.5s ease-in;
 }
 
+/* 프리뷰 */
+
+#preview{
+    z-index: 99;
+    position:absolute;
+    border:1px solid #ccc;
+    /* background:#333; */
+    padding:5px;
+    display:none;
+    color:#fff;
+    font-family: 'Amiri', serif;
+}
+
+.view table{
+    position: relative;
+}
+
+.view table tbody {
+    display: flex;
+    position: absolute;
+    top: -150px;
+}
+
+.view table tbody tr{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:flex-end; */
+    align-items: center;
+    margin: 0 30px;
+}
+
+.view table tbody tr th{
+    color: #fff;
+    padding: 20px 0;
+    font-family: 'Amiri', serif;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.view table tbody tr td{
+    overflow: hidden;
+}
+
+.view table tbody tr td img{
+    width: 220px;
+    height: 180px;
+    transition-duration: 0.3s;
+}
+
+.view table tbody tr td img:hover {transform: scale(1.2, 1.2); transition-duration: 0.5s;}
+
 /* 3. 섹션 */
 
 section.myswiper .sec03 {
@@ -214,10 +266,20 @@ section.myswiper .sec03 {
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    position: relative;
+}
+
+.sec03 .line{
+    width: 1px;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    top: 120px;
+    left: 115px;
 }
 
 .sec03 .title{
-    padding-top: 200px;
+    padding-top: 255px;
 }
 
 /* 4. 섹션 */
@@ -237,14 +299,4 @@ section.myswiper .sec04 {
     width: 400px;
     height: 3px;
     background: #fff;
-}
-
-#preview{
-    z-index: 99;
-    position:absolute;
-    border:1px solid #ccc;
-    background:#333;
-    padding:5px;
-    display:none;
-    color:#fff;
 }
