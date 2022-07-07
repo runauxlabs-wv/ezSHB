@@ -39,7 +39,7 @@ $(document).ready(function() {
     $(document).on("mouseover",".gallery",function(e){
         var image_data = $(this).data("image");
         var add_caption = (image_data != undefined) ? "<br/>" + image_data : "" ;
-        $("body").append("<p id='preview'><img src='"+ $(this).attr("src") +"' width='420px' />"+ add_caption +"</p>");
+        $("body").append("<p id='preview'><img src='"+ $(this).attr("src") +"' width='410px' />"+ add_caption +"</p>");
         $("#preview")
             .css("top",(e.pageY - xOffset) + "px")
             .css("left",(e.pageX + yOffset) + "px")

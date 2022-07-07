@@ -107,7 +107,7 @@ header .nav{
     justify-content: space-between;
     width: 90%;
     margin: 40px auto;
-    position: relativ;
+    position: relative;
 }
 
 header .nav .logo a{
@@ -116,8 +116,8 @@ header .nav .logo a{
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 18px;
-    left: 910px;
+    top: -20px;
+    left: 815px;
 }
 
 header .nav .right{
@@ -150,18 +150,25 @@ section.myswiper .sec02 {
 }
 
 .sec02 .title{
-    text-align: right;
-    padding-top: 320px;
+    text-align: left;
+    padding-top: 185px;
 }
 
 .sec02 .line{
-    width: 800px;
+    width: 100%;
     height: 1px;
     background: #fff;
     position: absolute;
-    top: 500px;
+    bottom: 150px;
     left: 0;
-    opacity: 0.4;
+    opacity: 0.5;
+}
+
+.sec02 .line2{
+    width: 300px;
+    height: 3px;
+    background: #fff;
+    float: left;
 }
 
 .title h1{
@@ -170,7 +177,7 @@ section.myswiper .sec02 {
     font-family: 'Amiri', serif;
     font-weight: 700;
     letter-spacing: 3px;
-    padding: 30px 0;
+    padding: 50px 0 30px 0;
 }
 
 .title h2{
@@ -226,25 +233,37 @@ section.myswiper .sec02 {
 
 .view table tbody {
     display: flex;
-    position: absolute;
-    top: -150px;
 }
 
 .view table tbody tr{
     display: flex;
     flex-direction: column;
-    /* justify-content:flex-end; */
+    justify-content:flex-end;
     align-items: center;
     margin: 0 30px;
 }
 
+.view table tbody tr:hover{
+    transform: translateY(-10%);
+    transition: 0.6s ease-in-out;
+}
+
+.view table tbody tr:hover th{
+    background: #FEDB77;
+    color: #281E1C;
+    font-weight: 700;
+}
+
 .view table tbody tr th{
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
+    margin-bottom: 20px;
     font-family: 'Amiri', serif;
-    width: 200px;
+    width: 220px;
     display: flex;
     justify-content: center;
+    background: rgba(255, 255, 255, 0.233);
+    border-radius: 7px;
 }
 
 .view table tbody tr td{
@@ -276,6 +295,7 @@ section.myswiper .sec03 {
     position: absolute;
     top: 120px;
     left: 115px;
+    opacity: 0.5;
 }
 
 .sec03 .title{

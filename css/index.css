@@ -206,19 +206,19 @@ section.myswiper .sec03{
     border-bottom: 2px solid #333333;
 }
 
-/* .swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical>.swiper-pagination-bullets {
     right: 0;
     top: 0;
     transform: translate3d(0px, 0%, 0px);
-} */
+}
 
-.swiper-container-vertical>.swiper-pagination-bullets {
+/* .swiper-container-vertical>.swiper-pagination-bullets {
     right: 0;
     top: 30px;
     -webkit-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
-}
+} */
 
 /* 1.인덱스 메인페이지 */
 
