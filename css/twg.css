@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 
 * {
     box-sizing: border-box;
@@ -29,43 +30,36 @@ section.myswiper {
     width: 10px;
     height: 10px;
     border-radius: 50px;
-    background: brown;
+    background: transparent;
+    border: 1px solid #fff;
     position: relative;
+    opacity: 1;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 6px;
 }
 
 .swiper-pagination-bullet-active {
-    background: wheat;
+    background: #fff;
 }
 
-/* .swiper-pagination-vertical.swiper-pagination-bullets,
-.swiper-vertical>.swiper-pagination-bullets {
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
     right: 0;
-    top: 0;
-    transform: translate3d(0px, 0%, 0px);
-} */
-
-.swiper-container-vertical>.swiper-pagination-bullets {
-    right: 0;
-    top: 30px;
     -webkit-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
 }
 
-section.myswiper .sec02{
-    background: #f4f4f4;
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    top: 155px;
+    left: 0;
+    width: 100%;
+    height: 20px;
 }
 
-section.myswiper .sec03{
-    background: tomato;
-}
+/* 메인 */
 
-section.myswiper .sec04{
-    background: #000;
-}
-
-/* 비디오 */
-
-section.myswiper .sec01{
+section.myswiper .sec01 {
     display: block;
     position: relative;
     width: 100vw;
@@ -73,14 +67,152 @@ section.myswiper .sec01{
     overflow: hidden;
 }
 
-section.myswiper .sec01 video{
+section.myswiper .sec01 video {
     position: absolute;
     /* top: -60px; */
     left: 50%;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
-    width: auto; 
+    width: auto;
     height: auto;
     z-index: -100;
     transform: translateX(-50%);
+}
+
+.sec01 .bg_wrap {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    z-index: -20;
+    position: absolute;
+}
+
+.sec01 .mainlogo {
+    background: url(../images/twg/TWG_logo_white.svg)0 0 no-repeat;
+    background-size: contain;
+    width: 600px;
+    height: 600px;
+    margin: 290px auto;
+}
+
+header {
+    position: fixed;
+    z-index: 600;
+}
+
+header .nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 40px auto;
+    position: relativ;
+}
+
+header .nav .logo{
+    background: url(../images/twg/TWG_logo_white.svg)0 0 no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 18px;
+    left: 910px;
+}
+
+header .nav .right{
+    display: flex;
+}
+
+header .bar {
+    background: url(../images/twg/bar.svg)0 0 no-repeat;
+    width: 100%;
+    height: 20px;
+    background-size: contain;
+    position: absolute;
+    top: 110px;
+}
+
+/* 2. 섹션 */
+
+section.myswiper .sec02,
+section.myswiper .sec03,
+section.myswiper .sec04{
+    padding: 150px 100px;
+}
+
+section.myswiper .sec02 {
+    background: url(../images/twg/sec02_bg.png) 0 30% no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.sec02 .title{
+    text-align: right;
+    padding-top: 380px;
+}
+
+.sec02 .line{
+    width: 800px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    opacity: 0.4;
+}
+
+.title h1{
+    font-size: 45px;
+    color: #fff;
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 30px 0;
+}
+
+.title h2{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Amiri', serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.title button{
+    padding: 8px 12px;
+    font-size: 15px;
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+    color: #fff;
+    background: #281E1C;
+    border: none;
+    border-radius: 7px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.title button:hover{
+    background:#FEDB77;
+    color: #281E1C;
+    transition: 0.5s ease-in;
+}
+
+/* 3. 섹션 */
+
+section.myswiper .sec03 {
+    background: url(../images/twg/sec03_bg.png) 0 20% no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* 4. 섹션 */
+
+section.myswiper .sec04 {
+    background: url(../images/twg/sec04_bg.png) 0 0 no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
