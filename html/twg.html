@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" type="text/css"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel='stylesheet' href='https://use.typekit.net/skn8ash.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="../css/twg.css">
 </head>
 
@@ -23,9 +22,13 @@
                 <a href="#"></a>
             </div>
             <div class="right">
-                <div class="search">검색</div>
-                <div class="cart">카트</div>
-                <div class="my">마이</div>
+                <div class="outline">
+                    <div class="search">
+                        <input class="search__input" type="text" placeholder="Search">
+                    </div>
+                </div>
+                <div class="cart"></div>
+                <div class="my"></div>
             </div>
         </div>
         <div class="bar"></div>
@@ -41,61 +44,105 @@
                 <div class="mainlogo"></div>
             </div>
             <div class="swiper-slide sec02">
-                <div class="line"></div>
-                <div class="title">
-                    <div class="line2"></div>
-                    <h1>SUMMER ESSENTIALS STARTER KIT</h1>
-                    <h2>CREATE YOUR GIFT SET</h2>
-                    <button>ADD TO BAG</button>
+                <div class="section">
+                    <ul class="case-study-wrapper">
+                        <li class="case-study-name">
+                            <a href="#" class="hover-target">SUMMER ESSENTIALS STARTER KIT</a>
+                        </li>
+                        <li class="case-study-name">
+                            <a href="#" class="hover-target">NEW WORLD TEA</a>
+                        </li>
+                        <li class="case-study-name">
+                            <a href="#" class="hover-target">2022 DARJEELING FIRST FLUSH HARVEST</a>
+                        </li>
+                        <li class="case-study-name">
+                            <a href="#" class="hover-target">MY CUP OF MAGIC MUSIC BOX TEA</a>
+                        </li>
+                    </ul>
+                    <ul class="case-study-images">
+                        <li>
+                            <div class="img-hero-background"></div>
+                            <div class="dark-over-hero">
+                            </div>
+                            <div class="hero-number-back">SUMMER</div>
+                            <div class="hero-number">01</div>
+                            <div class="hero-number-fixed">04</div>
+                            <div class="case-study-title">
+                                <div class="line"></div>
+                                <div class="title">
+                                    <h1>SUMMER ESSENTIALS STARTER KIT</h1>
+                                    <h2>CREATE YOUR GIFT SET</h2>
+                                    <button>ADD TO BAG</button>
+                                </div>
+                                <div class="view">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>TWG TEA GLASS STRAW
+                                                    <span class="material-icons-outlined shopping_bag">
+                                                        shopping_bag
+                                                    </span>
+                                                </th>
+                                                <td>
+                                                    <img src="../images/twg/sec02_pre2.jpg" class="gallery"
+                                                        alt="small_image" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>SUMMER HOLIDAY ICED TEABAG TASTER
+                                                    <span class="material-icons-outlined shopping_bag">
+                                                        shopping_bag
+                                                    </span>
+                                                </th>
+                                                <td>
+                                                    <img src="../images/twg/sec02_pre1.jpg" class="gallery"
+                                                        data-image="$50.0" alt="small_image" />
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>ICED TEA CARAFE IN BLUE
+                                                    <span class="material-icons-outlined shopping_bag">
+                                                        shopping_bag
+                                                    </span>
+                                                </th>
+                                                <td>
+                                                    <img src="../images/twg/sec02_pre3.jpg" class="gallery"
+                                                        data-image="$50.0" alt="small_image" />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="img-hero-background"></div>
+                            <div class="hero-number-back">NEW WORLD</div>
+                            <div class="hero-number">02</div>
+                            <div class="case-study-title">advertising, art direction</div>
+                        </li>
+                        <li>
+                            <div class="img-hero-background"></div>
+                            <div class="hero-number-back">DARJEELING</div>
+                            <div class="hero-number">03</div>
+                            <div class="case-study-title">photography, retouching</div>
+                        </li>
+                        <li>
+                            <div class="img-hero-background"></div>
+                            <div class="hero-number-back">MAGIC</div>
+                            <div class="hero-number">04</div>
+                            <div class="case-study-title">photography, advertising</div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="view">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>TWG TEA GLASS STRAW</th>
-                                <td>
-                                    <div class="wrap"></div>
-                                    <img src="../images/twg/sec02_pre2.jpg" class="gallery"
-                                        alt="small_image" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>SUMMER HOLIDAY ICED TEABAG TASTER</th>
-                                <td>
-                                    <img src="../images/twg/sec02_pre1.jpg" class="gallery"
-                                        data-image="$50.0" alt="small_image" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>ICED TEA CARAFE IN BLUE</th>
-                                <td>
-                                    <img src="../images/twg/sec02_pre3.jpg" class="gallery"
-                                        data-image="$50.0" alt="small_image" />
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <!-- Page cursor -->
+                <div class='cursor' id="cursor"></div>
+                <div class='cursor2' id="cursor2"></div>
+                <div class='cursor3' id="cursor3"></div>
             </div>
-            <div class="swiper-slide sec03">
-                <div class="line"></div>
-                <div class="title">
-                    <h1>NEW WORLD TEA</h1>
-                    <h2>PACKAGED LOOSE LEAF TEAS</h2>
-                    <h3>S$45.00</h3>
-                    <button>ADD TO BAG</button>
-                </div>
-            </div>
-            <div class="swiper-slide sec04">
-                <div class="title">
-                    <div class="line"></div>
-                    <h1>2022 DARJEELING FIRST FLUSH HARVEST GIFTS</h1>
-                    <h2>MARGARET'S HOPE FTGFOP1
-                        LOOSE LEAF TEAS</h2>
-                    <h3>S$45.50 per 50g</h3>
-                    <button>ADD TO BAG</button>
-                </div>
-            </div>
+        </div>
         </div>
     </section>
 </body>
