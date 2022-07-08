@@ -29,11 +29,13 @@ section.myswiper {
 }
 
 .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50px;
-    background: transparent;
-    border: 1px solid #fff;
+    /* background: transparent; */
+    background: url(../images/twg/bullet.svg)0 0 no-repeat;
+    background-size: cover;
+    /* border: 1px solid #fff; */
     position: relative;
     opacity: 1;
 }
@@ -43,7 +45,10 @@ section.myswiper {
 }
 
 .swiper-pagination-bullet-active {
-    background: #fff;
+    width: 15px;
+    height: 15px;
+    background: url(../images/twg/bullet_active.svg)0 0 no-repeat;
+    background-size: cover;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets,
@@ -134,6 +139,7 @@ header .nav .right .cart,
 header .nav .right .my {
     position: relative;
     top: -1px;
+    cursor: pointer;
 }
 
 header .nav .right .cart {
@@ -177,6 +183,7 @@ header .nav .right .my {
     background: transparent;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 input{
