@@ -166,11 +166,11 @@ header .nav .right .my {
     background-image: url("../images/twg/search.svg");
     background-repeat: no-repeat;
     background-size: 25px 25px;
-    background-position: 86% center;
+    background-position: 82% center;
     border-radius: 50px;
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .search__input {
@@ -181,6 +181,7 @@ header .nav .right .my {
 
 input{
     color: #fff;
+    font-family: 'Pretendard', sans-serif;
 }
 
 header .bar {
@@ -294,7 +295,7 @@ section.myswiper .sec02 {
 .cursor3.hover {
     -webkit-transform: scale(2) translateX(-25%) translateY(-25%);
     transform: scale(2) translateX(-25%) translateY(-25%);
-    border: none
+    border: none;
 }
 
 .cursor2 {

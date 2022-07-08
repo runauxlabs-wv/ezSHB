@@ -32,7 +32,7 @@ jQuery(document).ready(function(){
 
 // 갤러리 미리보기
 $(document).ready(function() {
-    var xOffset = 10;
+    var xOffset = 100;
     var yOffset = 30;
 
     //마우스 오버시 preview 생성
