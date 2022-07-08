@@ -38,6 +38,7 @@ section.myswiper {
     /* border: 1px solid #fff; */
     position: relative;
     opacity: 1;
+    transform: rotate(45deg);
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
