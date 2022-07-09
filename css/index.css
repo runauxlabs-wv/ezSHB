@@ -447,14 +447,20 @@ section {
 
 /* 2. 어바웃 */
 .swiper-container .swiper-wrapper .swiper-slide.sec02 {
-    padding: 180px 150px;
+    padding: 150px 150px;
 }
 
 .swiper-slide-active.sec02 h1 {
-    font-size: 60px;
+    font-size: 120px;
     font-weight: 600;
-    animation: fadeInUp 1.5s;
-    text-align: center;
+    animation: fadeInLeft 1.5s;
+    text-align: right;
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 200px;
+    left: 45px;
+    color: #3333330a;
+    font-style: italic;
 }
 
 .sec02 .about {
@@ -521,7 +527,7 @@ section {
 .sec02 .about .box1,
 .sec02 .about .box2 {
     width: 50%;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .sec02 .about .box2 span {
