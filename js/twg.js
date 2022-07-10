@@ -127,3 +127,10 @@ $(document).ready(function() {
   
   
   })(jQuery); 
+
+//   햄버거 메뉴
+
+$('#toggle').click(function() {
+	$('#toggle .bar').toggleClass('animate');
+	$('#page').toggleClass('overlay');
+});
