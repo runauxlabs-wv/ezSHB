@@ -134,3 +134,8 @@ $('#toggle').click(function() {
 	$('#toggle .bar').toggleClass('animate');
 	$('#page').toggleClass('overlay');
 });
+
+$('#toggle_dark').click(function() {
+	$('#toggle_dark .bar').toggleClass('animate');
+	$('#page').toggleClass('overlay');
+});

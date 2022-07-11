@@ -12,7 +12,7 @@ body {
     padding: 0;
     margin: 0 auto;
     min-width: 1280px;
-    color: #333333;
+    color: #281E1C;
     font-family: 'Pretendard', sans-serif;
     overflow: hidden;
 }
@@ -133,13 +133,27 @@ header .menu .logo a {
     z-index: 9999;
 }
 
+header .menu .logo_dark a {
+    background: url(../images/twg/TWG_logo_dark.svg)0 0 no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    left: 815px;
+    z-index: 9999;
+}
+
+
 header .menu .right {
     display: flex;
     align-items: center;
 }
 
 header .menu .right .cart,
-header .menu .right .my {
+header .menu .right .my,
+header .menu .right .cart_dark,
+header .menu .right .my_dark {
     position: relative;
     top: -1px;
     cursor: pointer;
@@ -154,14 +168,36 @@ header .menu .right .cart {
     padding-bottom: 40px;
 }
 
+header .menu .right .cart_dark {
+    background: url(../images/twg/cart_dark.svg)0 0 no-repeat;
+    width: 40px;
+    height: 35px;
+    background-size: contain;
+    margin-right: 20px;
+    padding-bottom: 40px;
+}
+
 header .menu .right .my {
     background: url(../images/twg/my.svg)0 0 no-repeat;
     width: 35px;
     height: 30px;
     background-size: contain;
 }
+
+header .menu .right .my_dark {
+    background: url(../images/twg/my_dark.svg)0 0 no-repeat;
+    width: 35px;
+    height: 30px;
+    background-size: contain;
+}
+
 .outline{
     background: url(../images/twg/searchout.svg) 0 0 no-repeat;
+    background-size: contain;
+}
+
+.outline_dark{
+    background: url(../images/twg/searchout_dark.svg) 0 0 no-repeat;
     background-size: contain;
 }
 
@@ -183,6 +219,24 @@ header .menu .right .my {
     margin-right: 20px;
 }
 
+.search_dark {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: transparent;
+    background-image: url("../images/twg/search_dark.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 82% center;
+    border-radius: 50px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    margin-right: 20px;
+}
+
 .search__input {
     background: transparent;
     border: none;
@@ -191,7 +245,7 @@ header .menu .right .my {
 }
 
 input{
-    color: #fff;
+    color: #a39494;
     font-family: 'Pretendard', sans-serif;
     letter-spacing: 1px;
 }
@@ -205,9 +259,19 @@ header .menubar {
     top: 110px;
 }
 
+header .menubar_dark {
+    background: url(../images/twg/bar_dark.svg)0 0 no-repeat;
+    width: 100%;
+    height: 20px;
+    background-size: contain;
+    position: absolute;
+    top: 110px;
+}
+
 /* 햄버거 메뉴 */
 
-#toggle {
+#toggle,
+#toggle_dark {
     position: absolute;
     top: 10px;
     width: 30px;
@@ -224,20 +288,31 @@ header .menubar {
     background: #fff;
 }
 
-#toggle div.bar {
+#toggle_dark div.bar,
+#toggle_dark div.bar:before,
+#toggle_dark div.bar:after {
+    width: 100%;
+    height: 3px;
+    background: #281E1C;
+}
+
+#toggle div.bar,
+#toggle_dark div.bar{
     position: relative;
     transform: translateY(9px);
     transition: all 0.3s 0.3s ease;
 }
 
-#toggle div.bar:before {
+#toggle div.bar:before,
+#toggle_dark div.bar:before {
     content: " ";
     position: absolute;
     bottom: 9px;
     transition: bottom 0.3s 0.3s ease, transform 0.3s ease;
 }
 
- #toggle div.bar:after {
+ #toggle div.bar:after,
+ #toggle_dark div.bar:after{
     content: " ";
     position: absolute;
     top: 9px;
@@ -246,24 +321,26 @@ header .menubar {
 
 /* Animation */
 
-#toggle div.bar.animate {
+#toggle div.bar.animate,
+#toggle_dark div.bar.animate {
     background: rgba(255, 255, 255, 0);
 }
 
-#toggle div.bar.animate:after {
+#toggle div.bar.animate:after,
+#toggle_dark div.bar.animate:after {
     top: 0;
     transform: rotate(45deg);
     transition: top 0.3s ease, transform 0.3s 0.3s ease;
 }
 
-#toggle div.bar.animate:before {
+#toggle div.bar.animate:before,
+#toggle_dark div.bar.animate:before {
     bottom: 0;
     transform: rotate(-45deg);
     transition: bottom 0.3s ease, transform 0.3s 0.3s ease;
 }
 
-
-#overlay {
+#overlay{
     position: fixed;
     top: 0;
     right: 0;
@@ -277,25 +354,44 @@ header .menubar {
     background: #281E1C;
 }
 
-#overlay nav {
+#overlay_dark{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease, max-height 0s 0.6s ease;
+    z-index: 100;
+    opacity: 1;
+    background: #FEDB77;
+}
+
+#overlay nav,
+#overlay_dark nav {
   position: absolute;
   bottom: 30px;
   left: 30px;
 }
 
 #overlay nav ul,
-#overlay nav ul li {
+#overlay nav ul li,
+#overlay_dark nav ul,
+#overlay_dark nav ul li {
     margin: 0;
     padding: 0;
     display: block;
     position: static;
 }
 
- #overlay nav ul {
+ #overlay nav ul,
+ #overlay_dark nav ul {
     padding: 30px;
  }
 
- #overlay nav ul li {
+ #overlay nav ul li,
+ #overlay_dark nav ul li {
     margin-bottom: 10px;
     opacity: 0;
     transition: all 0.9s 0s ease;
@@ -316,6 +412,20 @@ header .menubar {
     font-family: 'Amiri', serif;
  }
 
+ #overlay_dark nav ul li a{
+position: relative;
+   width: fit-content;
+   height: 50px;
+   display: inline-block;
+   transition: all 0.6s 0s ease;
+    text-transform: normal;
+    font-size: 35px;
+    font-weight: 300;
+    color: #281E1C;
+    text-decoration: none;
+    font-family: 'Amiri', serif;
+ }
+
  #overlay nav ul li a:after {
    content: " ";
    position: absolute;
@@ -328,53 +438,75 @@ header .menubar {
    transition: all 0.6s 0s ease;
  }
 
- #overlay nav ul li a:hover:after {
+ #overlay_dark nav ul li a:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    opacity: 0;
+    height: 3px;
+    background: #281E1C;
+    transition: all 0.6s 0s ease;
+  }
+
+ #overlay nav ul li a:hover:after,
+ #overlay_dark nav ul li a:hover:after {
    width: 100%;
    opacity: 1;
  }
 
- #overlay nav ul li a:hover {
+ #overlay nav ul li a:hover,
+ #overlay_dark nav ul li a:hover {
    color: #888888;
  }
 
- #overlay nav ul li a:nth-of-type(2){
+ #overlay nav ul li a:nth-of-type(2),
+ #overlay_dark nav ul li a:nth-of-type(2){
     display: none;
     font-size: 30px;
     font-family: 'pretendard', serif;
     letter-spacing: 1px;
  }
 
- #overlay nav ul li:hover a:nth-of-type(2){
+ #overlay nav ul li:hover a:nth-of-type(2),
+ #overlay_dark nav ul li:hover a:nth-of-type(2){
     display: block;
  }
 
- #overlay nav ul li:hover a:nth-of-type(1){
+ #overlay nav ul li:hover a:nth-of-type(1),
+ #overlay_dark nav ul li:hover a:nth-of-type(1){
     display: none;
  }
 
- #page.overlay #overlay nav ul li:nth-child(1) {
+ #page.overlay #overlay nav ul li:nth-child(1),
+ #page.overlay #overlay_dark nav ul li:nth-child(1) {
    transition: all 0.9s 0.6s ease;
  }
- #page.overlay #overlay nav ul li:nth-child(2) {
+ #page.overlay #overlay nav ul li:nth-child(2),
+ #page.overlay #overlay_dark nav ul li:nth-child(2) {
    transition: all 0.9s 0.8s ease;
  }
- #page.overlay #overlay nav ul li:nth-child(3) {
+ #page.overlay #overlay nav ul li:nth-child(3),
+ #page.overlay #overlay_dark nav ul li:nth-child(3) {
    transition: all 0.9s 1.0s ease;
  }
- #page.overlay #overlay nav ul li:nth-child(4) {
+ #page.overlay #overlay nav ul li:nth-child(4),
+ #page.overlay #overlay_dark nav ul li:nth-child(4) {
    transition: all 0.9s 1.2s ease;
  }
- #page.overlay #overlay nav ul li:nth-child(5) {
+ #page.overlay #overlay nav ul li:nth-child(5),
+ #page.overlay #overlay_dark nav ul li:nth-child(5) {
    transition: all 0.9s 1.4s ease;
  }
- #page.overlay #overlay nav ul li:nth-child(6) {
+ #page.overlay #overlay nav ul li:nth-child(6),
+ #page.overlay #overlay_dark nav ul li:nth-child(6) {
     transition: all 0.9s 1.6s ease;
   }
 
 
-
-
-#page.overlay #overlay {
+#page.overlay #overlay,
+#page.overlay #overlay_dark {
     position: fixed;
     top: 0;
     right: 0;
@@ -386,7 +518,8 @@ header .menubar {
     transition: all 0.3s ease;
 }
 
-#page.overlay #overlay nav ul li {
+#page.overlay #overlay nav ul li,
+#page.overlay #overlay_dark nav ul li {
 
   margin-left: 0;
   opacity: 1;
@@ -1019,3 +1152,9 @@ section.myswiper .sec04 {
 
 
 /* 서브페이지 1- 브랜드 소개 */
+
+.brand_story{
+    width: 100vw;
+    height: 100vh;
+    background: #FFFEF1;
+}
