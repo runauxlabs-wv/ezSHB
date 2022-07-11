@@ -447,7 +447,7 @@ section {
 
 /* 2. 어바웃 */
 .swiper-container .swiper-wrapper .swiper-slide.sec02 {
-    padding: 150px 150px;
+    padding: 170px 150px;
 }
 
 .swiper-slide-active.sec02 h1 {
@@ -567,6 +567,7 @@ section {
 
 .sec02 .about_bg{
     position: relative;
+    top: 80px;
 }
 
 .sec02 .double_circle{
@@ -623,24 +624,25 @@ section {
 
 /* 3. 프로젝트 A */
 
-section.myswiper .sec03{
+section.myswiper .sec03,
+section.myswiper .sec04{
     display: flex;
 
 }
-.sec03 .left,
-.sec03 .right{
+.project_photo,
+.cont{
     width: 50%;
 }
 
-.sec03 .right{
+.cont{
     background: #f4f4f4;
 }
 
-.sec03 .right .text_area{
+.cont .text_area{
     padding: 600px 100px; 
 }
 
-.sec03 .right .text_area p{
+.cont .text_area p{
     font-size: 15px;
     font-family: 'Pretendard', sans-serif;
     letter-spacing: 1px;
