@@ -147,16 +147,17 @@ header .menu .right .my {
 
 header .menu .right .cart {
     background: url(../images/twg/cart.svg)0 0 no-repeat;
-    width: 35px;
-    height: 25px;
+    width: 40px;
+    height: 35px;
     background-size: contain;
     margin-right: 20px;
+    padding-bottom: 40px;
 }
 
 header .menu .right .my {
     background: url(../images/twg/my.svg)0 0 no-repeat;
     width: 35px;
-    height: 25px;
+    height: 30px;
     background-size: contain;
 }
 .outline{
@@ -303,10 +304,16 @@ header .menubar {
 
  #overlay nav ul li a {
    position: relative;
+   width: fit-content;
    height: 50px;
    display: inline-block;
-   color: #ffffff;
    transition: all 0.6s 0s ease;
+    text-transform: normal;
+    font-size: 35px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Amiri', serif;
  }
 
  #overlay nav ul li a:after {
@@ -316,8 +323,8 @@ header .menubar {
    bottom: 0;
    width: 0;
    opacity: 0;
-   height: 1px;
-   background: white;
+   height: 3px;
+   background: #FEDB77;
    transition: all 0.6s 0s ease;
  }
 
@@ -328,6 +335,21 @@ header .menubar {
 
  #overlay nav ul li a:hover {
    color: #888888;
+ }
+
+ #overlay nav ul li a:nth-of-type(2){
+    display: none;
+    font-size: 30px;
+    font-family: 'pretendard', serif;
+    letter-spacing: 1px;
+ }
+
+ #overlay nav ul li:hover a:nth-of-type(2){
+    display: block;
+ }
+
+ #overlay nav ul li:hover a:nth-of-type(1){
+    display: none;
  }
 
  #page.overlay #overlay nav ul li:nth-child(1) {
@@ -350,13 +372,7 @@ header .menubar {
   }
 
 
- #overlay nav ul li a {
-    text-transform: normal;
-    font-size: 35px;
-    font-weight: 300;
-    color: white;
-    text-decoration: none;
- }
+
 
 #page.overlay #overlay {
     position: fixed;
@@ -763,20 +779,38 @@ section.myswiper .sec02 {
     font-family: 'Amiri', serif;
 }
 
-.view {
+.view,
+.view2,
+.view3 {
     display: flex;
     position: relative;
     /* margin-top: 50px; */
 }
 
-.view table tbody {
+.view table tbody{
     display: flex;
     position: absolute;
     left: 900px;
     top: -20px;
 }
 
-.view table tbody tr {
+.view2 table tbody{
+    display: flex;
+    position: absolute;
+    left: 1050px;
+    top: -20px; 
+}
+
+.view3 table tbody{
+    display: flex;
+    position: absolute;
+    left: 700px;
+    top: -20px; 
+}
+
+.view table tbody tr,
+.view2 table tbody tr,
+.view3 table tbody tr{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -784,25 +818,31 @@ section.myswiper .sec02 {
     margin-right: 30px;
 }
 
-.view table tbody tr:hover {
+.view table tbody tr:hover,
+.view2 table tbody tr:hover,
+.view3 table tbody tr:hover {
     transform: translateY(-10%);
     transition: 0.6s ease-in-out;
 }
 
-.view table tbody tr:hover th {
+.view table tbody tr:hover th,
+.view2 table tbody tr:hover th,
+.view3 table tbody tr:hover th {
     background: #FEDB77;
     color: #281E1C;
     font-weight: 700;
 }
 
-.view table tbody tr th {
+.view table tbody tr th,
+.view2 table tbody tr th,
+.view3 table tbody tr th{
     color: #fff;
     padding: 10px;
     margin-bottom: 20px;
     font-family: 'Amiri', serif;
     width: 220px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background: rgba(255, 255, 255, 0.233);
     border-radius: 7px;
     align-items: center;
@@ -810,12 +850,16 @@ section.myswiper .sec02 {
     text-align: center;
 }
 
-.view table tbody tr:hover .shopping_bag {
+.view table tbody tr:hover .shopping_bag,
+.view2 table tbody tr:hover .shopping_bag,
+.view3 table tbody tr:hover .shopping_bag  {
     background: #281E1C;
     color: #FEDB77;
 }
 
-.view table tbody tr th .shopping_bag {
+.view table tbody tr th .shopping_bag,
+.view2 table tbody tr th .shopping_bag,
+.view3 table tbody tr th .shopping_bag {
     line-height: 35px;
     padding: 0 5px;
     opacity: 1;
@@ -823,17 +867,28 @@ section.myswiper .sec02 {
     background: rgba(255, 255, 255, 0.219);
 }
 
-.view table tbody tr td {
+.view table tbody tr td,
+.view2 table tbody tr td,
+.view3 table tbody tr td {
     overflow: hidden;
 }
 
-.view table tbody tr td img {
+.view table tbody tr td img,
+.view3 table tbody tr td img{
     width: 160px;
     height: auto;
     transition-duration: 0.3s;
 }
 
-.view table tbody tr td img:hover {
+.view2 table tbody tr td img{
+    width: 180px;
+    height: auto;
+    transition-duration: 0.3s;
+}
+
+.view table tbody tr td img:hover,
+.view2 table tbody tr td img:hover,
+.view3 table tbody tr td img:hover {
     transform: scale(1.2, 1.2);
     transition-duration: 0.5s;
 }
