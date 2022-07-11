@@ -892,7 +892,7 @@ section.myswiper .sec02 {
 .view table tbody tr td img:hover,
 .view2 table tbody tr td img:hover,
 .view3 table tbody tr td img:hover {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.3, 1.3);
     transition-duration: 0.5s;
 }
 
@@ -1016,3 +1016,6 @@ section.myswiper .sec04 {
     height: 3px;
     background: #fff;
 }
+
+
+/* 서브페이지 1- 브랜드 소개 */
