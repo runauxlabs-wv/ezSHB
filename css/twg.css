@@ -644,7 +644,7 @@ section.myswiper .sec02 {
     list-style: none;
     opacity: 0;
     font-size: 18vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'pretendard', sans-serif;
     font-weight: 900;
     line-height: 1;
     color: rgba(255, 255, 255, .12);
@@ -665,7 +665,7 @@ section.myswiper .sec02 {
     list-style: none;
     opacity: 0;
     font-size: 13px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'pretendard', sans-serif;
     font-weight: 300;
     line-height: 1;
     color: #fff;
@@ -678,7 +678,7 @@ section.myswiper .sec02 {
 
 .case-study-images li .hero-number-fixed {
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
     left: 50%;
     margin-left: 30px;
     width: 40px;
@@ -690,8 +690,11 @@ section.myswiper .sec02 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 1;
-    color: #fff;
+    color: #281E1C;
     z-index: 6;
+    background: #FEDB77;
+    padding: 10px 0px;
+    border-radius: 50px;
 }
 
 .case-study-images li .hero-number-fixed:before {
