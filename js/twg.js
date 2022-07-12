@@ -139,3 +139,19 @@ $('#toggle_dark').click(function() {
 	$('#toggle_dark .bar').toggleClass('animate');
 	$('#page').toggleClass('overlay');
 });
+
+
+// 서브페이지 스와이퍼
+new Swiper('.subswiper', {
+    slidesPerView: 'auto',
+    initialSlide: 2,
+    speed: 1000,
+    spaceBetween: 32,
+    loop: true,
+    centeredSlides: true,
+    roundLengths: true,
+    mousewheel: true,
+    grabCursor: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true } });
