@@ -367,7 +367,7 @@ header .menubar_dark {
     width: 100%;
     height: 100%;
     position: relative;
-    padding: 200px 150px;
+    padding: 200px 150px 0px;
 }
 
 .brand_story .title {
@@ -512,4 +512,12 @@ header .menubar_dark {
 
 .brand_story .conbox3 p{
     padding: 100px 70px;
+}
+
+.teabg{
+    width: 100%;
+    height: 50vh;
+    background: url(../images/twg/teabg.svg)50% 20% no-repeat;
+    background-size: cover;
+    background-attachment : fixed;
 }
