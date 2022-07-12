@@ -9,7 +9,8 @@
 }
 
 body {
-    background: #FFFEF1;
+    /* background: #FFFEF1; */
+    background: #281E1C;
     padding: 0;
     margin: 0 auto;
     min-width: 1280px;
@@ -78,7 +79,7 @@ header .menu .right .my_dark {
     background-size: contain;
 }
 
-.outline_dark{
+.outline_dark {
     background: url(../images/twg/searchout_dark.svg) 0 0 no-repeat;
     background-size: contain;
 }
@@ -108,7 +109,7 @@ header .menu .right .my_dark {
     cursor: pointer;
 }
 
-input{
+input {
     color: #281E1C;
     font-family: 'Pretendard', sans-serif;
     letter-spacing: 1px;
@@ -142,7 +143,7 @@ header .menubar_dark {
     background: #281E1C;
 }
 
-#toggle_dark div.bar{
+#toggle_dark div.bar {
     position: relative;
     transform: translateY(9px);
     transition: all 0.3s 0.3s ease;
@@ -155,7 +156,7 @@ header .menubar_dark {
     transition: bottom 0.3s 0.3s ease, transform 0.3s ease;
 }
 
- #toggle_dark div.bar:after{
+#toggle_dark div.bar:after {
     content: " ";
     position: absolute;
     top: 9px;
@@ -180,7 +181,7 @@ header .menubar_dark {
     transition: bottom 0.3s ease, transform 0.3s 0.3s ease;
 }
 
-#overlay_dark{
+#overlay_dark {
     position: fixed;
     top: 0;
     right: 0;
@@ -195,9 +196,9 @@ header .menubar_dark {
 }
 
 #overlay_dark nav {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
 }
 
 #overlay_dark nav ul,
@@ -208,32 +209,32 @@ header .menubar_dark {
     position: static;
 }
 
- #overlay_dark nav ul {
+#overlay_dark nav ul {
     padding: 30px;
- }
+}
 
- #overlay_dark nav ul li {
+#overlay_dark nav ul li {
     margin-bottom: 10px;
     opacity: 0;
     transition: all 0.9s 0s ease;
     margin-left: 60px;
- }
+}
 
- #overlay_dark nav ul li a{
-position: relative;
-   width: fit-content;
-   height: 50px;
-   display: inline-block;
-   transition: all 0.6s 0s ease;
+#overlay_dark nav ul li a {
+    position: relative;
+    width: fit-content;
+    height: 50px;
+    display: inline-block;
+    transition: all 0.6s 0s ease;
     text-transform: normal;
     font-size: 35px;
     font-weight: 300;
     color: #281E1C;
     text-decoration: none;
     font-family: 'Amiri', serif;
- }
+}
 
- #overlay_dark nav ul li a:after {
+#overlay_dark nav ul li a:after {
     content: " ";
     position: absolute;
     left: 0;
@@ -243,55 +244,55 @@ position: relative;
     height: 3px;
     background: #281E1C;
     transition: all 0.6s 0s ease;
-  }
+}
 
- #overlay_dark nav ul li a:hover:after {
-   width: 100%;
-   opacity: 1;
- }
+#overlay_dark nav ul li a:hover:after {
+    width: 100%;
+    opacity: 1;
+}
 
- #overlay_dark nav ul li a:hover {
-   color: #888888;
- }
+#overlay_dark nav ul li a:hover {
+    color: #888888;
+}
 
- #overlay_dark nav ul li a:nth-of-type(2){
+#overlay_dark nav ul li a:nth-of-type(2) {
     display: none;
     font-size: 30px;
     font-family: 'pretendard', serif;
     letter-spacing: 1px;
- }
+}
 
- #overlay_dark nav ul li:hover a:nth-of-type(2){
+#overlay_dark nav ul li:hover a:nth-of-type(2) {
     display: block;
- }
+}
 
- #overlay_dark nav ul li:hover a:nth-of-type(1){
+#overlay_dark nav ul li:hover a:nth-of-type(1) {
     display: none;
- }
+}
 
- #page.overlay #overlay_dark nav ul li:nth-child(1) {
-   transition: all 0.9s 0.6s ease;
- }
+#page.overlay #overlay_dark nav ul li:nth-child(1) {
+    transition: all 0.9s 0.6s ease;
+}
 
- #page.overlay #overlay_dark nav ul li:nth-child(2) {
-   transition: all 0.9s 0.8s ease;
- }
+#page.overlay #overlay_dark nav ul li:nth-child(2) {
+    transition: all 0.9s 0.8s ease;
+}
 
- #page.overlay #overlay_dark nav ul li:nth-child(3) {
-   transition: all 0.9s 1.0s ease;
- }
+#page.overlay #overlay_dark nav ul li:nth-child(3) {
+    transition: all 0.9s 1.0s ease;
+}
 
- #page.overlay #overlay_dark nav ul li:nth-child(4) {
-   transition: all 0.9s 1.2s ease;
- }
+#page.overlay #overlay_dark nav ul li:nth-child(4) {
+    transition: all 0.9s 1.2s ease;
+}
 
- #page.overlay #overlay_dark nav ul li:nth-child(5) {
-   transition: all 0.9s 1.4s ease;
- }
+#page.overlay #overlay_dark nav ul li:nth-child(5) {
+    transition: all 0.9s 1.4s ease;
+}
 
- #page.overlay #overlay_dark nav ul li:nth-child(6) {
+#page.overlay #overlay_dark nav ul li:nth-child(6) {
     transition: all 0.9s 1.6s ease;
-  }
+}
 
 #page.overlay #overlay_dark {
     position: fixed;
@@ -307,19 +308,54 @@ position: relative;
 
 #page.overlay #overlay_dark nav ul li {
 
-  margin-left: 0;
-  opacity: 1;
+    margin-left: 0;
+    opacity: 1;
+}
+
+/* 커서 */
+.cursor {
+    background-color: #FEDB77;
+    height: 0;
+    width: 0;
+    z-index: 99999;
+}
+
+.cursor2,
+.cursor3 {
+    height: 36px;
+    width: 36px;
+    z-index: 99998;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out
+}
+
+.cursor2.hover,
+.cursor3.hover {
+    -webkit-transform: scale(2) translateX(-25%) translateY(-25%);
+    transform: scale(2) translateX(-25%) translateY(-25%);
+    border: none;
+}
+
+.cursor2 {
+    border: 2px solid #fff;
+    box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
+}
+
+.cursor2.hover {
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 
 /* 서브페이지 1- 브랜드 소개 */
 
-.brand_story{
+.brand_story {
     width: 100%;
     height: 100%;
     position: relative;
+    padding: 200px 150px;
 }
 
-.brand_story .title{
+.brand_story .title {
     background: url(../images/twg/brand_story.png)0 0 no-repeat;
     background-size: contain;
     width: 400px;
@@ -327,4 +363,87 @@ position: relative;
     position: absolute;
     top: 200px;
     left: 755px;
+}
+
+.brand_story .conbox1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 380px 300px 200px;
+    position: relative;
+}
+
+.brand_story .conbox1 .teapot {
+    background: url(../images/twg/teapot.svg)0 0 no-repeat;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+}
+
+.brand_story .conbox1 .leaf {
+    background: url(../images/twg/leaf.svg)0 0 no-repeat;
+    background-size: contain;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    opacity: 0.5;
+}
+
+.brand_story .conbox1 .text_area {
+    width: 55%;
+    padding: 80px 0 0 20px;
+    position: relative;
+}
+
+.brand_story .conbox1 .text_area h1,
+.brand_story .conbox2 h1 {
+    font-family: 'Amiri', serif;
+    padding-bottom: 20px;
+}
+
+.brand_story .conbox1 .text_area p {
+    line-height: 45px;
+    letter-spacing: 1px;
+}
+
+.brand_story .conbox1 .text_area .title {
+    display: flex;
+}
+
+.brand_story .conbox1 .text_area .line {
+    background: #281E1C;
+    height: 1px;
+    width: 60%;
+    position: absolute;
+    top: 115px;
+    left: 210px;
+}
+
+.brand_story .conbox2 {
+    padding: 0 150px;
+    position: relative;
+}
+
+.brand_story .conbox2 h1 {
+    text-align: center;
+    background: #FFFEF1;
+    position: absolute;
+    margin: 0 auto;
+    left: 600px;
+    padding: 0 15px;
+    top: -15px;
+}
+
+.brand_story .conbox2 .line {
+    background: #281E1C;
+    height: 1px;
+    width: 100%;
+}
+
+.brand_story .conbox2 .box{
+    width: 100%;
+    height: 900px;
+    background: url(../images/twg/box.svg)0 0 no-repeat;
+    background-size: contain;
 }
