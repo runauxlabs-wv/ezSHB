@@ -144,7 +144,7 @@ $('#toggle_dark').click(function() {
 // 서브페이지 스와이퍼
 new Swiper('.subswiper', {
     slidesPerView: 'auto',
-    initialSlide: 2,
+    initialSlide: 1,
     speed: 1000,
     spaceBetween: 32,
     loop: true,
