@@ -155,3 +155,25 @@ new Swiper('.subswiper', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true } });
+
+
+
+
+// 스크롤 애니메이션
+
+$(window).scroll(function () {
+    var wScroll = $(this).scrollTop();
+
+    if (wScroll >= $(".brand_story").offset().top - $(window).height() / 2) {
+        $(".brand_story").addClass("show");
+    }
+    if (wScroll >= $(".conbox1").offset().top - $(window).height() / 2) {
+        $(".conbox1").addClass("show");
+    }
+    if (wScroll >= $(".conbox2").offset().top - $(window).height() / 2) {
+        $(".conbox2").addClass("show");
+    }
+    if (wScroll >= $(".conbox3").offset().top - $(window).height() / 2) {
+        $(".conbox3").addClass("show");
+    }
+});

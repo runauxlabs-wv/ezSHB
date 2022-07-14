@@ -385,7 +385,7 @@ header .menubar_dark {
     width: 400px;
     height: 250px;
     position: absolute;
-    top: 200px;
+    top: 250px;
     left: 755px;
 }
 
@@ -653,7 +653,8 @@ header .menubar_dark {
 }
 
 .slide-content {
-    padding: 45px 100px;
+    margin-left: 10px;
+    padding: 40px 100px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -674,23 +675,6 @@ header .menubar_dark {
     margin-top: 0;
     font-size: 14px;
     flex-grow: 1;
-}
-
-.slide-content footer {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding-bottom: 2.8rem;
-    font-size: 14px;
-}
-
-.slide-content a {
-    color: #281E1C;
-    font-size: 12px;
-    font-weight: 700;
-    text-decoration: none;
-    border-bottom: 3px solid #281E1C;
-    padding-bottom: 3px;
 }
 
 .swiper-slide .text_area {
@@ -714,6 +698,7 @@ header .menubar_dark {
     font-size: 20px;
 }
 
+/* 푸터 */
 
 footer {
     margin: 0 auto;
@@ -821,6 +806,7 @@ footer .right ul{
 
 footer .right ul li{
     padding-right: 20px;
+    font-size: 14px;
 }
 
 footer .right ul li:nth-of-type(3){
@@ -829,3 +815,185 @@ footer .right ul li:nth-of-type(3){
     padding: 10px;
     border-radius: 50px;
 }
+
+/* 스크롤 애니메이션 */
+
+.brand_story .title{
+    opacity: 0; transform: translateY(40px); transition: all 0.9s ease-in-out;
+}
+.brand_story.show .title{
+    opacity: 1; transform: translateY(0);
+}
+.brand_story .conbox1 .teapot{
+    opacity: 0; transform: translateX(-40px); transition: all 0.9s 0.5s ease-in-out;
+}
+.brand_story .conbox1.show .teapot{
+    opacity: 1; transform: translateX(0);
+}
+.brand_story .conbox1 .text_area h1{
+    opacity: 0; transform: translateX(40px); transition: all 0.9s 1.0s ease-in-out;
+}
+.brand_story .conbox1.show .text_area h1{
+opacity: 1; transform: translateX(0);
+}
+.brand_story .conbox1 .text_area .line{
+    opacity: 0;
+    width: 0;
+    transition: all 0.9s 1.5s ease-in-out;
+}
+.brand_story .conbox1.show .text_area .line{
+    opacity: 1;
+    width: 60%;
+}
+.brand_story .conbox1 .text_area p{
+    opacity: 0; transform: translateY(40px); transition: all 0.9s 2.0s ease-in-out;
+}
+.brand_story .conbox1.show .text_area p{
+    opacity: 1; transform: translateY(0);
+}
+.brand_story .conbox2 .line{
+    opacity: 0;
+    width: 0;
+    transition: all 0.9s ease-in-out;
+}
+.brand_story .conbox2.show .line{
+    opacity: 1;
+    width: 100%;
+}
+.brand_story .conbox2 h1{
+    opacity: 0; transform: translateY(-40px); transition: all 0.9s 0.5s ease-in-out;
+}
+.brand_story .conbox2.show h1{
+    opacity: 1; transform: translateY(0);
+}
+.brand_story .conbox2 .text_area p{
+    opacity: 0; transform: translateY(40px); transition: all 0.9s 1.0s ease-in-out;
+}
+.brand_story .conbox2.show .text_area p{
+    opacity: 1; transform: translateY(0);
+}
+.brand_story .conbox3 .line{
+    opacity: 0;
+    width: 0;
+    transition: all 0.9s ease-in-out;
+}
+.brand_story .conbox3.show .line{
+    opacity: 1;
+    width: 90%;
+}
+.brand_story .conbox3 h1{
+    opacity: 0; transform: translateX(-40px); transition: all 0.9s 0.5s ease-in-out;
+}
+.brand_story .conbox3.show h1{
+    opacity: 1; transform: translateX(0);
+}
+.brand_story .conbox3 p{
+    opacity: 0; transform: translateY(40px); transition: all 0.9s 1.0s ease-in-out;
+}
+.brand_story .conbox3.show p{
+    opacity: 1; transform: translateY(0);
+}
+
+
+/* 버튼 */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: 'Pretendard', sans-serif;
+    letter-spacing: 3px;
+    margin-left: 20px;
+  }
+  button.addtobag {
+    width: 12rem;
+    height: auto;
+  }
+  button.addtobag .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #281E1C;
+    border-radius: 1.625rem;
+  }
+  button.addtobag .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  button.addtobag .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  button.addtobag .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+  }
+  button.addtobag .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 3rem;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  button:hover .circle {
+    width: 100%;
+    background: #FEDB77;
+  }
+  button:hover .circle .icon.arrow {
+    background: #281E1C;
+    transform: translate(1rem, 0);
+  }
+  button:hover .circle .icon.arrow::before{
+    border-top: 0.125rem solid #281E1C;
+    border-right: 0.125rem solid #281E1C;
+  }
+  button:hover .button-text {
+    color: #281E1C;
+  }
+  
+  @supports (display: grid) {
+    #container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 0.625rem;
+      grid-template-areas: ". main main ." ". main main .";
+    }
+  
+    #container {
+      grid-area: main;
+      align-self: center;
+      justify-self: center;
+    }
+  }
