@@ -177,3 +177,12 @@ $(window).scroll(function () {
         $(".conbox3").addClass("show");
     }
 });
+
+// 탭메뉴
+
+$(".fadeTab .conBox").hide().eq(0).show();
+$(".fadeTab li").click(function(){
+    $(this).addClass('on').siblings().removeClass('on');
+    $("#"+$(this).data('id')).fadeIn(1000)
+    .siblings('.conBox').fadeOut(300);
+});

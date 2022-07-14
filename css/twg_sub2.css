@@ -374,333 +374,73 @@ header .menubar_dark {
 }
 
 
-/* 서브페이지 1- 브랜드 소개 */
+/* 서브페이지 2- 상품 페이지 */
 
-.brand_story {
+/* 탭메뉴 */
+
+section .fadeTab{
+    width: 100%;
+    margin: 0 0 1000px 0;
+    position: relative;
+}
+section .fadeTab ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+section .fadeTab ul li{
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 40px;
+    margin: 0 0 0 2px;
+    background: #b4bcc2;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    position: relative;
+    cursor: pointer;
+}
+section .fadeTab ul li:first-child{ margin: 0; }
+section .fadeTab ul li.on{ background: #ccc; }
+section .fadeTab ul li:hover::after,
+section .fadeTab ul li.on::after{
+    width: 100%;
+    height: 5px;
+    background: #73a6c7;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section .fadeTab ul li:hover::after{ background: rgba(255,255,255,0.3); }
+section .fadeTab .conBox{
+    width: 100%;
+    height: 800px;
+    /* background:#ccc; */
+    padding: 40px;
+    color: #333;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+/* 상품페이지 */
+
+.shop_tea {
     width: 100%;
     height: 100%;
     position: relative;
     padding: 200px 150px 0px;
 }
 
-.brand_story .title {
-    background: url(../images/twg/brand_story.png)0 0 no-repeat;
-    background-size: contain;
-    width: 400px;
-    height: 250px;
-    position: absolute;
-    top: 250px;
-    left: 745px;
-}
-
-.brand_story .conbox1 {
-    display: flex;
-    justify-content: space-between;
-    padding: 380px 300px 200px;
-    position: relative;
-}
-
-.brand_story .conbox1 .teapot {
-    background: url(../images/twg/teapot.svg)0 0 no-repeat;
-    background-size: contain;
-    width: 400px;
-    height: 400px;
-}
-
-.brand_story .conbox1 .leaf {
-    background: url(../images/twg/leaf.svg)0 0 no-repeat;
-    background-size: contain;
-    width: 1200px;
-    height: 1200px;
-    position: absolute;
-    top: 250px;
-    right: -500px;
-    opacity: 0.5;
-    z-index: -30;
-}
-
-.brand_story .conbox1 .text_area {
-    width: 55%;
-    padding: 80px 0 0 20px;
-    position: relative;
-}
-
-.brand_story .conbox1 .text_area h1,
-.brand_story .conbox2 h1,
-.brand_story .conbox3 h1 {
-    font-family: 'Amiri', serif;
-    padding-bottom: 20px;
-}
-
-.brand_story .conbox1 .text_area p,
-.brand_story .conbox2 .text_area p,
-.brand_story .conbox3 p {
-    line-height: 45px;
-    letter-spacing: 1px;
-    word-break: keep-all;
-}
-
-.brand_story .conbox1 .text_area .title {
-    display: flex;
-}
-
-.brand_story .conbox1 .text_area .line {
-    background: #281E1C;
-    height: 1px;
-    width: 60%;
-    position: absolute;
-    top: 115px;
-    left: 210px;
-}
-
-.brand_story .conbox2 {
-    padding: 0 150px;
-    position: relative;
-}
-
-.brand_story .conbox2 h1 {
+.shop_tea h1{
     text-align: center;
-    background: #FFFEF1;
-    position: absolute;
-    margin: 0 auto;
-    left: 600px;
-    padding: 0 30px;
-    top: -15px;
 }
 
-.brand_story .conbox2 .line {
-    background: #281E1C;
-    height: 1px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.brand_story .conbox2 .box {
-    width: 100%;
-    height: 900px;
-    background: url(../images/twg/box.svg)0 0 no-repeat;
-    background-size: contain;
-    opacity: 0.7;
-}
-
-.brand_story .conbox2 .text_area {
-    position: absolute;
-    top: 340px;
-    left: 310px;
-    width: 35%;
-}
-
-.brand_story .conbox2 .teatime {
-    background: url(../images/twg/teatime.svg)0 0 no-repeat;
-    background-size: contain;
-    width: 390px;
-    height: 300px;
-    position: absolute;
-    top: 88px;
-    left: 650px;
-}
-
-.brand_story .conbox2 .flower {
-    background: url(../images/twg/flower.svg)0 0 no-repeat;
-    background-size: contain;
-    width: 800px;
-    height: 800px;
-    position: absolute;
-    top: 200px;
-    left: -500px;
-    z-index: 6;
-    opacity: 0.2;
-}
-
-.brand_story .conbox3 {
-    position: relative;
-    padding: 150px 150px 0;
-}
-
-.brand_story .conbox3 h1 {
-    text-align: center;
-    background: #FFFEF1;
-    position: absolute;
-    margin: 0 auto;
-    left: 190px;
-    padding: 0 30px;
-    top: 135px;
-}
-
-.brand_story .conbox3 .line {
-    background: #281E1C;
-    height: 1px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.brand_story .conbox3 p {
-    padding: 100px 70px 0px;
-}
-
-.teabg {
-    width: 100%;
-    height: 100vh;
-    background: url(../images/twg/teabg.svg)50% 50% no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
-/* 스와이퍼 */
-
-.brand_story .conbox4 {
-    height: 70vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.swiper-container {
-    height: 400px;
-    width: 100%;
-    padding-bottom: 85px;
-}
-
-.swiper-wrapper {
-    width: 73.8%;
-    will-change: transform;
-}
-
-@media (min-width: 630px) {
-    .swiper-wrapper {
-        width: 100%;
-    }
-}
-
-.swiper-slide {
-    width: 100%;
-    background-color: transparent;
-    background: url(../images/twg/product_bg.png)50% 50% no-repeat;
-    background-size: contain;
-    overflow: hidden;
-}
-
-.swiper-slide.swiper-slide-active .slide-image,
-.swiper-slide.swiper-slide-duplicate-active .slide-image {
-    transform: scale3d(1, 1, 1);
-}
-
-@media (min-width: 630px) {
-    .swiper-slide {
-        width: 50%;
-    }
-}
-
-@media (min-width: 768px) {
-    .swiper-slide {
-        width: 33.333333%;
-    }
-
-    .swiper-slide.swiper-slide-next .slide-image,
-    .swiper-slide.swiper-slide-prev .slide-image,
-    .swiper-slide.swiper-slide-duplicate-next .slide-image,
-    .swiper-slide.swiper-slide-duplicate-prev .slide-image {
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-@media (min-width: 1024px) {
-    .swiper-slide {
-        width: 25%;
-    }
-}
-
-.swiper-pagination {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85px;
-}
-
-.swiper-pagination.swiper-pagination {
-    bottom: 0;
-}
-
-.swiper-pagination-bullet {
-    background: #FEDB77;
-    width: 22px;
-    height: 4px;
-    border-radius: 0;
-    transition: opacity 1s ease;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet.swiper-pagination-bullet {
-    margin: 0;
-}
-
-@media (min-width: 768px) {
-    .swiper-pagination-bullet {
-        width: 40px;
-    }
-}
-
-.slide-image {
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transform: scale3d(1.3, 1.3, 1);
-    backface-visibility: hidden;
-    will-change: transform;
-    transition: transform 1400ms ease;
-}
-
-.slide-content {
-    margin-left: 10px;
-    padding: 40px 100px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.slide-content h4 {
-    font-size: 25px;
-    font-weight: 700;
-    margin: 0 0 1rem;
-    padding-top: 2.8rem;
-    flex-grow: 0;
-    font-family: 'Amiri', serif;
-}
-
-.slide-content p {
-    display: flex;
-    line-height: 1.8;
-    margin-top: 0;
-    font-size: 14px;
-    flex-grow: 1;
-}
-
-.swiper-slide .text_area {
-    width: 100%;
-    height: 100vh;
-    display: none;
-}
-
-.swiper-slide:hover .text_area {
-    display: block;
-}
-
-.swiper-slide h1 {
-    height: 100%;
-    margin: 0;
-    padding: 150px 50px;
-    background: #281e1c60;
-    color: #fff;
-    text-align: center;
-    font-family: 'Amiri', serif;
-    font-size: 20px;
-}
 
 /* 푸터 */
 
@@ -862,7 +602,7 @@ opacity: 1; transform: translateX(0);
 }
 .brand_story .conbox2.show .line{
     opacity: 1;
-    width: 90%;
+    width: 100%;
 }
 .brand_story .conbox2 h1{
     opacity: 0; transform: translateY(-40px); transition: all 0.9s 0.5s ease-in-out;
@@ -1007,3 +747,4 @@ button {
       justify-self: center;
     }
   }
+
