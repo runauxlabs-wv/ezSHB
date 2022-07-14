@@ -485,7 +485,18 @@ header .menubar_dark {
     position: absolute;
     top: 88px;
     left: 650px;
-    z-index: -60;
+}
+
+.brand_story .conbox2 .flower{
+    background: url(../images/twg/flower.svg)0 0 no-repeat;
+    background-size: contain;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 200px;
+    left: -500px;
+    z-index: 6;
+    opacity: 0.2;
 }
 
 .brand_story .conbox3{
@@ -642,18 +653,17 @@ header .menubar_dark {
   }
   .slide-content footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 100%;
     padding-bottom: 2.8rem;
     font-size: 14px;
-    color: #c2c0e0;
   }
   .slide-content a {
     color: #281E1C;
     font-size: 12px;
     font-weight: 700;
     text-decoration: none;
-    border-bottom: 3px solid currentColor;
+    border-bottom: 3px solid #281E1C;
     padding-bottom: 3px;
   }
 
@@ -670,7 +680,7 @@ header .menubar_dark {
   .swiper-slide h1{
     height: 100%;
     margin: 0;
-    padding: 100px;
+    padding: 150px 50px;
     background: #281e1c60;
     color: #fff;
     text-align: center;
