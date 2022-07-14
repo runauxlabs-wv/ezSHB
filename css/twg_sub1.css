@@ -546,7 +546,7 @@ header .menubar_dark {
 /* 스와이퍼 */
 
 .brand_story .conbox4 {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -749,6 +749,31 @@ footer .left ul li{
     font-weight: 500;
 }
 
+footer .left ul li a {
+    position: relative;
+    width: fit-content;
+    transition: all 0.6s 0s ease;
+    font-family: 'Amiri', serif;
+    font-weight: 500;
+}
+
+footer .left ul li a:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    opacity: 0;
+    height: 2px;
+    background: #281E1C;
+    transition: all 0.6s 0s ease;
+}
+
+footer .left ul li a:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
 footer .middle{
     width: 33.3%;
     height: 600px;
@@ -784,9 +809,13 @@ footer .right .text p{
     line-height: 30px;
 }
 
+footer .right .text p{
+    font-size: 14px;
+}
+
 footer .right ul{
     display: flex;
-    padding: 0;
+    padding: 15px 0;
     align-items: center;
 }
 
