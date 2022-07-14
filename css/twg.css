@@ -381,6 +381,9 @@ header .menubar {
  #page.overlay #overlay nav ul li:nth-child(6){
     transition: all 0.9s 1.6s ease;
   }
+  #page.overlay #overlay nav ul li:nth-child(7) {
+    transition: all 0.9s 1.8s ease;
+}
 
 
 #page.overlay #overlay{

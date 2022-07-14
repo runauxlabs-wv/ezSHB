@@ -303,6 +303,10 @@ header .menubar_dark {
     transition: all 0.9s 1.6s ease;
 }
 
+#page.overlay #overlay_dark nav ul li:nth-child(7) {
+    transition: all 0.9s 1.8s ease;
+}
+
 #page.overlay #overlay_dark {
     position: fixed;
     top: 0;
@@ -717,7 +721,7 @@ footer .logo{
 
 footer .left{
     width: 33.3%;
-    height: 600px;
+    height: 550px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -761,7 +765,7 @@ footer .left ul li a:hover:after {
 
 footer .middle{
     width: 33.3%;
-    height: 600px;
+    height: 550px;
     word-break: keep-all;
     display: flex;
     justify-content: center;
@@ -781,7 +785,7 @@ footer .middle p{
 
 footer .right{
     width: 33.3%;
-    height: 600px;
+    height: 550px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -870,6 +874,12 @@ opacity: 1; transform: translateX(0);
     opacity: 0; transform: translateY(40px); transition: all 0.9s 1.0s ease-in-out;
 }
 .brand_story .conbox2.show .text_area p{
+    opacity: 1; transform: translateY(0);
+}
+.brand_story .conbox2 .teatime{
+    opacity: 0; transform: translateY(40px); transition: all 0.9s 1.3s ease-in-out;
+}
+.brand_story .conbox2.show .teatime{
     opacity: 1; transform: translateY(0);
 }
 .brand_story .conbox3 .line{
