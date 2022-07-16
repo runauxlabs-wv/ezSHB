@@ -8,11 +8,11 @@
     box-sizing: border-box;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #281E1C;
 }
@@ -56,7 +56,7 @@ header .menu .logo_dark a {
     height: 100px;
     position: absolute;
     top: -20px;
-    left: 805px;
+    left: 810px;
     z-index: 9999;
 }
 
@@ -390,7 +390,7 @@ header .menubar_dark {
     height: 250px;
     position: absolute;
     top: 250px;
-    left: 745px;
+    left: 750px;
 }
 
 .brand_story .conbox1 {
@@ -398,6 +398,24 @@ header .menubar_dark {
     justify-content: space-between;
     padding: 380px 300px 200px;
     position: relative;
+}
+
+@keyframes ani {
+    100% {
+        background-position: -170px 0;
+    }
+}
+
+.ani {
+    width: 85px;
+    height: 140px;
+    background: url(../images/twg/ani.png)0 0 no-repeat;
+    background-size: 170px 140px;
+    animation: ani 900ms infinite steps(2);
+    opacity: 0.5;
+    position: absolute;
+    top: -50px;
+    left: -55px;
 }
 
 .brand_story .conbox1 .teapot {
@@ -463,7 +481,7 @@ header .menubar_dark {
     background: #FFFEF1;
     position: absolute;
     margin: 0 auto;
-    left: 600px;
+    left: 585px;
     padding: 0 30px;
     top: -15px;
 }
@@ -477,27 +495,132 @@ header .menubar_dark {
 
 .brand_story .conbox2 .box {
     width: 100%;
-    height: 900px;
+    height: 550px;
     background: url(../images/twg/box.svg)0 0 no-repeat;
     background-size: contain;
-    opacity: 0.7;
+    position: absolute;
+    top: 225px;
+    left: 375px;
 }
 
-.brand_story .conbox2 .text_area {
-    position: absolute;
-    top: 340px;
-    left: 310px;
-    width: 35%;
+.brand_story .conbox2 .con{
+    padding: 170px 0px;
+    text-align: center;
+}
+.brand_story .conbox2 .con h2{
+    margin: 30px 0 20px;
 }
 
-.brand_story .conbox2 .teatime {
-    background: url(../images/twg/teatime.svg)0 0 no-repeat;
-    background-size: contain;
-    width: 390px;
-    height: 300px;
+.brand_story .conbox2 .iconbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand_story .conbox2 .iconbox h3{
+    font-size: 17px;
+    padding: 5px 10px;
+    background: rgba(227, 219, 209, 0.275);
+    border-radius: 50px;
+}
+
+.brand_story .conbox2 .i01,
+.brand_story .conbox2 .i02,
+.brand_story .conbox2 .i03{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.brand_story .conbox2 .i02 h3{
+    transform: translateY(-55%);
+}
+
+@keyframes i01 {
+    100% {
+        background-position: -160px 0;
+    }
+}
+
+.brand_story .conbox2 .i01 .icon{
+    width: 70px;
+    height: 70px;
+    background: url(../images/twg/icon1.png)0 0 no-repeat;
+    background-size: 160px 80px;
+    animation: i01 900ms infinite steps(2);
+}
+
+@keyframes i02 {
+    100% {
+        background-position: -315px 0;
+    }
+}
+
+.brand_story .conbox2 .i02 .icon{
+    width: 95px;
+    height: 95px;
+    background: url(../images/twg/icon2.png)0 0 no-repeat;
+    background-size: 315px 105px;
+    animation: i02 900ms infinite steps(3);
+}
+
+.clockbox{
+    width: 55px;
+    height: 60px;
+    display: inline-block;
+    position: relative;
+}
+
+.clock{
+    width: 55px;
+    height: 55px;
+    border: 3px solid #281E1C;
+    border-radius: 50%;
+}
+
+.clock::after{
+    content: "";
+    width: 3px;
+    height: 25px;
+    border-radius: 5px;
+    background: #281E1C;
     position: absolute;
-    top: 88px;
-    left: 650px;
+    top:3px;
+    left: 48%;
+    transform-origin: 50% 97%;
+    animation: clocka 2s linear infinite;
+}
+
+@keyframes clocka{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.clock::before{
+    content: "";
+    width: 3px;
+    height: 22px;
+    background: #281E1C;
+    position: absolute;
+    top: 7px;
+    left: 48%;
+    transform-origin: 50% 94%;
+    animation: clockb 12s linear infinite;
+}
+
+@keyframes clockb{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .brand_story .conbox2 .flower {
@@ -514,7 +637,7 @@ header .menubar_dark {
 
 .brand_story .conbox3 {
     position: relative;
-    padding: 150px 150px 0;
+    padding: 100px 150px 0;
 }
 
 .brand_story .conbox3 h1 {
@@ -534,8 +657,9 @@ header .menubar_dark {
     margin: 0 auto;
 }
 
+.brand_story .conbox2 p,
 .brand_story .conbox3 p {
-    padding: 100px 70px 0px;
+    padding: 70px 70px 0px;
 }
 
 .teabg {
@@ -711,7 +835,7 @@ footer {
     border-top: 1px solid #e3dbd1;
 }
 
-footer .logo{
+footer .logo {
     background: url(../images/twg/TWG_logo_dark.svg)0 0 no-repeat;
     background-size: contain;
     width: 300px;
@@ -719,7 +843,7 @@ footer .logo{
     margin-left: 50px;
 }
 
-footer .left{
+footer .left {
     width: 33.3%;
     height: 550px;
     display: flex;
@@ -728,11 +852,11 @@ footer .left{
     align-items: center;
 }
 
-footer .left ul{
+footer .left ul {
     text-align: center;
 }
 
-footer .left ul li{
+footer .left ul li {
     padding: 15px 0;
     font-size: 20px;
     font-weight: 500;
@@ -763,7 +887,7 @@ footer .left ul li a:hover:after {
     opacity: 1;
 }
 
-footer .middle{
+footer .middle {
     width: 33.3%;
     height: 550px;
     word-break: keep-all;
@@ -777,13 +901,13 @@ footer .middle{
     border-right: 1px solid #e3dbd1;
 }
 
-footer .middle p{
+footer .middle p {
     line-height: 30px;
     font-size: 14px;
     padding-top: 20px;
 }
 
-footer .right{
+footer .right {
     width: 33.3%;
     height: 550px;
     display: flex;
@@ -794,26 +918,26 @@ footer .right{
 }
 
 footer .right .text h3,
-footer .right .text p{
+footer .right .text p {
     line-height: 30px;
 }
 
-footer .right .text p{
+footer .right .text p {
     font-size: 14px;
 }
 
-footer .right ul{
+footer .right ul {
     display: flex;
     padding: 15px 0;
     align-items: center;
 }
 
-footer .right ul li{
+footer .right ul li {
     padding-right: 20px;
     font-size: 14px;
 }
 
-footer .right ul li:nth-of-type(3){
+footer .right ul li:nth-of-type(3) {
     font-weight: 800;
     background: #e3dbd146;
     padding: 10px;
@@ -822,86 +946,125 @@ footer .right ul li:nth-of-type(3){
 
 /* 스크롤 애니메이션 */
 
-.brand_story .title{
-    opacity: 0; transform: translateY(40px); transition: all 0.9s ease-in-out;
+.brand_story .conbox1 .teapot {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 0.9s 0.5s ease-in-out;
 }
-.brand_story.show .title{
-    opacity: 1; transform: translateY(0);
+
+.brand_story .conbox1.show .teapot {
+    opacity: 1;
+    transform: translateX(0);
 }
-.brand_story .conbox1 .teapot{
-    opacity: 0; transform: translateX(-40px); transition: all 0.9s 0.5s ease-in-out;
+
+.brand_story .conbox1 .text_area h1 {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 0.9s 1.0s ease-in-out;
 }
-.brand_story .conbox1.show .teapot{
-    opacity: 1; transform: translateX(0);
+
+.brand_story .conbox1.show .text_area h1 {
+    opacity: 1;
+    transform: translateX(0);
 }
-.brand_story .conbox1 .text_area h1{
-    opacity: 0; transform: translateX(40px); transition: all 0.9s 1.0s ease-in-out;
-}
-.brand_story .conbox1.show .text_area h1{
-opacity: 1; transform: translateX(0);
-}
-.brand_story .conbox1 .text_area .line{
+
+.brand_story .conbox1 .text_area .line {
     opacity: 0;
     width: 0;
     transition: all 0.9s 1.5s ease-in-out;
 }
-.brand_story .conbox1.show .text_area .line{
+
+.brand_story .conbox1.show .text_area .line {
     opacity: 1;
     width: 60%;
 }
-.brand_story .conbox1 .text_area p{
-    opacity: 0; transform: translateY(40px); transition: all 0.9s 2.0s ease-in-out;
+
+.brand_story .conbox1 .text_area p {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s 2.0s ease-in-out;
 }
-.brand_story .conbox1.show .text_area p{
-    opacity: 1; transform: translateY(0);
+
+.brand_story .conbox1.show .text_area p {
+    opacity: 1;
+    transform: translateY(0);
 }
-.brand_story .conbox2 .line{
+
+.brand_story .conbox2 .line {
     opacity: 0;
     width: 0;
     transition: all 0.9s ease-in-out;
 }
-.brand_story .conbox2.show .line{
+
+.brand_story .conbox2.show .line {
     opacity: 1;
     width: 90%;
 }
-.brand_story .conbox2 h1{
-    opacity: 0; transform: translateY(-40px); transition: all 0.9s 0.5s ease-in-out;
+
+.brand_story .conbox2 h1 {
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: all 0.9s 0.5s ease-in-out;
 }
-.brand_story .conbox2.show h1{
-    opacity: 1; transform: translateY(0);
+
+.brand_story .conbox2.show h1 {
+    opacity: 1;
+    transform: translateY(0);
 }
-.brand_story .conbox2 .text_area p{
-    opacity: 0; transform: translateY(40px); transition: all 0.9s 1.0s ease-in-out;
+
+.brand_story .conbox2 .text_area p {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s 1.0s ease-in-out;
 }
-.brand_story .conbox2.show .text_area p{
-    opacity: 1; transform: translateY(0);
+
+.brand_story .conbox2.show .text_area p {
+    opacity: 1;
+    transform: translateY(0);
 }
-.brand_story .conbox2 .teatime{
-    opacity: 0; transform: translateY(40px); transition: all 0.9s 1.3s ease-in-out;
+
+.brand_story .conbox3 .teatime {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s 1.3s ease-in-out;
 }
-.brand_story .conbox2.show .teatime{
-    opacity: 1; transform: translateY(0);
+
+.brand_story .conbox3.show .teatime {
+    opacity: 1;
+    transform: translateY(0);
 }
-.brand_story .conbox3 .line{
+
+.brand_story .conbox3 .line {
     opacity: 0;
     width: 0;
     transition: all 0.9s ease-in-out;
 }
-.brand_story .conbox3.show .line{
+
+.brand_story .conbox3.show .line {
     opacity: 1;
     width: 90%;
 }
-.brand_story .conbox3 h1{
-    opacity: 0; transform: translateX(-40px); transition: all 0.9s 0.5s ease-in-out;
+
+.brand_story .conbox3 h1 {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 0.9s 0.5s ease-in-out;
 }
-.brand_story .conbox3.show h1{
-    opacity: 1; transform: translateX(0);
+
+.brand_story .conbox3.show h1 {
+    opacity: 1;
+    transform: translateX(0);
 }
-.brand_story .conbox3 p{
-    opacity: 0; transform: translateY(40px); transition: all 0.9s 1.0s ease-in-out;
+
+.brand_story .conbox3 p {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.9s 1.0s ease-in-out;
 }
-.brand_story .conbox3.show p{
-    opacity: 1; transform: translateY(0);
+
+.brand_story .conbox3.show p {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -920,12 +1083,14 @@ button {
     font-family: 'Pretendard', sans-serif;
     letter-spacing: 3px;
     margin-left: 20px;
-  }
-  button.addtobag {
+}
+
+button.addtobag {
     width: 12rem;
     height: auto;
-  }
-  button.addtobag .circle {
+}
+
+button.addtobag .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: relative;
     display: block;
@@ -934,23 +1099,26 @@ button {
     height: 3rem;
     background: #281E1C;
     border-radius: 1.625rem;
-  }
-  button.addtobag .circle .icon {
+}
+
+button.addtobag .circle .icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
     background: #fff;
-  }
-  button.addtobag .circle .icon.arrow {
+}
+
+button.addtobag .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     left: 0.625rem;
     width: 1.125rem;
     height: 0.125rem;
     background: none;
-  }
-  button.addtobag .circle .icon.arrow::before {
+}
+
+button.addtobag .circle .icon.arrow::before {
     position: absolute;
     content: "";
     top: -0.25rem;
@@ -960,8 +1128,9 @@ button {
     border-top: 0.125rem solid #fff;
     border-right: 0.125rem solid #fff;
     transform: rotate(45deg);
-  }
-  button.addtobag .button-text {
+}
+
+button.addtobag .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     top: 0;
@@ -976,34 +1145,39 @@ button {
     text-align: center;
     text-transform: uppercase;
     font-size: 13px;
-  }
-  button:hover .circle {
+}
+
+button:hover .circle {
     width: 100%;
     background: #FEDB77;
-  }
-  button:hover .circle .icon.arrow {
+}
+
+button:hover .circle .icon.arrow {
     background: #281E1C;
     transform: translate(1rem, 0);
-  }
-  button:hover .circle .icon.arrow::before{
+}
+
+button:hover .circle .icon.arrow::before {
     border-top: 0.125rem solid #281E1C;
     border-right: 0.125rem solid #281E1C;
-  }
-  button:hover .button-text {
+}
+
+button:hover .button-text {
     color: #281E1C;
-  }
-  
-  @supports (display: grid) {
+}
+
+@supports (display: grid) {
     #container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 0.625rem;
-      grid-template-areas: ". main main ." ". main main .";
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0.625rem;
+        grid-template-areas: ". main main ."". main main .";
     }
-  
+
     #container {
-      grid-area: main;
-      align-self: center;
-      justify-self: center;
+        grid-area: main;
+        align-self: center;
+        justify-self: center;
     }
-  }
+}
+

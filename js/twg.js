@@ -164,9 +164,7 @@ new Swiper('.subswiper', {
 $(window).scroll(function () {
     var wScroll = $(this).scrollTop();
 
-    if (wScroll >= $(".brand_story").offset().top - $(window).height() / 2) {
-        $(".brand_story").addClass("show");
-    }
+
     if (wScroll >= $(".conbox1").offset().top - $(window).height() / 2) {
         $(".conbox1").addClass("show");
     }
