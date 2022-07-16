@@ -391,20 +391,20 @@ section .fadeTab ul{
     padding: 0;
 }
 section .fadeTab ul li{
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     padding: 0px 20px;
     margin: 0 0 0 20px;
     background: rgba(227, 219, 209, 0.275);
     font-weight: 600;
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    color: #281E1C;
     position: relative;
     cursor: pointer;
     border-radius: 50px;
 }
 section .fadeTab ul li:first-child{ margin: 0; }
-section .fadeTab ul li.on{ background: #281E1C; }
+section .fadeTab ul li.on{ background: #281E1C;
+color: #fff; }
 section .fadeTab ul li:hover::after{ background: rgba(255,255,255,0.3); }
 section .fadeTab .conBox{
     width: 100%;
