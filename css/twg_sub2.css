@@ -391,36 +391,27 @@ section .fadeTab ul{
     padding: 0;
 }
 section .fadeTab ul li{
-    height: 60px;
-    line-height: 60px;
-    padding: 0px 40px;
-    margin: 0 0 0 2px;
-    background: #b4bcc2;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 20px;
+    margin: 0 0 0 20px;
+    background: rgba(227, 219, 209, 0.275);
     font-weight: 600;
     color: #fff;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     position: relative;
     cursor: pointer;
+    border-radius: 50px;
 }
 section .fadeTab ul li:first-child{ margin: 0; }
-section .fadeTab ul li.on{ background: #ccc; }
-section .fadeTab ul li:hover::after,
-section .fadeTab ul li.on::after{
-    width: 100%;
-    height: 5px;
-    background: #73a6c7;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+section .fadeTab ul li.on{ background: #281E1C; }
 section .fadeTab ul li:hover::after{ background: rgba(255,255,255,0.3); }
 section .fadeTab .conBox{
     width: 100%;
     height: 800px;
     /* background:#ccc; */
     padding: 40px;
-    color: #333;
+    color: #281E1C;
     overflow-y: auto;
     overflow-x: hidden;
     position: absolute;
@@ -437,8 +428,19 @@ section .fadeTab .conBox{
     padding: 200px 150px 0px;
 }
 
+.shop_tea .top{
+    background: url(../images/twg/top.svg)50% 50% no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+
 .shop_tea h1{
     text-align: center;
+    font-family: 'Amiri', serif;
+    padding: 10px 0 50px 0;
+    margin: 0;
 }
 
 

@@ -630,7 +630,7 @@ header .menubar_dark {
     height: 800px;
     position: absolute;
     top: 200px;
-    left: -500px;
+    left: -400px;
     z-index: 6;
     opacity: 0.2;
 }
