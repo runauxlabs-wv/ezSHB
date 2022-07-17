@@ -201,7 +201,7 @@ header .menubar_dark {
     transition: all 0.3s ease, max-height 0s 0.6s ease;
     z-index: 100;
     opacity: 1;
-    background: #e5d9c0f6;
+    background: #F8F3E3;
 }
 
 #overlay_dark nav {
@@ -466,7 +466,7 @@ section .fadeTab .conBox {
 .conBox .item{
     display: inline-block;
     width: 30%;
-    background: #e5d9c048;
+    background: #F8F3E3;
     margin-bottom: 120px;
     position: relative;
 }
@@ -490,54 +490,23 @@ section .fadeTab .conBox {
 
 .conBox .item img{
     width: 100%;
+    position: relative;
 }
 
-.conBox .item.i01:hover{
-    background: #e5d9c048 url(../images/twg/item1_1.png)50% 25% no-repeat;
+.conBox .item img:nth-of-type(2){
+    width: 65%;
+    position: absolute;
+    left: 80px;
+    top: 100px;
+    opacity: 0;
 }
 
-.conBox .item.i02:hover{
-    background: #e5d9c048 url(../images/twg/item2_1.png)50% 25% no-repeat;
+.conBox .item:hover img:nth-of-type(2){
+    opacity: 1;
+    transition: all 0.5s ease;
 }
 
-.conBox .item.i03:hover{
-    background: #e5d9c048 url(../images/twg/item3_1.png)50% 25% no-repeat;
-}
-
-.conBox .item.i04:hover{
-    background: #e5d9c048 url(../images/twg/item4_1.png)50% 25% no-repeat;
-}
-
-.conBox .item.i05:hover{
-    background: #e5d9c048 url(../images/twg/item5_1.png)50% 25% no-repeat;
-}
-
-.conBox .item.i06:hover{
-    background: #e5d9c048 url(../images/twg/item6_1.png)50% 25% no-repeat;
-}
-
-.conBox .item.i07:hover{
-    background: #e5d9c048 url(../images/twg/item7_1.png)50% 25% no-repeat;
-}
-
-.conBox .item.i08:hover{
-    background: #e5d9c048 url(../images/twg/item8_1.png)50% 25% no-repeat;
-}
-
-.conBox .item.i09:hover{
-    background: #e5d9c048 url(../images/twg/item9_1.png)50% 25% no-repeat;
-}
-
-
-.conBox .item.i01:hover img,
-.conBox .item.i02:hover img,
-.conBox .item.i03:hover img,
-.conBox .item.i04:hover img,
-.conBox .item.i05:hover img,
-.conBox .item.i06:hover img,
-.conBox .item.i07:hover img,
-.conBox .item.i08:hover img,
-.conBox .item.i09:hover img{
+.conBox .item:hover img:nth-of-type(1){
     opacity: 0;
     transition: all 0.5s ease;
 }
@@ -685,143 +654,9 @@ footer .right ul li {
 
 footer .right ul li:nth-of-type(3) {
     font-weight: 800;
-    background: #e5d9c048;
+    background: #F8F3E3;
     padding: 10px;
     border-radius: 50px;
-}
-
-/* 스크롤 애니메이션 */
-
-.brand_story .title {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.9s ease-in-out;
-}
-
-.brand_story.show .title {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.brand_story .conbox1 .teapot {
-    opacity: 0;
-    transform: translateX(-40px);
-    transition: all 0.9s 0.5s ease-in-out;
-}
-
-.brand_story .conbox1.show .teapot {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.brand_story .conbox1 .text_area h1 {
-    opacity: 0;
-    transform: translateX(40px);
-    transition: all 0.9s 1.0s ease-in-out;
-}
-
-.brand_story .conbox1.show .text_area h1 {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.brand_story .conbox1 .text_area .line {
-    opacity: 0;
-    width: 0;
-    transition: all 0.9s 1.5s ease-in-out;
-}
-
-.brand_story .conbox1.show .text_area .line {
-    opacity: 1;
-    width: 60%;
-}
-
-.brand_story .conbox1 .text_area p {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.9s 2.0s ease-in-out;
-}
-
-.brand_story .conbox1.show .text_area p {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.brand_story .conbox2 .line {
-    opacity: 0;
-    width: 0;
-    transition: all 0.9s ease-in-out;
-}
-
-.brand_story .conbox2.show .line {
-    opacity: 1;
-    width: 100%;
-}
-
-.brand_story .conbox2 h1 {
-    opacity: 0;
-    transform: translateY(-40px);
-    transition: all 0.9s 0.5s ease-in-out;
-}
-
-.brand_story .conbox2.show h1 {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.brand_story .conbox2 .text_area p {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.9s 1.0s ease-in-out;
-}
-
-.brand_story .conbox2.show .text_area p {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.brand_story .conbox2 .teatime {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.9s 1.3s ease-in-out;
-}
-
-.brand_story .conbox2.show .teatime {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.brand_story .conbox3 .line {
-    opacity: 0;
-    width: 0;
-    transition: all 0.9s ease-in-out;
-}
-
-.brand_story .conbox3.show .line {
-    opacity: 1;
-    width: 90%;
-}
-
-.brand_story .conbox3 h1 {
-    opacity: 0;
-    transform: translateX(-40px);
-    transition: all 0.9s 0.5s ease-in-out;
-}
-
-.brand_story .conbox3.show h1 {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.brand_story .conbox3 p {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.9s 1.0s ease-in-out;
-}
-
-.brand_story .conbox3.show p {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 
