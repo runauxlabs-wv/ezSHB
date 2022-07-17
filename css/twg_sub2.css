@@ -503,12 +503,12 @@ section .fadeTab .conBox {
 
 .conBox .item:hover img:nth-of-type(2){
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.5s linear;
 }
 
 .conBox .item:hover img:nth-of-type(1){
     opacity: 0;
-    transition: all 0.5s ease;
+    transition: all 0.5s linear;
 }
 
 .conBox .item .item_info_area{
@@ -619,7 +619,14 @@ footer .middle {
 footer .middle p {
     line-height: 30px;
     font-size: 14px;
+}
+
+footer .middle p:nth-of-type(1){
     padding-top: 20px;
+    }
+    
+footer .middle p:nth-of-type(3){
+opacity: 0.7;
 }
 
 footer .right {
