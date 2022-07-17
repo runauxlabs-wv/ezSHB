@@ -240,17 +240,13 @@ header .top:hover .h_inner .gnb span:nth-of-type(5):after{
   width: 0;
 }
 
-/* header .top:hover .h_inner .gnb span:first-child:before{
-  right: unset;
-  left: 0;
-} */
-
 header .top:hover .h_inner .gnb .subgnball{
   height: 400px;
-  background: #fff url(../images/yuhan/bg17.png)50% 48% no-repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px); 
   background-size: cover;
   box-shadow: 0 3px 5px rgba(0,0,0, 0.1);
-  transition: height 0.5s;
+  transition: height 0.8s;
 }
 
 header .top .h_inner .gnb .subgnball > ul > li > ul > li > a:hover{
@@ -2623,4 +2619,138 @@ fieldset {
 
 .sub_company_content .box.b03 .value_m{
   display: none;
+}
+
+/* 스크롤  애니메이션 */
+
+.company .company_top .picture{
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.9s ease-in-out;
+}
+
+.company.show .company_top .picture{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.company .company_top .rec{
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.9s ease-in-out;
+}
+
+.company.show .company_top .rec{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.company .text_area h1{
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.9s 0.3s linear;
+}
+
+.company.show .text_area h1{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.company .text_area p{
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.9s 0.6s linear;
+}
+
+.company.show .text_area p{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.company .company_bottom .hoverslide{
+  opacity: 0;
+  transform: translateX(500px);
+  transition: all 0.9s 0.9s ease-in-out;
+}
+
+.company.show .company_bottom .hoverslide{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tab ul li{
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.9s linear;
+}
+
+.tab.show ul li{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tab ul li.on{
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.9s linear;
+}
+
+.tab.show ul li.on{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tab .forest .text_area h1{
+  opacity: 0;
+  transform: translateY(70px);
+  transition: all 0.7s 0.3s linear;
+}
+
+.tab.show .forest .text_area h1{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tab .forest .text_area h2{
+  opacity: 0;
+  transform: translateY(70px);
+  transition: all 0.7s 0.6s linear;
+}
+
+.tab.show .forest .text_area h2{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tab .forest .text_area p{
+  opacity: 0;
+  transform: translateY(70px);
+  transition: all 0.7s 0.9s linear;
+}
+
+.tab.show .forest .text_area p{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tab .forest .forest_video{
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.7s 1.2s linear;
+}
+
+.tab.show .forest .forest_video{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tab .photobox{
+  opacity: 0;
+  transform: translateY(70px);
+  transition: all 0.7s 1.5s linear;
+}
+
+.tab.show .photobox{
+  opacity: 1;
+  transform: translateY(0);
 }

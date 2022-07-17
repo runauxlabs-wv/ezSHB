@@ -234,3 +234,4 @@ $(".fadeTab li").click(function(){
 //     acceleration: 1.5,
 //     deceleration: 0.965,
 //   });
+
