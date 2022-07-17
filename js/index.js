@@ -3,6 +3,7 @@ var swiper = new Swiper('.myswiper', {
     slidesPerView: 1,
     direction: 'vertical',
     // effect : 'fade',
+    speed : 1000,
     mousewheel: true,
     keyboard: {
         enabled: true,
