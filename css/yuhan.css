@@ -2640,23 +2640,17 @@ fieldset {
 
 /* 스크롤  애니메이션 */
 
-.company .company_top .picture{
+.company .company_top .picture,
+.company .company_top .logo_w,
+.company .company_top .rec
+{
   opacity: 0;
   transform: translateX(-100px);
   transition: all 0.9s ease-in-out;
 }
 
-.company.show .company_top .picture{
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.company .company_top .rec{
-  opacity: 0;
-  transform: translateX(-100px);
-  transition: all 0.9s ease-in-out;
-}
-
+.company.show .company_top .picture,
+.company.show .company_top .logo_w,
 .company.show .company_top .rec{
   opacity: 1;
   transform: translateX(0);
