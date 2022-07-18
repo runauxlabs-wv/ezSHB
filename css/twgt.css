@@ -271,3 +271,41 @@ footer .right .text p{
 footer .right .text h3{
     font-size: 15px;
 }
+
+/* 서브페이지 - 2 */
+
+.shop_tea{
+    padding: 200px 0px 0px;
+}
+
+section .fadeTab ul li{
+    padding: 0 20px;
+}
+
+section .fadeTab .conBox{
+    padding: 50px 50px 0 50px
+}
+
+.conBox .item img:nth-of-type(2) {
+    left: 38px;
+    top: 50px;
+}
+
+.conBox .item .bag {
+    top: 20px;
+    right: 20px;
+}
+
+.conBox .item{
+    margin-bottom: 80px;
+}
+
+.conBox .item .item_info_area{
+    padding-bottom: 30px;
+}
+
+.conBox .item .item_info_area h1{
+    font-size: 21px;
+    width: 78%;
+    margin: 0 auto;
+}
