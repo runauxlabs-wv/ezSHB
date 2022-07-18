@@ -567,6 +567,12 @@ footer .logo {
     display: none;
 }
 
+.sub_tabm{
+    display: block;
+    top: 500px;
+    right: 20px;
+}
+
 .outer_container {
     margin-bottom: 80px;
     width: 75%;
