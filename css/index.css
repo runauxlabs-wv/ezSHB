@@ -99,7 +99,10 @@ body {
     margin: 0;
     min-width: 1280px;
     color: #333333;
-    font-family: Termina, sans-serif;
+    /* font-family: Termina, sans-serif; */
+    font-family: "Gilroy ExtraBold", system-ui, sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 header,
