@@ -1,0 +1,6 @@
+/* twg 모바일 */
+@charset "utf-8";
+
+body {
+    min-width: 320px;
+}

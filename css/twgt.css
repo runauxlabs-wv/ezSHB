@@ -1,0 +1,142 @@
+/* twg 태블릿 */
+@charset "utf-8";
+
+body {
+    min-width: 640px;
+}
+
+
+.shop{
+    top: 935px;
+}
+
+.title h1{
+    width: 500px;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 60px;
+    padding: 50px 0 10px 0;
+}
+
+.sec02 .title{
+    position: relative;
+    top: 50px;
+}
+
+.title h3{
+    padding: 10px 0 30px 0;
+}
+
+.main_wrapper {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 10;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translate(-12%, -40%);
+    transform: translate(-5%, -40%);
+    list-style: none;
+}
+
+.sec02 .line{
+    width: 1px;
+    height: 372px;
+    background: #fff;
+    opacity: 0.5;
+    position: absolute;
+    top: -235px;
+    left: 10px;
+}
+
+/* 서브페이지 */
+
+.brand_story{
+    padding: 450px 0px 0px;
+}
+
+.brand_story .conbox1{
+    padding: 0 60px 0 120px;
+}
+
+.brand_story .title {
+    width: 350px;
+    height: 200px;
+    top: 180px;
+    left: 200px;
+}
+
+.brand_story .conbox1 .teapot {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.ani {
+    width: 85px;
+    height: 140px;
+    background: url(../images/twg/ani.png)0 0 no-repeat;
+    background-size: 170px 140px;
+    animation: ani 900ms infinite steps(2);
+    opacity: 0.5;
+    position: absolute;
+    top: -80px;
+    left: -55px;
+}
+
+.brand_story .conbox1 .text_area{
+    width: 70%;
+    padding: 80px 0 0 25px;
+}
+
+.brand_story .conbox1 .text_area h1, .brand_story .conbox2 h1, .brand_story .conbox3 h1 {
+    font-family: 'Amiri', serif;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.brand_story .conbox1 .text_area p, .brand_story .conbox2 .text_area p, .brand_story .conbox3 p {
+    line-height: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-break: keep-all;
+}
+
+.brand_story .conbox1 .text_area .line {
+    background: #281E1C;
+    height: 1px;
+    width: 60%;
+    position: absolute;
+    top: 110px;
+    left: 170px;
+}
+
+.brand_story .conbox1.show .text_area .line{
+    width: 50%;
+}
+
+.brand_story .conbox2{
+    padding: 100px 60px;
+}
+
+.brand_story .conbox2.show .line{
+    width: 100%;
+}
+
+.brand_story .conbox2 p, .brand_story .conbox3 p {
+    padding: 50px 20px 0px;
+}
+
+.brand_story .conbox2 h1{
+    text-align: center;
+    background: #FFFEF1;
+    position: absolute;
+    margin: 0 auto;
+    left: 585px;
+    padding: 0 30px;
+    top: -15px;
+}

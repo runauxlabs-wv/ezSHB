@@ -512,14 +512,12 @@ section.myswiper .sec02 {
     background-color: #212121;
 }
 
-/* Case Study Showcase
-================================================== */
+/* 메인 슬라이드 */
 
-.case-study-wrapper {
+.main_wrapper {
     position: absolute;
     top: 30%;
     left: 80%;
-    /* right: 0; */
     z-index: 10;
     width: auto;
     margin: 0;
@@ -529,7 +527,7 @@ section.myswiper .sec02 {
     list-style: none;
 }
 
-.case-study-wrapper .case-study-name a {
+.main_wrapper .main_name a {
     position: relative;
     list-style: none;
     display: block;
@@ -548,7 +546,7 @@ section.myswiper .sec02 {
     transition: all 300ms linear;
 }
 
-.case-study-wrapper .case-study-name a:nth-of-type(2){
+.main_wrapper .main_name a:nth-of-type(2){
     display: none;
     font-family: 'pretendard', sans-serif;
     /* position: relative; */
@@ -556,23 +554,23 @@ section.myswiper .sec02 {
     font-size: 18px;
 }
 
-.case-study-wrapper .case-study-name a:hover {
+.main_wrapper .main_name a:hover {
     text-decoration: none;
 }
 
-.case-study-wrapper .case-study-name.active a:nth-of-type(2) {
+.main_wrapper .main_name.active a:nth-of-type(2) {
     display: block;
     color: #fff;
     font-weight: 700;
     opacity: 1;
 }
 
-.case-study-wrapper .case-study-name.active a:nth-of-type(1){
+.main_wrapper .main_name.active a:nth-of-type(1){
     opacity: 0;
     display: none;
 }
 
-.case-study-images {
+.main_img {
     position: absolute;
     top: 0;
     left: 0;
@@ -582,7 +580,7 @@ section.myswiper .sec02 {
     z-index: 2;
 }
 
-.case-study-images li {
+.main_img li {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -594,7 +592,7 @@ section.myswiper .sec02 {
     transition: all 300ms linear;
 }
 
-.case-study-images li .img-hero-background {
+.main_img li .main_background {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -615,13 +613,13 @@ section.myswiper .sec02 {
     transition: all 300ms linear;
 }
 
-.case-study-images li.show .img-hero-background {
+.main_img li.show .main_background {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
-.case-study-images li .case-study-title {
+.main_img li .title_group {
     position: absolute;
     top: 350px;
     left: 120px;
@@ -640,13 +638,13 @@ section.myswiper .sec02 {
     transition: all 300ms linear;
 }
 
-.case-study-images li.show .case-study-title {
+.main_img li.show .title_group {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }
 
-.case-study-images li .hero-number-back {
+.main_img li .number_back {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -665,7 +663,7 @@ section.myswiper .sec02 {
     transition: all 300ms linear;
 }
 
-.case-study-images li .hero-number {
+.main_img li .number {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -688,7 +686,7 @@ section.myswiper .sec02 {
     transition: all 300ms linear;
 }
 
-.case-study-images li .hero-number-fixed {
+.main_img li .number_fixed {
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -709,7 +707,7 @@ section.myswiper .sec02 {
     border-radius: 50px;
 }
 
-.case-study-images li .hero-number-fixed:before {
+.main_img li .number_fixed:before {
     position: absolute;
     content: '';
     top: 50%;
@@ -720,17 +718,17 @@ section.myswiper .sec02 {
     background-color: rgba(255, 255, 255, .4);
 }
 
-.case-study-images li.show .hero-number {
+.main_img li.show .number {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
-.case-study-images li.show .hero-number-back {
+.main_img li.show .number_back {
     opacity: 1;
 }
 
-.dark-over-hero {
+.dark {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -741,22 +739,22 @@ section.myswiper .sec02 {
     opacity: 0.2;
 }
 
-.case-study-images li:nth-child(1) .img-hero-background {
+.main_img li:nth-child(1) .main_background {
     background: url(../images/twg/bg5.png)50% 10% no-repeat;
     background-size: cover;
 }
 
-.case-study-images li:nth-child(2) .img-hero-background {
+.main_img li:nth-child(2) .main_background {
     background: url(../images/twg/bg2.png)50% 20% no-repeat;
     background-size: cover;
 }
 
-.case-study-images li:nth-child(3) .img-hero-background {
+.main_img li:nth-child(3) .main_background {
     background: url(../images/twg/bg6.jpg)50% 60% no-repeat;
     background-size: cover;
 }
 
-.case-study-images li:nth-child(4) .img-hero-background {
+.main_img li:nth-child(4) .main_background {
     background: url(../images/twg/bg4.jpg)50% 20% no-repeat;
     background-size: cover;
 }
@@ -765,18 +763,18 @@ section.myswiper .sec02 {
 ================================================== */
 
 @media (max-width: 991px) {
-    .case-study-images li .hero-number-back {
+    .main_img li .number_back {
         font-size: 26vw;
     }
 }
 
 @media (max-width: 767px) {
-    .case-study-wrapper .case-study-name a {
+    .main_wrapper .main_name a {
         font-size: 20px;
         letter-spacing: 1px;
     }
 
-    .case-study-images li .hero-number-back {
+    .main_img li .number_back {
         font-size: 32vw;
     }
 }
