@@ -103,9 +103,14 @@ section.myswiper .sec01 video {
 .sec01 .mainlogo {
     background: url(../images/twg/TWG_logo_white.svg)0 0 no-repeat;
     background-size: contain;
-    width: 600px;
-    height: 600px;
-    margin: 305px auto;
+    /* width: 600px; */
+    width: 50%;
+    height: 500px;
+    /* position: absolute;
+    top: 350px;
+    left: 660px; */
+    margin: 350px auto;
+    margin-right: 310px;
 }
 
 header {
@@ -212,9 +217,10 @@ header .menubar {
     background: url(../images/twg/shop.svg) 0 0 no-repeat;
     background-size: contain;
     position: absolute;
-    top: 1000px;
+    bottom: 15px;
     right: 10px;
     cursor: pointer;
+    z-index: 200;
 }
 
 /* 햄버거 메뉴 */

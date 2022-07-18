@@ -5,9 +5,11 @@ body {
     min-width: 640px;
 }
 
-
-.shop {
-    top: 935px;
+.sec01 .mainlogo {
+    width: 60%;
+    height: 500px;
+    margin: 360px auto;
+    margin-right: 155px;
 }
 
 .title h1 {
@@ -191,7 +193,7 @@ body {
     height: 50vh;
 }
 
-.swiper-slide h1 {
+.subswiper .swiper-slide h1 {
     height: 100%;
     margin: 0;
     padding: 150px 50px;
