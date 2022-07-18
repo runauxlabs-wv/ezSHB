@@ -109,7 +109,7 @@ section.myswiper .sec01 video {
     /* position: absolute;
     top: 350px;
     left: 660px; */
-    margin: 350px auto;
+    margin: 325px auto;
     margin-right: 310px;
 }
 
@@ -178,7 +178,6 @@ header .menu .right .my {
     transition: transform 250ms ease-in-out;
     font-size: 14px;
     line-height: 18px;
-    background-color: transparent;
     background-image: url("../images/twg/search.svg");
     background-repeat: no-repeat;
     background-size: 25px 25px;

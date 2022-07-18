@@ -4,3 +4,73 @@
 body {
     min-width: 320px;
 }
+
+header .menu {
+    width: 90%;
+    margin: 35px auto;
+}
+
+.sec01 .mainlogo {
+    width: 80%;
+    height: 500px;
+    margin: 250px auto;
+}
+
+#toggle {
+    position: absolute;
+    top: 10px;
+    width: 25px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1000;
+    margin-left: 10px;
+}
+
+#toggle div.bar,
+#toggle div.bar:before,
+#toggle div.bar:after {
+    height: 2px;
+    background: #fff;
+}
+
+.outline {
+    background: url(../images/twg/searchout.svg) 0 0 no-repeat;
+    background-size: contain;
+    width: 200px;
+    margin-top: 3px;
+}
+
+.search {
+    padding: 10px 15px;
+    background-size: 20px 20px;
+    background-position: 92% center;
+    margin-right: 20px;
+}
+
+header .menu .right .cart {
+    background: url(../images/twg/cart.svg)50% 50% no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 27px;
+    margin: 0 10px;
+    padding-bottom: 0;
+}
+
+header .menu .right .my {
+    background: url(../images/twg/my.svg)50% 50% no-repeat;
+    background-size: contain;
+    width: 28px;
+    height: 23px;
+    margin-top: 3px;
+}
+
+#overlay nav ul li a {
+    position: relative;
+    width: fit-content;
+    height: 40px;
+    font-size: 22px;
+}
+
+#overlay nav ul {
+    padding: 20px;
+}
