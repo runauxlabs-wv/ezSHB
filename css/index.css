@@ -685,6 +685,7 @@ section.myswiper .sec04 {
 
 .cont {
     background: #f4f4f4;
+    z-index: 200;
 }
 
 .cont .text_area {
@@ -704,6 +705,23 @@ section.myswiper .sec04 {
     color: #333333;
 }
 
+.sec03{
+    background: url(../images/yuhan/bg10.png)50% 50% no-repeat;
+    background-size: cover;
+}
+
+.sec03 .intro_txt h1{
+    position: absolute;
+    color: #fff;
+    font-size: 300px;
+    font-weight: 900;
+    text-align: left;
+    padding: 100px;
+    margin-top: 150px;
+    margin-left: 100px;
+    opacity: 0.8;
+}
+
 .project_area {
     display: flex;
     flex-direction: column;
@@ -713,7 +731,38 @@ section.myswiper .sec04 {
     padding: 40px;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 0.875rem;
+    background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px); 
 }
+
+.swiper-slide-active.sec03 .project_area {
+    animation: pj 2.5s cubic-bezier(.24,.62,.64,.28);
+}
+
+.swiper-slide-active.sec03 .cont {
+    animation: pj-r 2.5s cubic-bezier(.24,.62,.64,.28);
+}
+
+@keyframes pj{
+    0% {
+        opacity: 0;
+        transform: translateX(-3000px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes pj-r{
+    0% {
+        transform: translateY(3000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
 
 /* 뷰포트 */
 
@@ -764,6 +813,8 @@ section.myswiper .sec04 {
     background-position: 100% 0;
 }
 
+/* 크롬 프레임 */
+
 .chrome-bar {
     display: flex;
     flex-direction: column;
@@ -771,7 +822,7 @@ section.myswiper .sec04 {
     height: 481px;
     border-radius: 0.5rem;
     background-color: #fff;
-    box-shadow: 0 1rem 40px #e1e9ec88;
+    box-shadow: 0 1rem 40px #82858688;
     overflow: hidden;
 }
 
@@ -1030,12 +1081,71 @@ body .chrome-bar .tab-section .tab-container .tab:not(:first-child):hover::after
 
 .button_area {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 40px 0;
     display: flex;
     justify-content: center;
 }
 
+.button_area a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin: 0 10px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 14px;
+    border: 1px solid #333333;
+    line-height: 40px;
+    font-weight: 600;
+    transition: 0.5s;
+    color: #333333;
+}
+
 /* 4. 프로젝트 B */
+
+.sec04{
+    background: url(../images/index/sec04.png)50% 50% no-repeat;
+    background-size: cover;
+}
+
+.sec04 .intro_txt h1{
+    position: absolute;
+    color: #fff;
+    font-size: 300px;
+    font-weight: 900;
+    text-align: right;
+    padding: 100px;
+    margin-top: 150px;
+    margin-right: 100px;
+    opacity: 0.8;
+}
+
+.swiper-slide-active.sec04 .project_area {
+    animation: pj2 2.5s cubic-bezier(.24,.62,.64,.28);
+}
+
+.swiper-slide-active.sec04 .cont {
+    animation: pj-r2 2.5s cubic-bezier(.24,.62,.64,.28);
+}
+
+@keyframes pj2{
+    0% {
+        opacity: 0;
+        transform: translateX(3000px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes pj-r2{
+    0% {
+        transform: translateY(-3000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
 
 /* 5.콘택트 */
 
@@ -1059,6 +1169,7 @@ section.myswiper .sec05 {
 
 .sec05 .contact {
     padding: 150px 100px;
+    font-weight: 900;
 }
 
 .swiper-slide-active.sec05 .tel {
