@@ -715,12 +715,14 @@ section.myswiper .sec04 {
     font-family: 'Playfair Display', serif;
     position: absolute;
     color: #333333;
-    font-size: 250px;
-    width: 70%;
+    font-size: 200px;
     font-weight: 900;
     text-align: left;
-    padding: 260px 150px;
-    margin-left: 190px;
+    /* padding: 260px 150px; */
+    /* margin: 0 auto; */
+    top: 34%;
+    left: 35%;
+    width: 50%;
     opacity: 0.8;
     z-index: -20;
 }
