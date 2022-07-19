@@ -1,6 +1,10 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
 @import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
 
 @keyframes scrollani1 {
@@ -100,7 +104,11 @@ body {
     min-width: 1280px;
     color: #333333;
     /* font-family: Termina, sans-serif; */
-    font-family: "Gilroy ExtraBold", system-ui, sans-serif;
+    /* font-family: "Gilroy ExtraBold", system-ui, sans-serif; */
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -137,8 +145,9 @@ section.myswiper .sec03{
 }
 
 .logo {
+    font-family: 'Playfair Display', serif;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 900;
     color: #333333;
     position: fixed;
     display: block;
@@ -151,6 +160,7 @@ section.myswiper .sec03{
 }
 
 .swiper-pagination-bullet {
+    font-weight: 600;
     width: 200px;
     height: 50px;
     border-radius: unset;
@@ -163,6 +173,7 @@ section.myswiper .sec03{
     position: relative;
     transition: all .2s;
     overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .swiper-pagination-bullet:hover {
@@ -355,10 +366,12 @@ section {
     opacity: 0;
     animation: fadeInText 1.5s 3.0s ease-in forwards;
     cursor: text;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sec01 h3 {
-    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
     margin: 2rem 0;
     font-size: clamp(4.5rem, 4vw, 3rem);
     /* max-width: 800px; */
@@ -372,7 +385,8 @@ section {
 
 
 .sec01 h1 {
-    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
     margin: 2rem 0;
     font-size: clamp(6.5rem, 4vw, 3rem);
     /* max-width: 800px; */
@@ -431,7 +445,8 @@ section {
 
 .fly_in_text li {
     display: inline-block;
-    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
     font-size: clamp(6.5rem, 4vw, 3rem);
     margin-right: 10px;
     margin: 2rem 0;
@@ -472,7 +487,7 @@ section {
 }
 
 .sec02 .about h2 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 30px;
     padding: 40px 0 25px 0;
     border-bottom: 1px solid #333333;
@@ -501,7 +516,7 @@ section {
 .sec02 .about .box1 span {
     font-size: 20px;
     line-height: 60px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .sec02 .about .box1 p {
@@ -539,7 +554,7 @@ section {
     width: fit-content;
     border-radius: 5px;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
     margin-right: 5px;
 }
 
@@ -697,3 +712,39 @@ section.myswiper .sec05 {
     font-weight: 300;
     font-size: 50px;
 }
+
+
+
+/* 테스트중 */
+
+  
+.container ul {
+      height: 100%;
+      width: 100%;
+  }
+  
+  .container li {
+      height: 100%;
+      width: 100%;
+  }
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* background-image: url("https://i.postimg.cc/c4zCYgjS/Space-BG.png"); */
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 30;
+    position: absolute;
+  }
+  
+  img {
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
