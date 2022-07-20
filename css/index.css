@@ -683,14 +683,39 @@ section.myswiper .sec04 {
 }
 
 .cont .text_area {
-    padding: 600px 100px;
+    padding: 400px 100px;
 }
 
-.cont .text_area p {
+.cont .text_area h2{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 25px 0 10px 0;
+}
+
+.cont .text_area p,
+.cont .text_area .box {
     font-size: 15px;
     font-family: 'Pretendard', sans-serif;
     letter-spacing: 1px;
     line-height: 25px;
+}
+
+.cont .text_area .box{
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.cont .text_area .box{
+    background: #e6e6e6;
+    padding: 5px 8px;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+
+.cont .text_area .box.b04{
+    background: #333333;
+    color: #fff;
+    font-weight: 600;
 }
 
 .sec03 a,
@@ -715,7 +740,7 @@ section.myswiper .sec04 {
     z-index: -20;
 }
 
-.project_area {
+.sec03 .project_area {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -724,7 +749,18 @@ section.myswiper .sec04 {
     padding: 40px;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 0.875rem;
-    background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px); 
+  background: url(../images/yuhan/bg10.png)50% 50% no-repeat;
+  background-size: cover;
+}
+
+.sec03 .project_area::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(15px); 
 }
 
@@ -1074,7 +1110,7 @@ body .chrome-bar .tab-section .tab-container .tab:not(:first-child):hover::after
 
 .button_area {
     text-align: center;
-    margin: 40px 0;
+    margin: 70px 0;
     display: flex;
     justify-content: center;
 }
@@ -1104,10 +1140,19 @@ body .chrome-bar .tab-section .tab-container .tab:not(:first-child):hover::after
     height: 15px;
     border-radius: 50%;
     margin: 5px 5px 0 0;
+    box-shadow: 0px 0px 10px #b9b9b988;
 }
 
 .color.c01{
     background: #009FE3;
+}
+
+.color.c02{
+    background: #fff;
+}
+
+.color.c03{
+    background: #2e2e2e;
 }
 
 /* 4. 프로젝트 B */
@@ -1127,6 +1172,30 @@ body .chrome-bar .tab-section .tab-container .tab:not(:first-child):hover::after
     left: 42%;
     opacity: 0.8;
     z-index: -20;
+}
+
+.sec04 .project_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 40px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.875rem;
+  backdrop-filter: blur(15px); 
+  background: url(../images/index/sec04.png)50% 50% no-repeat;
+  background-size: cover;
+}
+
+.sec04 .project_area::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px); 
 }
 
 .swiper-slide-active.sec04 .project_area {
@@ -1155,6 +1224,22 @@ body .chrome-bar .tab-section .tab-container .tab:not(:first-child):hover::after
     100%{
         transform: translateX(0px);
     }
+}
+
+.color.c04{
+    background: #FEDB77;
+}
+
+.color.c05{
+    background: #FFFEF1;
+}
+
+.color.c06{
+    background: #F8F3E3;
+}
+
+.color.c07{
+    background: #281E1C;
 }
 
 /* 5.콘택트 */
