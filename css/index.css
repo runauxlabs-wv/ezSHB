@@ -683,7 +683,7 @@ section.myswiper .sec04 {
 }
 
 .cont .text_area {
-    padding: 400px 100px;
+    padding: 360px 100px;
 }
 
 .cont .text_area h2{
@@ -1110,7 +1110,7 @@ body .chrome-bar .tab-section .tab-container .tab:not(:first-child):hover::after
 
 .button_area {
     text-align: center;
-    margin: 70px 0;
+    margin: 70px 0 20px 0;
     display: flex;
     justify-content: center;
 }
@@ -1247,7 +1247,7 @@ body .chrome-bar .tab-section .tab-container .tab:not(:first-child):hover::after
 section.myswiper .sec05 {
     background: #000;
     margin-top: 500px;
-    color: #fff;
+    color: #d5d5d5;
     z-index: -9999;
 }
 
@@ -1265,6 +1265,17 @@ section.myswiper .sec05 {
 .sec05 .contact {
     padding: 150px 100px;
     font-weight: 900;
+}
+
+.sec05 a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.sec05 .mail:hover{
+    transition: 0.5s ease;
+    padding-left: 20px;
+    
 }
 
 .swiper-slide-active.sec05 .tel {
