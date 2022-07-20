@@ -673,6 +673,7 @@ section .wrapper {
 section.myswiper .sec03,
 section.myswiper .sec04 {
     display: flex;
+    position: relative;
 }
 
 .project_area,
@@ -702,10 +703,10 @@ section.myswiper .sec04 {
     color: #333333;
 }
 
-.sec03{
+/* .sec03{
     background: url(../images/yuhan/bg2.png)50% 50% no-repeat;
     background-size: cover;
-}
+} */
 
 .sec03 .container{
     z-index: -15;
@@ -713,16 +714,16 @@ section.myswiper .sec04 {
 
 .sec03 .intro_txt h1{
     font-family: 'Playfair Display', serif;
-    position: absolute;
     color: #333333;
-    font-size: 200px;
+    color: #fff;
+    font-size: 50px;
     font-weight: 900;
     text-align: left;
     /* padding: 260px 150px; */
     /* margin: 0 auto; */
-    top: 34%;
-    left: 35%;
-    width: 50%;
+    position: absolute;
+    top: 47%;
+    left: 42%;
     opacity: 0.8;
     z-index: -20;
 }
@@ -1200,4 +1201,48 @@ section.myswiper .sec05 {
 .swiper-slide-active.sec05 .mail span {
     font-weight: 300;
     font-size: 50px;
+}
+
+
+/* 테스트중 */
+
+.cir_group{
+    position: absolute;
+    top: 42%;
+    left: 39%;
+    z-index: -25;
+}
+
+.cir {
+    position: absolute;
+    left: 50px;
+    background: linear-gradient(344deg, #51f8f9, #f278ff, #f7ff83);
+    background-size: clamp(100px, 10vw, 10vw);
+    filter: blur(clamp(10px, 2vw, 30px));
+    width: 300px;
+    height: 200px;
+    animation: cir1 5s ease infinite;
+}
+
+@keyframes cir1 {
+    0%{background-position:57% 0%}
+    50%{background-position:14% 100%}
+    100%{background-position:57% 0%}
+}
+
+.cir2{
+    position: absolute;
+    left: 150px;
+    background: linear-gradient(344deg, #009fe3, #ffd072);
+    background-size: clamp(50px, 10vw, 10vw);
+    filter: blur(clamp(20px, 4vw, 40px));
+    width: 200px;
+    height: 200px;
+    animation: cir2 5s ease infinite;
+}
+
+@keyframes cir2 {
+    0%{background-position:76% 0%}
+    50%{background-position:25% 100%}
+    100%{background-position:76% 0%}
 }
