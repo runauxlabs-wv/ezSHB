@@ -74,3 +74,96 @@ header .menu .right .my {
 #overlay nav ul {
     padding: 20px;
 }
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    top: 140px;
+    left: -10px;
+    width: 100%;
+    height: 20px;
+}
+
+.main_wrapper {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    z-index: 10;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translate(-12%, -40%);
+    transform: translate(-12%, -40%);
+    list-style: none;
+}
+
+.main_wrapper .main_name a{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.main_wrapper .main_name.active a:nth-of-type(2) {
+    font-size: 15px;
+}
+
+.main_img li .title_group {
+    position: absolute;
+    top: 35%;
+    left: 30px;
+    
+}
+
+.title h1 {
+    width: 90%;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Amiri', serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 40px;
+    padding: 50px 0 10px 0;
+}
+
+.title h2{
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.title h3{
+    font-size: 13px;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+
+.sec02 .line {
+    width: 1px;
+    height: 245px;
+    background: #fff;
+    opacity: 0.5;
+    position: absolute;
+    top: -120px;
+    left: 5px;
+}
+
+button.addtobag{
+    margin: 10px 0;
+}
+
+button.addtobag .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 3rem;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+button:hover .button-text {
+    color: #281E1C;
+  }
