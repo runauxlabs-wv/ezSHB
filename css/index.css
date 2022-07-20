@@ -124,11 +124,6 @@ section.myswiper {
     height: 100vh;
 }
 
-/* section.myswiper .sec02,
-section.myswiper .sec03{
-    background: #f4f4f4;
-} */
-
 /* custmm bullets style */
 .header {
     position: fixed;
@@ -703,26 +698,17 @@ section.myswiper .sec04 {
     color: #333333;
 }
 
-/* .sec03{
-    background: url(../images/yuhan/bg2.png)50% 50% no-repeat;
-    background-size: cover;
-} */
-
 .sec03 .container{
     z-index: -15;
 }
 
 .sec03 .intro_txt h1{
     font-family: 'Playfair Display', serif;
-    color: #333333;
     color: #fff;
     font-size: 50px;
     font-weight: 900;
-    text-align: left;
-    /* padding: 260px 150px; */
-    /* margin: 0 auto; */
     position: absolute;
-    top: 47%;
+    top: 48%;
     left: 42%;
     opacity: 0.8;
     z-index: -20;
@@ -1108,10 +1094,6 @@ body .chrome-bar .tab-section .tab-container .tab:not(:first-child):hover::after
 
 /* 4. 프로젝트 B */
 
-.sec04{
-    background: url(../images/index/sec04_2.png)50% 50% no-repeat;
-    background-size: cover;
-}
 
 .sec04 .container{
     z-index: -15;
@@ -1119,13 +1101,12 @@ body .chrome-bar .tab-section .tab-container .tab:not(:first-child):hover::after
 
 .sec04 .intro_txt h1{
     font-family: 'Playfair Display', serif;
-    position: absolute;
     color: #fff;
-    font-size: 200px;
+    font-size: 50px;
     font-weight: 900;
-    text-align: right;
-    padding: 260px 150px;
-    margin-right: 190px;
+    position: absolute;
+    top: 48%;
+    left: 42%;
     opacity: 0.8;
     z-index: -20;
 }
@@ -1234,8 +1215,8 @@ section.myswiper .sec05 {
     position: absolute;
     left: 150px;
     background: linear-gradient(344deg, #009fe3, #ffd072);
-    background-size: clamp(50px, 10vw, 10vw);
-    filter: blur(clamp(20px, 4vw, 40px));
+    background-size: clamp(100px, 10vw, 10vw);
+    filter: blur(clamp(20px, 500vw, 40px));
     width: 200px;
     height: 200px;
     animation: cir2 5s ease infinite;
