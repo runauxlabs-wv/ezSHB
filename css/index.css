@@ -494,13 +494,14 @@ section .wrapper {
 }
 
 .swiper-slide-active.sec02 h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 120px;
-    font-weight: 600;
+    font-weight: 800;
     animation: fadeInLeft 1.5s;
     text-align: right;
     writing-mode: vertical-lr;
     position: absolute;
-    top: 200px;
+    top: 350px;
     left: 45px;
     color: #3333330a;
     font-style: italic;
@@ -1082,14 +1083,31 @@ body .chrome-bar .tab-section .tab-container .tab:not(:first-child):hover::after
     display: block;
     width: 100px;
     height: 40px;
-    margin: 0 10px;
+    margin: 0 15px;
     font-family: 'Pretendard', sans-serif;
     font-size: 14px;
-    border: 1px solid #333333;
+    border: 1px solid #33333348;
     line-height: 40px;
     font-weight: 600;
-    transition: 0.5s;
     color: #333333;
+}
+
+.button_area a:hover{
+    transition: 0.5s;
+    color: #fff;
+    background: #333333;
+}
+
+.color{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px 5px 0 0;
+}
+
+.color.c01{
+    background: #009FE3;
 }
 
 /* 4. 프로젝트 B */
@@ -1227,3 +1245,47 @@ section.myswiper .sec05 {
     50%{background-position:25% 100%}
     100%{background-position:76% 0%}
 }
+
+/* 로딩 */
+
+.spinner-box {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: absolute;
+  top: 28%;
+    left: 36.5%;
+    z-index: -30;
+}
+
+.circle-border {
+    width: 500px;
+    height: 500px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(63,249,220);
+    background: linear-gradient(0deg, rgba(102,249,255,0.1) 33%, #333333 100%);
+    animation: spin 3.0s linear 0s infinite;
+  }
+  
+  .circle-core {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #E6E6E6;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(359deg);
+    }
+  }
