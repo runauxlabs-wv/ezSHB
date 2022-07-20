@@ -16,7 +16,8 @@ header .menu {
     margin: 250px auto;
 }
 
-#toggle {
+#toggle,
+#toggle_dark {
     position: absolute;
     top: 10px;
     width: 25px;
@@ -33,6 +34,13 @@ header .menu {
     background: #fff;
 }
 
+#toggle_dark div.bar,
+#toggle_dark div.bar:before,
+#toggle_dark div.bar:after{
+    height: 2px;
+    background: #281E1C;
+}
+
 .outline {
     background: url(../images/twg/searchout.svg) 0 0 no-repeat;
     background-size: contain;
@@ -40,7 +48,15 @@ header .menu {
     margin-top: 3px;
 }
 
-.search {
+.outline_dark {
+    background: url(../images/twg/searchout_dark.svg) 0 0 no-repeat;
+    background-size: contain;
+    width: 200px;
+    margin-top: 3px;
+}
+
+.search,
+.search_dark {
     padding: 10px 15px;
     background-size: 20px 20px;
     background-position: 92% center;
@@ -56,6 +72,15 @@ header .menu .right .cart {
     padding-bottom: 0;
 }
 
+header .menu .right .cart_dark {
+    background: url(../images/twg/cart_dark.svg)0 0 no-repeat;
+    width: 32px;
+    height: 27px;
+    background-size: contain;
+    margin: 0 10px;
+    padding-bottom: 0;
+}
+
 header .menu .right .my {
     background: url(../images/twg/my.svg)50% 50% no-repeat;
     background-size: contain;
@@ -64,14 +89,29 @@ header .menu .right .my {
     margin-top: 3px;
 }
 
-#overlay nav ul li a {
+header .menu .right .my_dark {
+    background: url(../images/twg/my_dark.svg)0 0 no-repeat;
+    width: 28px;
+    height: 23px;
+    margin-top: 3px;
+    background-size: contain;
+}
+
+#overlay nav ul li a,
+#overlay_dark nav ul li a {
     position: relative;
     width: fit-content;
     height: 40px;
     font-size: 22px;
 }
 
-#overlay nav ul {
+#overlay nav ul li a:nth-of-type(2),
+#overlay_dark nav ul li a:nth-of-type(2){
+    font-size: 22px;
+}
+
+#overlay nav ul,
+#overlay_dark nav ul{
     padding: 20px;
 }
 
@@ -167,3 +207,191 @@ button.addtobag .button-text {
 button:hover .button-text {
     color: #281E1C;
   }
+
+
+/* 서브페이지 */
+
+.brand_story {
+    padding:  400px 0px 0px;
+}
+
+.brand_story .title {
+    width: 250px;
+    height: 150px;
+    top: 140px;
+    left: 70px;
+}
+
+.brand_story .conbox1 {
+    display: block;
+    padding: 0 10px 0 10px;
+}
+
+.brand_story .conbox1 .teapot {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.brand_story .conbox1 .text_area {
+    width: 90%;
+    padding: 30px 10px 0px 10px;
+    margin: 0 auto;
+}
+.brand_story .conbox2 .text_area {
+    padding: 20px 10px 0px 10px;
+}
+
+.brand_story .conbox1 .text_area h1, .brand_story .conbox2 h1, .brand_story .conbox3 h1{
+    font-size: 23px;
+}
+
+.brand_story .conbox1 .text_area .line {
+    top: 55px;
+    left: 135px;
+}
+
+.brand_story .conbox1.show .text_area .line {
+    width: 52%;
+}
+
+.brand_story .conbox2 {
+    padding: 30px 10px;
+}
+
+.brand_story .conbox2 h1 {
+    margin: 0 auto;
+    left: 40px;
+    padding: 0 10px;
+    top: 60px;
+}
+
+.brand_story .conbox2 .box {
+    top: 375px;
+    left: 0px;
+}
+
+.brand_story .conbox2 .con {
+    padding: 15px 0px;
+}
+
+.brand_story .conbox2 .con h2 {
+    margin: 0px 0 10px;
+    font-size: 17px;
+}
+
+.brand_story .conbox2 .i01, .brand_story .conbox2 .i02, .brand_story .conbox2 .i03{
+    width: 150px;
+}
+
+.brand_story .conbox2 .iconbox h3 {
+    font-size: 13px;
+    padding: 5px 3px;
+    background: #F8F3E3;
+    border-radius: 50px;
+}
+
+.brand_story .conbox2 .iconbox{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.brand_story .conbox3 {
+    padding: 30px 10px;
+}
+
+.brand_story .conbox3 h1 {
+    left: 200px;
+    top: 60px;
+    margin: 0 auto;
+    left: 40px;
+    padding: 0 10px;
+}
+
+.brand_story .conbox3 p {
+    padding: 70px 20px 0px;
+}
+
+.subswiper .swiper-slide h1 {
+    padding: 110px 50px;
+
+}
+.swiper-container-horizontal>.swiper-pagination-bullets{
+    top: 30px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+}
+
+.slide-content h4 {
+    font-size: 23px;
+    padding-top: 2.4rem;
+    padding-left: 20px;
+    width: 186px;
+}
+
+.slide-content p{
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+.slide-content {
+    padding: 20px 20px;
+}
+
+
+footer {
+    display: block;
+}
+
+footer .left,
+footer .middle,
+footer .right{
+    width: 100%;
+    height: 400px;
+    padding: 25px 20px;
+    line-height: 0px;
+}
+
+footer .left{
+    display: none;
+}
+
+footer .right ul{
+    line-height: 15px;
+    padding: 0;
+}
+
+footer .logo {
+    width: 200px;
+    height: 90px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+footer .middle p:nth-of-type(1),
+footer .middle p:nth-of-type(2){
+    display: none;
+}
+
+footer .middle{
+    height: 180px;
+    padding: 0px 20px 0px 20px;
+}
+
+footer .right{
+    height: 160px;
+}
+
+footer .middle p{
+    margin: 0;
+}
+
+footer .right .text h3:nth-of-type(2),
+footer .right .text p:nth-of-type(2){
+    display: none;
+}
+
+footer .right .text h3, footer .right .text p {
+    line-height: 25px;
+}
