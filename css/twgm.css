@@ -395,3 +395,62 @@ footer .right .text p:nth-of-type(2){
 footer .right .text h3, footer .right .text p {
     line-height: 25px;
 }
+
+/* 서브페이지2 */
+
+.shop_tea h1{
+    font-size: 25px;
+    padding: 10px 0 20px 0;
+}
+
+section .fadeTab ul li {
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 10px;
+    margin: 0 0 0 10px;
+    font-size: 15px;
+}
+
+section .fadeTab .conBox {
+    padding: 10px 20px 0 20px;
+}
+
+.conBox .item {
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+.conBox .item .item_info_area h1 {
+    font-size: 18px;
+}
+
+.conBox .item img:nth-of-type(2) {
+    left: 25px;
+    top: 35px;
+}
+
+.conBox .item .bag {
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.conBox .item .item_info_area h2 {
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.shop_tea .list{
+    transform: translateY(-50px);
+}
+
+.conBox .item .item_info_area button {
+    padding: 4px 9px 4px 12px;
+    font-size: 12px;
+}
+
+.conBox .item .item_info_area {
+    padding-bottom: 20px;
+}
