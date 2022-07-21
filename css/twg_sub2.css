@@ -534,6 +534,7 @@ section .fadeTab .conBox {
     line-height: 27px;
     font-size: 13px;
     margin: 0;
+    color: #281E1C;
 }
 
 .conBox .item .item_info_area button:hover{
