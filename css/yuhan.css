@@ -1886,7 +1886,7 @@ footer .info a:nth-child(3) {
 
 .top .info p {
   opacity: 0.5;
-  /* display: inline-block; */
+  display: inline-block;
   font-size: 14px;
   padding-right: 10px;
   color: #fff;
