@@ -45,6 +45,11 @@ body {
     list-style: none;
 }
 
+.main_img li .title_group{
+    top: 350px;
+    left: 60px;
+}
+
 .sec02 .line {
     width: 1px;
     height: 372px;
@@ -53,6 +58,11 @@ body {
     position: absolute;
     top: -235px;
     left: 10px;
+}
+
+.search,
+.search_dark {
+    background-position: 77% center;
 }
 
 /* 서브페이지 - 1 */
@@ -69,7 +79,7 @@ body {
     width: 350px;
     height: 200px;
     top: 180px;
-    left: 200px;
+    left: 245px;
 }
 
 .brand_story .conbox1 .teapot {
